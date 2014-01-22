@@ -57,6 +57,7 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
+
 <div class="actions col-md-2">
 	<div class="block">
 	<div class="content">
