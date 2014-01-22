@@ -77,6 +77,13 @@ class TrPo extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'BigUnit' => array(
+			'className' => 'BigUnit',
+			'foreignKey' => 'big_unit_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 }

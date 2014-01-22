@@ -46,6 +46,7 @@ class PurchaseOrdersController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->PurchaseOrder->recursive =2;
 		if (!$this->PurchaseOrder->exists($id)) {
 			throw new NotFoundException(__('Invalid purchase order'));
 		}
