@@ -1,7 +1,7 @@
 <div class="units form">
 <?php echo $this->Form->create('Unit'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Unit'); ?></legend>
+		<legend><?php echo __('Add Unit hahaha'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
 		echo $this->Form->input('status');
