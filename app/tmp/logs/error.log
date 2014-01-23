@@ -8626,3 +8626,205 @@ Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
 Stack Trace:
 #0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-01-23 02:07:15 Error: [MissingActionException] Action PurchaseRequestsController::getAll() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseRequestsController',
+  'action' => 'getAll',
+)
+Request URL: /cake/purchase_requests/getAll
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-23 02:07:19 Error: [MissingActionException] Action PurchaseRequestsController::getall() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseRequestsController',
+  'action' => 'getall',
+)
+Request URL: /cake/purchase_requests/getall
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-23 02:18:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:19:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:19:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:19:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:19:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:19:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:21:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:21:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:21:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:21:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:22:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:23:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-23 02:23:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

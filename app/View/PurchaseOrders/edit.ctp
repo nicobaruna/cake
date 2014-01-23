@@ -94,6 +94,12 @@
 				
 					
 			</table>
+			<button type="button" class="btn more btn-info right">
+						add more item
+					</button>
+					<button type="button" class="btn less btn-warning right">
+						less item
+					</button>
 			<?php echo $this->Form->end(__('Submit')); ?>
 		</div>
 	</div>

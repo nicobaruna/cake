@@ -16,7 +16,7 @@
 				</dd>
 				<dt><?php echo __('User'); ?></dt>
 				<dd>
-					<?php echo $this->Html->link($purchaseRequest['User']['id'], array('controller' => 'users', 'action' => 'view', $purchaseRequest['User']['id'])); ?>
+					<?php echo $this->Html->link($purchaseRequest['User']['username'], array('controller' => 'users', 'action' => 'view', $purchaseRequest['User']['id'])); ?>
 					&nbsp;
 				</dd>
 				<dt><?php echo __('Date'); ?></dt>
@@ -54,7 +54,7 @@
 					<?php echo h($purchaseRequest['PurchaseRequest']['made_by']); ?>
 					&nbsp;
 				</dd>
-				<dt><?php echo __('Discount'); ?></dt>
+				<dt><?php echo __('Discount (%)'); ?></dt>
 				<dd>
 					<?php echo h($purchaseRequest['PurchaseRequest']['discount']); ?>
 					&nbsp;
@@ -98,15 +98,17 @@
 					<th><?php echo __('Purchase Request Id'); ?></th>
 					<th><?php echo __('Stock Id'); ?></th>
 					<th><?php echo __('Qty'); ?></th>
+					<th><?php echo __('Unit'); ?></th>
 					<th><?php echo __('Harga'); ?></th>
 					<th class="actions"><?php echo __('Actions'); ?></th>
 				</tr>
-				<?php foreach ($purchaseRequest['TrRequest'] as $trRequest): ?>
+				<?php $total = 0; foreach ($purchaseRequest['TrRequest'] as $trRequest): ?>
 					<tr>
 						<td><?php echo $trRequest['id']; ?></td>
 						<td><?php echo $trRequest['purchase_request_id']; ?></td>
 						<td><?php echo $trRequest['stock_id']; ?></td>
 						<td><?php echo $trRequest['qty']; ?></td>
+						<td><?php echo $trRequest['BigUnit']['name']; ?></td>
 						<td><?php echo $trRequest['harga']; ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link(__('View'), array('controller' => 'tr_requests', 'action' => 'view', $trRequest['id'])); ?>
@@ -114,7 +116,21 @@
 							<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tr_requests', 'action' => 'delete', $trRequest['id']), null, __('Are you sure you want to delete # %s?', $trRequest['id'])); ?>
 						</td>
 					</tr>
+				<?php 
+				
+					$total =  $total + ($trRequest['qty'] * $trRequest['harga']);
+				
+				?>
 				<?php endforeach; ?>
+				<?php
+					$discount = $total * ($purchaseRequest['PurchaseRequest']['discount'] / 100);
+					$total = $total - $discount;
+				 ?>
+				<tr>
+					<td colspan="5">Total dengan discount</td>
+					<td><?php echo $total; ?></td>
+					<td></td>
+				</tr>
 				</table>
 				<?php endif; ?>
 

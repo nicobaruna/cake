@@ -38,6 +38,7 @@ class PurchaseRequestsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->PurchaseRequest->recursive = 2;
 		if (!$this->PurchaseRequest->exists($id)) {
 			throw new NotFoundException(__('Invalid purchase request'));
 		}

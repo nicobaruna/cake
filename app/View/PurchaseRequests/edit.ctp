@@ -23,16 +23,27 @@
 							echo $this->Form->input('made_by');
 							echo $this->Form->input('discount');
 							$count = 0;
-							foreach ($this->request->data['TrRequest'] as $item) {
-								echo $this->Form->input('TrRequest.'.$count.'.id',array('label'=>'item'));
-								echo $this->Form->input('TrRequest.'.$count.'.purchase_request_id',array('label'=>'item'));
-								echo $this->Form->input('TrRequest.'.$count.'.stock_id',array('label'=>'item'));
-								echo $this->Form->input('TrRequest.'.$count.'.qty',array('label'=>'Qty'));
-								echo $this->Form->input('TrRequest.'.$count.'.big_unit_id',array('label'=>'Unit','options'=>$bigUnits,'default'=>$item['big_unit_id']));
-								echo $this->Form->input('TrRequest.'.$count.'.harga',array('label'=>'Harga'));
-								$count++;
+							?>
+							<fieldset>
+						<legend>Items</legend>
+						<div class="items">
+							<?php 
+							foreach ($this->request->data['TrRequest'] as $key => $value) {
+								
 							}
-						?>
+								echo $this->Form->input('TrRequest.'.$key.'.stock_id',array('label'=>'item','value'=>$stocks,'empty'=>'please choose one'));
+								echo $this->Form->input('TrRequest.'.$key.'.qty',array('label'=>'Qty'));
+								echo $this->Form->input('TrRequest.'.$key.'.big_unit_id',array('label'=>'Unit','value'=>$bigUnits,'empty'=>'please choose one'));
+								echo $this->Form->input('TrRequest.'.$key.'.harga',array('label'=>'Harga'));
+							?>
+						</div>
+					</fieldset>
+					<button type="button" class="btn more btn-info right">
+						add more item
+					</button>
+					<button type="button" class="btn less btn-warning right">
+						less item
+					</button>
 					</div>
 				</div>
 			<?php echo $this->Form->end(__('Submit')); ?>
@@ -61,3 +72,16 @@
 	</div>
 
 </div>
+
+<div class="hidden">
+		<div id="item" data-indexnumber="1">
+			<div class="item{number} wrapper" > 
+		<?php 
+			echo $this->Form->input('TrRequest.{number}.stock_id',array('label'=>'item','value'=>$stocks,'empty'=>'please choose one'));
+			echo $this->Form->input('TrRequest.{number}.qty',array('label'=>'Qty'));
+			echo $this->Form->input('TrRequest.{number}.big_unit_id',array('label'=>'Unit','value'=>$bigUnits,'empty'=>'please choose one'));
+			echo $this->Form->input('TrRequest.{number}.harga',array('label'=>'Harga'));
+		?>
+		</div>
+		</div>
+	</div>
