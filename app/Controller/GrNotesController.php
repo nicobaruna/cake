@@ -46,6 +46,7 @@ class GrNotesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->GrNote->recursive = 2;
 		if (!$this->GrNote->exists($id)) {
 			throw new NotFoundException(__('Invalid gr note'));
 		}

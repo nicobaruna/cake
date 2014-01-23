@@ -6,9 +6,16 @@ App::uses('AppModel', 'Model');
  * @property Supplier $Supplier
  * @property User $User
  * @property GrNote $GrNote
- * @property hasMany $hasMany
+ * @property TrFixPurchaseOrder $TrFixPurchaseOrder
  */
 class FixedPurchaseOrder extends AppModel {
+
+/**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'id';
 
 /**
  * Validation rules
@@ -37,7 +44,7 @@ class FixedPurchaseOrder extends AppModel {
 			),
 		),
 		'date' => array(
-			'datetime' => array(
+			'date' => array(
 				'rule' => array('date'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
@@ -121,8 +128,8 @@ class FixedPurchaseOrder extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'TrFixPuchaseOrder' => array(
-			'className' => 'TrFixPuchaseOrder',
+		'TrFixPurchaseOrder' => array(
+			'className' => 'TrFixPurchaseOrder',
 			'foreignKey' => 'fixed_purchase_order_id',
 			'dependent' => false,
 			'conditions' => '',

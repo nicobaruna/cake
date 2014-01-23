@@ -68,22 +68,24 @@
 </div>
 <div class="related">
 	<h3><?php echo __('Related Tr Requests'); ?></h3>
-	<?php if (!empty($grNote['TrRequest'])): ?>
+	<?php if (!empty($grNote['TrGrnote'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Purchase Request Id'); ?></th>
-		<th><?php echo __('Stock Id'); ?></th>
+		
+	
+		<th><?php echo __('Stock Name'); ?></th>
 		<th><?php echo __('Qty'); ?></th>
+		<th><?php echo __('Unit'); ?></th>
 		<th><?php echo __('Harga'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
-	<?php foreach ($grNote['TrRequest'] as $trRequest): ?>
+	<?php $total = 0; foreach ($grNote['TrGrnote'] as $trRequest): ?>
 		<tr>
-			<td><?php echo $trRequest['id']; ?></td>
-			<td><?php echo $trRequest['purchase_request_id']; ?></td>
-			<td><?php echo $trRequest['stock_id']; ?></td>
+		
+
+			<td><?php echo $trRequest['Stock']['name']; ?></td>
 			<td><?php echo $trRequest['qty']; ?></td>
+			<td><?php echo $trRequest['BigUnit']['name']; ?></td>
 			<td><?php echo $trRequest['harga']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'tr_requests', 'action' => 'view', $trRequest['id'])); ?>
@@ -91,7 +93,19 @@
 				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tr_requests', 'action' => 'delete', $trRequest['id']), null, __('Are you sure you want to delete # %s?', $trRequest['id'])); ?>
 			</td>
 		</tr>
-	<?php endforeach; ?>
+	<?php
+		 $total = $total + ($trRequest['harga'] * $trRequest['qty']);
+		 endforeach; 
+	?>
+	<?php
+					$discount = $total * ($grNote['GrNote']['discount'] / 100);
+					$total = $total - $discount;
+				 ?>
+				<tr>
+					<td colspan="5">Total dengan discount</td>
+					<td><?php echo $total; ?></td>
+					<td></td>
+				</tr>
 	</table>
 <?php endif; ?>
 

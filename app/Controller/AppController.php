@@ -52,7 +52,7 @@ class AppController extends Controller {
 	
 		$warehouses = NULL;
 		if($this->request->is(array('post', 'put' ))) {
-			var_dump($this->request->data);
+			//var_dump($this->request->data); exit;
 			
 			if ($this->$modelTo->saveAssociated($this->request->data,array('deep'=>TRUE))) {
 			$dataPR = array(
@@ -66,7 +66,7 @@ class AppController extends Controller {
 				if($modelTo == 'GrNote'){
 					$this->pushToWareHouse($this->request->data);
 				}
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'getAll'));
 			}
 			} else {
 				$this->Session->setFlash(__('The purchase order could not be saved. Please, try again.'));
@@ -86,7 +86,7 @@ class AppController extends Controller {
 								 	$warehouses[$val['Warehouse']['id']] = $val['Warehouse']['name'];
 								 }
 								 break;
-				case 'FixedPurchaseOrder' :  $trTableTo = 'TrFixPurhcaseOrder';
+				case 'FixedPurchaseOrder' :  $trTableTo = 'TrFixPurchaseOrder';
 											 $trTableFrom = 'TrGrnote';
 											 
 											 break;

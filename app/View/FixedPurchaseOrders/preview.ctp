@@ -39,13 +39,13 @@
 					<tbody>
 					<?php
 						$count = 0;
-						foreach ($this->request->data['TrFixPurhcaseOrder'] as $item) {
+						foreach ($this->request->data['TrFixPurchaseOrder'] as $item) {
 					?>
 						<tr>
-							<td><?php echo $this->Form->input('TrFixPurhcaseOrder.'.$count.'.stock_id',array('label'=>false)); ?></td>
-							<td><?php echo $this->Form->input('TrFixPurhcaseOrder.'.$count.'.qty',array('label'=>false));?></td>
-							<td><?php echo $this->Form->input('TrFixPurhcaseOrder.'.$count.'.big_unit_id',array('label'=>False,'options'=>$bigUnits,'default'=>$item['big_unit_id'])); ?></td>
-							<td><?php echo $this->Form->input('TrFixPurhcaseOrder.'.$count.'.harga',array('label'=>false)); ?></td>
+							<td><?php echo $this->Form->input('TrFixPurchaseOrder.'.$count.'.stock_id',array('label'=>false)); ?></td>
+							<td><?php echo $this->Form->input('TrFixPurchaseOrder.'.$count.'.qty',array('label'=>false));?></td>
+							<td><?php echo $this->Form->input('TrFixPurchaseOrder.'.$count.'.big_unit_id',array('label'=>False,'options'=>$bigUnits,'default'=>$item['big_unit_id'])); ?></td>
+							<td><?php echo $this->Form->input('TrFixPurchaseOrder.'.$count.'.harga',array('label'=>false)); ?></td>
 						
 						</tr>
 					<?php $count++; } ?>

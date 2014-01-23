@@ -1,13 +1,20 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * TrFixPuchaseOrder Model
+ * TrFixPurchaseOrder Model
  *
- * @property FixedPuchaseOrder $FixedPuchaseOrder
+ * @property FixedPurchaseOrder $FixedPurchaseOrder
  * @property Stock $Stock
  * @property BigUnit $BigUnit
  */
-class TrFixPuchaseOrder extends AppModel {
+class TrFixPurchaseOrder extends AppModel {
+
+/**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'id';
 
 /**
  * Validation rules
@@ -15,7 +22,7 @@ class TrFixPuchaseOrder extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'fixed_puchase_order_id' => array(
+		'fixed_purchase_order_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -75,9 +82,9 @@ class TrFixPuchaseOrder extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'FixedPuchaseOrder' => array(
-			'className' => 'FixedPuchaseOrder',
-			'foreignKey' => 'fixed_puchase_order_id',
+		'FixedPurchaseOrder' => array(
+			'className' => 'FixedPurchaseOrder',
+			'foreignKey' => 'fixed_purchase_order_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
