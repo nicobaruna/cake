@@ -52,7 +52,7 @@ class AppController extends Controller {
 	
 		$warehouses = NULL;
 		if($this->request->is(array('post', 'put' ))) {
-			//var_dump($this->request->data); exit;
+			var_dump($this->request->data); exit;
 			
 			if ($this->$modelTo->saveAssociated($this->request->data,array('deep'=>TRUE))) {
 			$dataPR = array(
