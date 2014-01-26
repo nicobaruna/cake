@@ -59,6 +59,7 @@ class AclNode extends Model {
  * @throws CakeException when binding to a model that doesn't exist.
  */
 	public function node($ref = null) {
+
 		$db = $this->getDataSource();
 		$type = $this->alias;
 		$result = null;
@@ -89,6 +90,8 @@ class AclNode extends Model {
 				)),
 				'order' => $db->name("{$type}.lft") . ' DESC'
 			);
+			
+			
 
 			foreach ($path as $i => $alias) {
 				$j = $i - 1;

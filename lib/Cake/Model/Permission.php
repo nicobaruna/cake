@@ -219,6 +219,7 @@ class Permission extends AppModel {
  */
 	public function getAclLink($aro, $aco) {
 		$obj = array();
+		
 		$obj['Aro'] = $this->Aro->node($aro);
 		$obj['Aco'] = $this->Aco->node($aco);
 

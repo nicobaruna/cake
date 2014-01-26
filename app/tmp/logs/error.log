@@ -9288,3 +9288,2293 @@ Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
 Stack Trace:
 #0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-01-25 15:41:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:42:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:45:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'foreign_key' in where clause is ambiguous
+Request URL: /cake/users/edit/2
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Aro`.`i...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('SELECT `Aro`.`i...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1076): DboSource->fetchAll('SELECT `Aro`.`i...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(Aro), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\app\Controller\UsersController.php(115): Model->find('first', Array)
+#7 [internal function]: UsersController->edit('2')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 15:45:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:46:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:46:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:46:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:46:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:46:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:46:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:46:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:47:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:48:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:51:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:51:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:52:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:52:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:54:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:55:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:55:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:56:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:56:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:56:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:57:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:57:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:58:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:58:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:58:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'NULL'' at line 1
+Request URL: /cake/users/edit/2
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Aro`.`i...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('SELECT `Aro`.`i...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1076): DboSource->fetchAll('SELECT `Aro`.`i...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(Aro), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\cake\app\Controller\UsersController.php(120): Model->find('list', Array)
+#7 [internal function]: UsersController->edit('2')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 15:58:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:58:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:59:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 15:59:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:19:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:19:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:20:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:20:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:20:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:20:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:21:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:21:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:21:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:21:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:22:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:22:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:22:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:22:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:22:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:24:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 00:43:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(47): AclComponent->allow('Admin', '*')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 00:44:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(47): AclComponent->allow('Admin', '*')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 00:45:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Gudang')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Gudang', 'GrNote')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Gudang', 'GrNote', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Gudang', 'GrNote', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(48): AclComponent->allow('Gudang', 'GrNote')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 00:45:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(49): AclComponent->allow('Analis', 'PurchaseRequest')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 00:56:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(49): AclComponent->allow('Analis', 'PurchaseRequest')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 00:57:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'PurchaseRequest...')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'PurchaseRequest...', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'PurchaseRequest...', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(49): AclComponent->allow('Analis', 'PurchaseRequest...')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 01:26:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'PurchaseRequest...')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'PurchaseRequest...', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'PurchaseRequest...', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(49): AclComponent->allow('Analis', 'PurchaseRequest...')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 01:32:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/fixed_purchase_orders/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'PurchaseRequest...')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'PurchaseRequest...', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'PurchaseRequest...', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(49): AclComponent->allow('Analis', 'PurchaseRequest...')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Controller\FixedPurchaseOrdersController.php(19): AppController->beforeFilter()
+#13 [internal function]: FixedPurchaseOrdersController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 01:42:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/admin/acl
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'PurchaseRequest...')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'PurchaseRequest...', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'PurchaseRequest...', '*')
+#10 C:\wamp\www\cake\app\Controller\AppController.php(49): AclComponent->allow('Analis', 'PurchaseRequest...')
+#11 C:\wamp\www\cake\app\Controller\AppController.php(56): AppController->setPermission()
+#12 C:\wamp\www\cake\app\Plugin\Acl\Controller\AclAppController.php(16): AppController->beforeFilter()
+#13 [internal function]: AclAppController->beforeFilter(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AclController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-01-26 01:42:44 Error: [MissingPluginException] Plugin debug_kit could not be found.
+Exception Attributes: array (
+  'plugin' => 'debug_kit',
+)
+Request URL: /cake/admin/acl
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Core\App.php(365): CakePlugin::path('debug_kit')
+#1 C:\wamp\www\cake\lib\Cake\Core\App.php(226): App::pluginPath('debug_kit')
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(547): App::path('Controller', 'debug_kit')
+#3 [internal function]: App::load('ToolbarAccessCo...')
+#4 [internal function]: spl_autoload_call('ToolbarAccessCo...')
+#5 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(250): get_class_methods('ToolbarAccessCo...')
+#6 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(157): AclReflectorComponent->get_controller_actions('ToolbarAccessCo...')
+#7 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(234): AclReflectorComponent->get_all_plugins_controllers_actions()
+#8 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclManagerComponent.php(203): AclReflectorComponent->get_all_actions()
+#9 C:\wamp\www\cake\app\Plugin\Acl\Controller\AclAppController.php(87): AclManagerComponent->get_missing_acos()
+#10 C:\wamp\www\cake\app\Plugin\Acl\Controller\AclAppController.php(19): AclAppController->_check_files_updates()
+#11 [internal function]: AclAppController->beforeFilter(Object(CakeEvent))
+#12 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#13 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#15 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AclController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-01-26 01:44:03 Error: [MissingPluginException] Plugin debug_kit could not be found.
+Exception Attributes: array (
+  'plugin' => 'debug_kit',
+)
+Request URL: /cake/admin/acl
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Core\App.php(365): CakePlugin::path('debug_kit')
+#1 C:\wamp\www\cake\lib\Cake\Core\App.php(226): App::pluginPath('debug_kit')
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(547): App::path('Controller', 'debug_kit')
+#3 [internal function]: App::load('ToolbarAccessCo...')
+#4 [internal function]: spl_autoload_call('ToolbarAccessCo...')
+#5 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(250): get_class_methods('ToolbarAccessCo...')
+#6 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(157): AclReflectorComponent->get_controller_actions('ToolbarAccessCo...')
+#7 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(234): AclReflectorComponent->get_all_plugins_controllers_actions()
+#8 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclManagerComponent.php(203): AclReflectorComponent->get_all_actions()
+#9 C:\wamp\www\cake\app\Plugin\Acl\Controller\AclAppController.php(87): AclManagerComponent->get_missing_acos()
+#10 C:\wamp\www\cake\app\Plugin\Acl\Controller\AclAppController.php(19): AclAppController->_check_files_updates()
+#11 [internal function]: AclAppController->beforeFilter(Object(CakeEvent))
+#12 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#13 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#15 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AclController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-01-26 01:44:23 Error: [MissingPluginException] Plugin debug_kit could not be found.
+Exception Attributes: array (
+  'plugin' => 'debug_kit',
+)
+Request URL: /cake/admin/acl
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Core\App.php(365): CakePlugin::path('debug_kit')
+#1 C:\wamp\www\cake\lib\Cake\Core\App.php(226): App::pluginPath('debug_kit')
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(547): App::path('Controller', 'debug_kit')
+#3 [internal function]: App::load('ToolbarAccessCo...')
+#4 [internal function]: spl_autoload_call('ToolbarAccessCo...')
+#5 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(250): get_class_methods('ToolbarAccessCo...')
+#6 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(157): AclReflectorComponent->get_controller_actions('ToolbarAccessCo...')
+#7 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclReflectorComponent.php(234): AclReflectorComponent->get_all_plugins_controllers_actions()
+#8 C:\wamp\www\cake\app\Plugin\Acl\Controller\Component\AclManagerComponent.php(203): AclReflectorComponent->get_all_actions()
+#9 C:\wamp\www\cake\app\Plugin\Acl\Controller\AclAppController.php(87): AclManagerComponent->get_missing_acos()
+#10 C:\wamp\www\cake\app\Plugin\Acl\Controller\AclAppController.php(19): AclAppController->_check_files_updates()
+#11 [internal function]: AclAppController->beforeFilter(Object(CakeEvent))
+#12 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#13 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#15 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AclController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-01-26 01:48:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'PurchaseRequest...')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'PurchaseRequest...', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'PurchaseRequest...', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'PurchaseRequest...')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 01:51:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 01:54:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 01:57:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:11:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:12:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:15:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:19:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:20:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:20:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:21:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:21:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:21:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:22:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(172): AclComponent->allow('Analis', 'controllers')
+#11 C:\wamp\www\cake\app\Controller\UsersController.php(40): UsersController->setPermission()
+#12 [internal function]: UsersController->index()
+#13 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-01-26 02:25:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(664): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:28:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(610): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:28:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(610): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:28:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(610): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:28:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:29:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:30:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:32:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:33:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:34:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:34:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(222): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:36:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:36:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 02:37:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:15:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(667): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(799): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:16:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:17:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', 'controllers')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', 'controllers', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', 'controllers', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', 'controllers')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:19:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:19:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:21:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:23:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:24:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(667): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:24:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(667): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:25:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:25:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:25:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Analis')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Analis', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Analis', '*', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Analis', '*', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(171): AclComponent->allow('Analis', '*')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 03:33:08 Error: [MissingViewException] View file "C:\wamp\www\cake\app\View\Users\set_permission.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cake\\app\\View\\Users\\set_permission.ctp',
+)
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-26 03:40:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'foreign_key' in where clause is ambiguous
+Request URL: /cake/users/edit/1
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Aro`.`i...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Aro`.`i...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Aro`.`i...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(Aro), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\app\Controller\UsersController.php(114): Model->find('first', Array)
+#7 [internal function]: UsersController->edit('1')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-26 04:24:45 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Model.php(3471): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\cake\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(3493): Model->setSource('purchase_orders')
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#6 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\cake\app\Controller\GrNotesController.php(25): PaginatorComponent->paginate('PurchaseOrder', Array)
+#9 [internal function]: GrNotesController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#14 C:\wamp\www\cake\app\View\Pages\home.ctp(2): Object->requestAction(Array)
+#15 C:\wamp\www\cake\lib\Cake\View\View.php(929): include('C:\wamp\www\cak...')
+#16 C:\wamp\www\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\wamp\www\cak...', Array)
+#17 C:\wamp\www\cake\lib\Cake\View\View.php(460): View->_render('C:\wamp\www\cak...')
+#18 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render('home', NULL)
+#19 C:\wamp\www\cake\app\Controller\PagesController.php(68): Controller->render('home')
+#20 [internal function]: PagesController->display('home')
+#21 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#22 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#23 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#24 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#25 {main}
+2014-01-26 04:24:46 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Model.php(3471): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\cake\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(3493): Model->setSource('purchase_orders')
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#6 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\cake\app\Controller\GrNotesController.php(25): PaginatorComponent->paginate('PurchaseOrder', Array)
+#9 [internal function]: GrNotesController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#14 C:\wamp\www\cake\app\View\Pages\home.ctp(2): Object->requestAction(Array)
+#15 C:\wamp\www\cake\lib\Cake\View\View.php(929): include('C:\wamp\www\cak...')
+#16 C:\wamp\www\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\wamp\www\cak...', Array)
+#17 C:\wamp\www\cake\lib\Cake\View\View.php(460): View->_render('C:\wamp\www\cak...')
+#18 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render('home', NULL)
+#19 C:\wamp\www\cake\app\Controller\PagesController.php(68): Controller->render('home')
+#20 [internal function]: PagesController->display('home')
+#21 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#22 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#23 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#24 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#25 {main}
+2014-01-26 04:27:58 Error: [MissingViewException] View file "C:\wamp\www\cake\app\View\Users\set_permission.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cake\\app\\View\\Users\\set_permission.ctp',
+)
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-26 04:30:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Gudang')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Gudang', 'GrNote')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Gudang', 'GrNote', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Gudang', 'GrNote', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Gudang', 'GrNote')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:37:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Gudang')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Gudang', NULL)
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Gudang', NULL, '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Gudang', NULL, '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Gudang')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:39:06 Error: [MissingViewException] View file "C:\wamp\www\cake\app\View\Users\set_permission.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cake\\app\\View\\Users\\set_permission.ctp',
+)
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-26 04:41:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Gudang')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Gudang', 'GrNote')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Gudang', 'GrNote', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Gudang', 'GrNote', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Gudang', 'GrNote')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:43:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Gudang')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Gudang', 'GrNote')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Gudang', 'GrNote', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Gudang', 'GrNote', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Gudang', 'GrNote')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:43:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node(NULL)
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink(NULL, NULL)
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow(NULL, NULL, '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow(NULL, NULL, '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow()
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:44:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', NULL)
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', NULL, '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', NULL, '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:44:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:45:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:50:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 04:50:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 06:19:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(801): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(82): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(82): Aro->node(Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(74): Permission->check(Array, 'Pages/display', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(110): DbAcl->check(Array, 'Pages/display', '*')
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'Pages/display')
+#10 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(462): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#11 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(307): AuthComponent->isAuthorized(Array)
+#12 [internal function]: AuthComponent->startup(Object(PagesController))
+#13 C:\wamp\www\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#14 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#18 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#19 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2014-01-26 06:20:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(82): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(82): Aro->node(Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(74): Permission->check(Array, 'Pages/display', '*')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(110): DbAcl->check(Array, 'Pages/display', '*')
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'Pages/display')
+#10 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(462): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#11 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(307): AuthComponent->isAuthorized(Array)
+#12 [internal function]: AuthComponent->startup(Object(PagesController))
+#13 C:\wamp\www\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#14 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#15 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#16 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#17 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#18 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#19 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2014-01-26 06:25:58 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /cake/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Core\App.php(365): CakePlugin::path('DebugKit')
+#1 C:\wamp\www\cake\lib\Cake\Core\App.php(226): App::pluginPath('DebugKit')
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 C:\wamp\www\cake\lib\Cake\Controller\ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 C:\wamp\www\cake\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(181): Controller->constructClasses()
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-26 06:26:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Core\App.php(365): CakePlugin::path('DebugKit')
+#1 C:\wamp\www\cake\lib\Cake\Core\App.php(226): App::pluginPath('DebugKit')
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 C:\wamp\www\cake\lib\Cake\Controller\ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 C:\wamp\www\cake\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(181): Controller->constructClasses()
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-26 06:26:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 06:26:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 06:27:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(192): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 06:27:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(194): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 06:32:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(195): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 06:48:02 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [C:\wamp\www\cake\lib\Cake\Model\Behavior\AclBehavior.php, line 239]
+2014-01-26 06:48:02 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum functio...', 'C:\wamp\www\cak...', 239)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', 'C:\wamp\www\cak...', 239, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', 'C:\wamp\www\cak...', 239, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 06:48:26 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(195): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 06:48:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/setPermission
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'PurchaseRequest')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'PurchaseRequest', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'PurchaseRequest', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(195): AclComponent->allow('Admin', 'PurchaseRequest')
+#11 [internal function]: UsersController->setPermission()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 13:46:21 Error: [MissingBehaviorException] Behavior class ’Acl’Behavior could not be found.
+Exception Attributes: array (
+  'class' => '’Acl’Behavior',
+  'plugin' => false,
+)
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\BehaviorCollection.php(66): BehaviorCollection->load('???Acl???', Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Model.php(747): BehaviorCollection->init('User', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 C:\wamp\www\cake\lib\Cake\Utility\ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#4 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(148): ClassRegistry::init(Array)
+#5 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(188): FormHelper->_getModel('User')
+#6 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(338): FormHelper->_introspectModel('User', 'key')
+#7 C:\wamp\www\cake\app\View\Users\login.ctp(1): FormHelper->create('User', Array)
+#8 C:\wamp\www\cake\lib\Cake\View\View.php(929): include('C:\wamp\www\cak...')
+#9 C:\wamp\www\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\wamp\www\cak...', Array)
+#10 C:\wamp\www\cake\lib\Cake\View\View.php(460): View->_render('C:\wamp\www\cak...')
+#11 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-26 13:50:02 Error: [MissingBehaviorException] Behavior class ’Acl’Behavior could not be found.
+Exception Attributes: array (
+  'class' => '’Acl’Behavior',
+  'plugin' => false,
+)
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\BehaviorCollection.php(66): BehaviorCollection->load('???Acl???', Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Model.php(747): BehaviorCollection->init('User', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 C:\wamp\www\cake\lib\Cake\Utility\ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#4 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(148): ClassRegistry::init(Array)
+#5 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(188): FormHelper->_getModel('User')
+#6 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(338): FormHelper->_introspectModel('User', 'key')
+#7 C:\wamp\www\cake\app\View\Users\login.ctp(1): FormHelper->create('User', Array)
+#8 C:\wamp\www\cake\lib\Cake\View\View.php(929): include('C:\wamp\www\cak...')
+#9 C:\wamp\www\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\wamp\www\cak...', Array)
+#10 C:\wamp\www\cake\lib\Cake\View\View.php(460): View->_render('C:\wamp\www\cak...')
+#11 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-26 13:50:55 Error: [MissingBehaviorException] Behavior class ’Acl’Behavior could not be found.
+Exception Attributes: array (
+  'class' => '’Acl’Behavior',
+  'plugin' => false,
+)
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\BehaviorCollection.php(66): BehaviorCollection->load('???Acl???', Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Model.php(747): BehaviorCollection->init('User', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 C:\wamp\www\cake\lib\Cake\Utility\ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#4 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(148): ClassRegistry::init(Array)
+#5 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(188): FormHelper->_getModel('User')
+#6 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(338): FormHelper->_introspectModel('User', 'key')
+#7 C:\wamp\www\cake\app\View\Users\login.ctp(1): FormHelper->create('User', Array)
+#8 C:\wamp\www\cake\lib\Cake\View\View.php(929): include('C:\wamp\www\cak...')
+#9 C:\wamp\www\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\wamp\www\cak...', Array)
+#10 C:\wamp\www\cake\lib\Cake\View\View.php(460): View->_render('C:\wamp\www\cak...')
+#11 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-26 13:51:12 Error: [MissingTableException] Table ’group’s for model ’Group’ was not found in datasource default.
+Exception Attributes: array (
+  'table' => '’group’s',
+  'class' => '’Group’',
+  'ds' => 'default',
+)
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Model.php(3493): Model->setSource('???group???s')
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1064): Model->getDataSource()
+#2 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(User), Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#4 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(115): Model->find('first', Array)
+#5 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(83): BaseAuthenticate->_findUser('nico', '001nico')
+#6 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(753): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(598): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\cake\app\Controller\UsersController.php(205): AuthComponent->login()
+#9 [internal function]: UsersController->login()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-26 13:51:36 Error: [MissingTableException] Table ’group’s for model ’Group’ was not found in datasource default.
+Exception Attributes: array (
+  'table' => '’group’s',
+  'class' => '’Group’',
+  'ds' => 'default',
+)
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Model.php(3493): Model->setSource('???group???s')
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1064): Model->getDataSource()
+#2 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(User), Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#4 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(115): Model->find('first', Array)
+#5 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(83): BaseAuthenticate->_findUser('nico', '001nico')
+#6 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(753): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(598): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\cake\app\Controller\UsersController.php(205): AuthComponent->login()
+#9 [internal function]: UsersController->login()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-26 13:52:05 Error: [MissingTableException] Table ’group’s for model ’Group’ was not found in datasource default.
+Exception Attributes: array (
+  'table' => '’group’s',
+  'class' => '’Group’',
+  'ds' => 'default',
+)
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Model.php(3493): Model->setSource('???group???s')
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1064): Model->getDataSource()
+#2 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(User), Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#4 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(115): Model->find('first', Array)
+#5 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(83): BaseAuthenticate->_findUser('nico', '001nico')
+#6 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(753): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(598): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\cake\app\Controller\UsersController.php(205): AuthComponent->login()
+#9 [internal function]: UsersController->login()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-26 13:52:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.group_id' in 'on clause'
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(115): Model->find('first', Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(83): BaseAuthenticate->_findUser('nico', '001nico')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(753): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AuthComponent.php(598): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(205): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 13:52:37 Error: Fatal Error (1): Call to a member function Session() on a non-object in [C:\wamp\www\cake\app\Controller\UsersController.php, line 178]
+2014-01-26 13:52:37 Error: [FatalErrorException] Call to a member function Session() on a non-object
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 178, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 178, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 14:00:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/install
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Admin')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Admin', 'Post')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Admin', 'Post', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Admin', 'Post', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(223): AclComponent->allow('Admin', 'Post', '*')
+#11 [internal function]: UsersController->install()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-26 14:01:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'node' at line 1
+Request URL: /cake/users/install
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('node', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('node', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('node', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('node', Array, Object(Aro))
+#5 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Model->__call('node', Array)
+#6 C:\wamp\www\cake\lib\Cake\Model\Permission.php(223): Aro->node('Super')
+#7 C:\wamp\www\cake\lib\Cake\Model\Permission.php(174): Permission->getAclLink('Super', 'Post')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(88): Permission->allow('Super', 'Post', '*', 1)
+#9 C:\wamp\www\cake\lib\Cake\Controller\Component\AclComponent.php(123): DbAcl->allow('Super', 'Post', '*')
+#10 C:\wamp\www\cake\app\Controller\UsersController.php(277): AclComponent->allow('Super', 'Post', '*')
+#11 [internal function]: UsersController->install()
+#12 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}

@@ -23,7 +23,7 @@ App::uses('Debugger', 'Utility');
 <html lang=en>
 	<head>
 		<?php echo $this -> Html -> charset(); ?>
-		<base href="<?php echo $this->webroot; ?>" >
+		<base href="<?php echo $this->request->webroot; ?>" >
 		<title>
 			<?php echo $cakeDescription ?>:
 			<?php echo $title_for_layout; ?>

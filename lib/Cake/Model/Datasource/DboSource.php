@@ -422,7 +422,7 @@ class DboSource extends DataSource {
 
 		$t = microtime(true);
 		$this->_result = $this->_execute($sql, $params);
-
+	
 		if ($options['log']) {
 			$this->took = round((microtime(true) - $t) * 1000, 0);
 			$this->numRows = $this->affected = $this->lastAffected();
@@ -454,9 +454,11 @@ class DboSource extends DataSource {
 
 		try {
 			$query = $this->_connection->prepare($sql, $prepareOptions);
+			
 			$query->setFetchMode(PDO::FETCH_LAZY);
 			if (!$query->execute($params)) {
 				$this->_results = $query;
+				
 				$query->closeCursor();
 				return false;
 			}

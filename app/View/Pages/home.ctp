@@ -1,5 +1,10 @@
 
 <?php $grnotes = $this->requestAction(array('controller'=>'grnotes','action'=>'index'))  ?>
+<div class="col-md-6">
+	<h2>Selamat datang , <?php echo $this->Session->read('Auth.User.username') ?></h2>
+</div>
+
+
    <div class=col-md-5>
       <div class="block block-drop-shadow">
         <div class="head bg-default bg-light-rtl">
@@ -30,7 +35,7 @@
               <p><?php echo $item['GrNote']['note'] ?></p>
             </div>
             <div class=list-controls> 
-            	<a href="<?php echo $this->base; ?>/grnotes/preview/GrNote/PurchaseOrder/<?php echo $item['PurchaseOrder']['id'] ?>" class="widget-icon widget-icon-circle">
+            	<a href="<?php echo $this->request->base; ?>/grnotes/preview/GrNote/PurchaseOrder/<?php echo $item['PurchaseOrder']['id'] ?>" class="widget-icon widget-icon-circle">
             		<span class=icon-rotate-right></span>
             	</a> 
             	
@@ -38,7 +43,7 @@
           </div>
          <?php endforeach; ?>
           </div>
-        <div class="footer tac"> <a href="<?php echo $this->base; ?>/grnotes/index">Load more ...</a> </div>
+        <div class="footer tac"> <a href="<?php echo $this->request->base; ?>/grnotes/index">Load more ...</a> </div>
       </div>
         </div>
 

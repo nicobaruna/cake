@@ -23,7 +23,7 @@ App::uses('Debugger', 'Utility');
 <html lang=en>
 	<head>
 		<?php echo $this -> Html -> charset(); ?>
-		<base href="<?php echo $this->webroot; ?>" >
+		<base href="<?php echo $this->request->webroot; ?>" >
 		<title>
 			<?php echo $cakeDescription ?>:
 			<?php echo $title_for_layout; ?>
@@ -69,7 +69,7 @@ App::uses('Debugger', 'Utility');
 				 
 						echo $this -> fetch('content'); 
 				?>
-				
+				<?php echo $this->element('sql_dump'); ?>
 			</div>
 		</div>
 	<div class=row>

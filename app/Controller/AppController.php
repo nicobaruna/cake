@@ -31,17 +31,31 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	
 	public $components = array(
 	    'DebugKit.Toolbar',
         'Session',
+        'Acl',
         'Auth' => array(
             'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
             'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
         )
     );
+	
+	
+	public function getLastQuery() {
+	  $dbo = $this->getDatasource();
+	  $logs = $dbo->getLog();
+	  $lastLog = end($logs['log']);
+	  return $lastLog['query'];
+	}
 
     public function beforeFilter() {
         $this->Auth->allow('index', 'view');
+		$this->loadModel('Aro');
+		
+		//$this->initAcl();
+		//$this->setPermission();
     }
 	
 	public function preview($modelTo,$modelFrom,$id = null) {

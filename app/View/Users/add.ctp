@@ -39,6 +39,7 @@
 								</div>
 							</div>
 						</div>
+						
 						<div class=form-row>
 							<div class=col-md-12>
 								<div class=input-group>
@@ -46,6 +47,18 @@
 										<span class="icon-email"></span>
 									</div>
 									<?php echo $this->Form->input('email',array('class'=>'form-control','placeholder'=>'email','label'=>false)); ?>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class=form-row>
+							<div class=col-md-12>
+								<div class=input-group>
+									<div class=input-group-addon>
+										<span class="icon-email"></span>
+									</div>
+									<?php echo $this->Form->input('Aro.role',array('class'=>'form-control','empty'=>'please choose one Role','label'=>false,'options'=>$roles)); ?>
 								</div>
 							</div>
 							

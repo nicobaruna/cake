@@ -12,8 +12,8 @@
 				echo $this->Form->input('email');
 				echo $this->Form->input('firstname');
 				echo $this->Form->input('lastname');
-				echo $this->Form->input('last_login');
-				echo $this->Form->input('role');
+				//echo $this->Form->input('last_login');
+				echo $this->Form->input('Aro.role',array('options'=>$roles,'selected'=>$this->request->data['Aro']['parent_id']));
 			?>
 		</div>
 		<?php echo $this->Form->end(__('Submit')); ?>
@@ -32,3 +32,5 @@
 		<span class="btn btn-default"><?php echo $this->Html->link(__('New Purhcase Order'), array('controller' => 'purhcase_orders', 'action' => 'add')); ?> </span>
 	</div>
 </div>
+
+<?php echo $this->element('sql_dump'); ?>

@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class UsersController extends AppController {
-
+	
 	/**
 	 * Components
 	 *
@@ -24,8 +24,10 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// Allow users to register and logout.
-		$this -> Auth -> allow('add', 'logout','edit','view');
-		$this->layout = 'login';
+		$this -> Auth -> allow('add', 'logout','edit','view','setPermission');
+		
+		
+		
 	}
 
 	/**
@@ -59,15 +61,37 @@ class UsersController extends AppController {
 	 * @return void
 	 */
 	public function add() {
+		$this->layout = 'login';
 		if ($this -> request -> is('post')) {
 			$this -> User -> create();
+			$this->request->data['User']['role'] = $this->request->data['Aro']['role'];
 			if ($this -> User -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The user has been saved.'));
-				return $this -> redirect(array('action' => 'index'));
+				$arosData = array(
+					'Aro'=>array(
+						'alias' => $this->request->data['User']['username'],
+						'parent_id' => $this->request->data['Aro']['role'],
+						'model' => 'User',
+						'foreign_key' => $this->User->getLastInsertId()
+					)
+				);
+				if($this->Aro->save($arosData)){
+					return $this -> redirect(array('action' => 'index'));
+				}else{
+					$this -> Session -> setFlash(__('The user could not be saved. Please, try again.'));
+				}
 			} else {
 				$this -> Session -> setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		}
+		
+		$roles = $this->Aro->find('list',array('fields'=>array(
+			'id' ,'alias'
+		),'conditions'=>array(
+			'parent_id' =>NULL
+		)));
+		
+		$this->set(compact('roles'));
 	}
 
 	/**
@@ -82,16 +106,49 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this -> request -> is(array('post', 'put'))) {
+			$this->request->data['User']['role'] = $this->request->data['Aro']['role'];
 			if ($this -> User -> save($this -> request -> data)) {
 				$this -> Session -> setFlash(__('The user has been saved.'));
-				return $this -> redirect(array('action' => 'index'));
+				
+				//get id
+				$result = $this->Aro->find('first',array(
+					'conditions' => array(
+						'Aro.foreign_key' => $this->request->data['User']['id']
+					)
+				));
+				
+				$arosData = array(
+					'Aro'=>array(
+						'id' => $result['Aro']['id'],
+						'alias' => $this->request->data['User']['username'],
+						'parent_id' => $this->request->data['Aro']['role'],
+						'model' => 'User',
+						'foreign_key' => $this->request->data['User']['id']
+					)
+				);
+				if($this->Aro->save($arosData)){
+					return $this -> redirect(array('action' => 'index'));
+				}else{
+					$this -> Session -> setFlash(__('The user could not be saved. Please, try again.'));
+				}
 			} else {
 				$this -> Session -> setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this -> User -> primaryKey => $id));
+			$aroOptions = array('conditions' => array(
+				'Aro.foreign_key' => $id
+			));
 			$this -> request -> data = $this -> User -> find('first', $options);
+			$aro = $this->Aro->find('first',$aroOptions);
+			$this->request->data['Aro'] = $aro['Aro'];
 		}
+		$roles = $this->Aro->find('list',array('fields'=>array(
+			'id' ,'alias'
+		),'conditions'=>array(
+			'parent_id' =>NULL
+		)));
+		$this->set(compact('roles'));
 	}
 
 	/**
@@ -116,13 +173,42 @@ class UsersController extends AppController {
 	}
 
 	
+	public function getRedirectUrl(){
+		//ger Session
+		$session = $this->Session->read('Auth.User.Role');
+		$this->loadModel('Aro');
+		//get group name
+		$group = $this->Aro->findByid($session);
+		switch ($group) {
+			case 'admin':
+				$path = array('controller'=>'pages','action'=>'home');
+				break;
+			case 'gudang' :
+				$path = array('controller'=>'PurchaseRequest','action'=>'index');
+				break;
+			case 'analis' :
+				$path = array('controller'=>'PurchaseOrder','action'=>'index');
+			case 'checkers' :
+				$path = array('controller'=>'GrNotes','action'=>'index');
+			default:
+				$path = array('controller'=>'pages','action'=>'home');
+				break;
+		}
+		
+		return $path;
+		
+	}
 
 	public function login() {
+		$this->layout = 'login';
 		$this->set('jsIncludes', $this->js);
 		if ($this -> request -> is('post')) {
 			
 			if ($this -> Auth -> login()) {
-				return $this -> redirect($this -> Auth -> redirect());
+				
+				$redirect = $this->getRedirectUrl();
+				
+				return $this -> redirect($redirect);
 			}
 		
 			$this -> Session -> setFlash(__('Invalid username or password, try again'));
@@ -132,5 +218,66 @@ class UsersController extends AppController {
 	public function logout() {
 		return $this -> redirect($this -> Auth -> logout());
 	}
+	
+	function install(){       
+    /*if($this->Acl->Aro->findByAlias("Admin")){   
+        $this->redirect('/');   
+    } */  
+    $aro = new aro();   
+   
+    $aro->create();   
+    $aro->save(array(   
+        'model' => 'User',   
+        'foreign_key' => null,   
+        'parent_id' => null,   
+        'alias' => 'Super'   
+    ));   
+   
+    $aro->create();   
+    $aro->save(array(   
+        'model' => 'User',   
+        'foreign_key' => null,   
+        'parent_id' => null,   
+        'alias' => 'Admin'   
+    ));   
+   
+    $aro->create();   
+    $aro->save(array(   
+        'model' => 'User',   
+        'foreign_key' => null,   
+        'parent_id' => null,   
+        'alias' => 'User'   
+    ));   
+   
+    $aro->create();   
+    $aro->save(array(   
+        'model' => 'User',   
+        'foreign_key' => null,   
+        'parent_id' => null,   
+        'alias' => 'Suspended'   
+    ));   
+   
+    $aco = new Aco();   
+    $aco->create();   
+    $aco->save(array(   
+        'model' => 'User',   
+        'foreign_key' => null,   
+        'parent_id' => null,   
+        'alias' => 'User'   
+    ));   
+   
+    $aco->create();   
+    $aco->save(array(   
+       'model' => 'Post',   
+       'foreign_key' => null,   
+       'parent_id' => null,   
+       'alias' => 'Post'   
+    ));   
+   
+    $this->Acl->allow('Super', 'Post', '*');   
+    $this->Acl->allow('Super', 'User', '*');   
+    $this->Acl->allow('Admin', 'Post', '*');   
+    $this->Acl->allow('User', 'Post', array('create'));   
+}  
 
 }
