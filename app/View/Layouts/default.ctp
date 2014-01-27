@@ -75,7 +75,7 @@ App::uses('Debugger', 'Utility');
 	<div class=row>
     <div class=page-footer>
       <div class=page-footer-wrap>
-        <div class="side pull-left"> Copyirght &COPY; YourCompany 2013. All rights reserved. </div>
+        <div class="side pull-left"> Copyirght &COPY; Lubana Resto 2014. All rights reserved. </div>
       </div>
     </div>
 	</body>
