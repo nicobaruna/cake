@@ -175,21 +175,28 @@ class UsersController extends AppController {
 	
 	public function getRedirectUrl(){
 		//ger Session
-		$session = $this->Session->read('Auth.User.Role');
+		$session = $this->Session->read('Auth.User.role');
 		$this->loadModel('Aro');
 		//get group name
-		$group = $this->Aro->findByid($session);
-		switch ($group) {
+		$group = $this->Aro->find('first',array(
+			'conditions'=> array(
+				'Aro.id' => $session
+			)
+		));
+		var_dump($group['Aro']['alias']);
+		switch ($group['Aro']['alias']) {
 			case 'admin':
 				$path = array('controller'=>'pages','action'=>'home');
 				break;
 			case 'gudang' :
-				$path = array('controller'=>'PurchaseRequest','action'=>'index');
+				$path = array('controller'=>'PurchaseRequests','action'=>'index');
 				break;
-			case 'analis' :
-				$path = array('controller'=>'PurchaseOrder','action'=>'index');
+			case 'Analis' :
+				$path = array('controller'=>'PurchaseOrders','action'=>'index');
+				break;
 			case 'checkers' :
 				$path = array('controller'=>'GrNotes','action'=>'index');
+				break;
 			default:
 				$path = array('controller'=>'pages','action'=>'home');
 				break;
@@ -207,7 +214,7 @@ class UsersController extends AppController {
 			if ($this -> Auth -> login()) {
 				
 				$redirect = $this->getRedirectUrl();
-				
+				//var_dump($redirect); exit;
 				return $this -> redirect($redirect);
 			}
 		

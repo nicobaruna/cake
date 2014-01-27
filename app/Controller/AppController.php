@@ -36,11 +36,17 @@ class AppController extends Controller {
 	    'DebugKit.Toolbar',
         'Session',
         'Acl',
+        'Search.Prg',
         'Auth' => array(
-            'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+           
             'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
         )
     );
+	
+
+    public $presetVars = true; // using the model configuration
+
+    
 	
 	
 	public function getLastQuery() {

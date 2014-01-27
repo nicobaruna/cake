@@ -22,6 +22,10 @@ class PurchaseRequestsController extends AppController {
  */
 	public function index() {
 		$this->PurchaseRequest->recursive = 0;
+		$purchaseRequests = $this->Paginator->paginate();
+		if ($this->request->is('post')) {
+			$purchaseRequests = $this->find();
+		}
 		$this->set('purchaseRequests', $this->Paginator->paginate());
 	}
 	
@@ -29,6 +33,13 @@ class PurchaseRequestsController extends AppController {
 		parent::beforeFilter();
 		$this->loadModel('Stock');
 	}
+	
+	public function find() {
+        $this->Prg->commonProcess();
+		$model = $this->modelClass;
+        $this->Paginator->settings['conditions'] = $this->$model->parseCriteria($this->Prg->parsedParams());
+        return $this->Paginator->paginate();
+    }
 
 /**
  * view method

@@ -3,6 +3,14 @@
 		<div class="header">
 			<h2><?php echo __('Purchase Requests'); ?></h2>
 		</div>
+		<?php 
+				
+		echo $this->element('search', array(
+		    "model" => 'PurchaseRequest',
+		    
+		));
+		
+		?>
 		<div class="content">
 			<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 			<thead>
@@ -80,10 +88,9 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-
-<div class="col-md-10">
+	
+	
+	<div class="col-md-10">
 	<div class="actions block">
 		<h3><?php echo __('Actions'); ?></h3>
 		<div>
@@ -99,3 +106,8 @@
 		</div>
 	</div>
 </div>
+	
+</div>
+
+
+

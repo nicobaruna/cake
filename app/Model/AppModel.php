@@ -30,5 +30,40 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+	//public $actsAs = array('Search.Searchable');
 	
+	public $filterArgs = array(
+        'supllier' => array('type' => 'like' , 'field' => 'Supplier.name'),
+        'status' => array('type' => 'value'),
+        'jangka_pembayaran' => array('type' => 'value'),
+        'date' => array('type' => 'expression', 'method' => 'makeRangeCondition', 'field' => 'date BETWEEN ? AND ?'),
+        
+    );
+	
+	
+	public function findByTags($data = array()) {
+        $this->Tagged->Behaviors->attach('Containable', array('autoFields' => false));
+        $this->Tagged->Behaviors->attach('Search.Searchable');
+        $query = $this->Tagged->getQuery('all', array(
+            'conditions' => array('Tag.name'  => $data['tags']),
+            'fields' => array('foreign_key'),
+            'contain' => array('Tag')
+        ));
+        return $query;
+    }
+
+    public function orConditions($data = array()) {
+        $filter = $data['filter'];
+        $cond = array(
+            'OR' => array(
+                $this->alias . '.title LIKE' => '%' . $filter . '%',
+                $this->alias . '.body LIKE' => '%' . $filter . '%',
+            ));
+        return $cond;
+    }
+	
+	
+	public function beforFilter(){
+		
+	}
 }
