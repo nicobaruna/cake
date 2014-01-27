@@ -62,11 +62,11 @@
 		<div class="header">
 			<h2><?php echo __('Actions'); ?></h2>
 		</div>
-		<div>
-			<span class="btn btn-default"><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('PurchaseOrder.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('PurchaseOrder.id'))); ?></span>
-			<span class="btn btn-default"><?php echo $this->Html->link(__('List Gr Note'), array('action' => 'index')); ?></span>
-			<span class="btn btn-default"><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </span>
-			<span class="btn btn-default"><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </span>
+		<div class="content list-group">
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('PurchaseOrder.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('PurchaseOrder.id'))); ?>
+			<?php echo $this->Html->link(__('List Gr Note'), array('action' => 'index')); ?>
+			<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> 
+			<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> 
 		</div>
 	</div>
 	</div>

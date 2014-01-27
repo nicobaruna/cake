@@ -1,6 +1,6 @@
 <div class="trGrnotes view col-md-10">
 	
-	<div class="trGrnotes view col-md-8">
+	<div class="trGrnotes view col-md-9">
 		<div class="block">
 			<h2><?php echo __('Tr Grnote'); ?></h2>
 			<dl>
@@ -33,18 +33,20 @@
 		</div>
 	</div>
 
-	<div class="actions col-md-4">
+	<div class="actions col-md-3">
 		<div class="block">
-			<h3><?php echo __('Actions'); ?></h3>
-			<div>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('Edit Tr Grnote'), array('action' => 'edit', $trGrnote['TrGrnote']['id'])); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Form->postLink(__('Delete Tr Grnote'), array('action' => 'delete', $trGrnote['TrGrnote']['id']), null, __('Are you sure you want to delete # %s?', $trGrnote['TrGrnote']['id'])); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Tr Grnotes'), array('action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Tr Grnote'), array('action' => 'add')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Gr Notes'), array('controller' => 'gr_notes', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Gr Note'), array('controller' => 'gr_notes', 'action' => 'add')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add')); ?> </span>
+			<div class="header">
+				<h3><?php echo __('Actions'); ?></h3>
+			</div>
+			<div class="content list-group">
+				<?php echo $this->Html->link(__('Edit Tr Grnote'), array('action' => 'edit', $trGrnote['TrGrnote']['id']),array('class'=>'list-group-item')); ?>
+				<?php echo $this->Form->postLink(__('Delete Tr Grnote'), array('action' => 'delete', $trGrnote['TrGrnote']['id']), null, __('Are you sure you want to delete # %s?', $trGrnote['TrGrnote']['id']),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('List Tr Grnotes'), array('action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Tr Grnote'), array('action' => 'add'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('List Gr Notes'), array('controller' => 'gr_notes', 'action' => 'index'),array('class'=>'list-group-item')); ?>
+				<?php echo $this->Html->link(__('New Gr Note'), array('controller' => 'gr_notes', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
 			</div>
 		</div>
 	</div>

@@ -1,7 +1,7 @@
 <div class="fixedPurchaseOrders index col-md-10">
 
-	<div class="block">
-		<div class="fixedPurchaseOrders-detail">
+	<div class="col-md-9">
+		<div class="fixedPurchaseOrders-detail block">
 
 			<div class="header">
 				<h2><?php echo __('Fixed Purchase Orders'); ?></h2>
@@ -34,9 +34,9 @@
 					<td><?php echo h($fixedPurchaseOrder['GrNote']['status']); ?>&nbsp;</td>
 					<td><?php echo h($fixedPurchaseOrder['GrNote']['discount']); ?>&nbsp;</td>
 					<td class="actions">
-						<?php echo $this->Html->link(__('Confirm'), array('action' => 'preview','FixedPurchaseOrder','GrNote', $fixedPurchaseOrder['GrNote']['id'])); ?>
-						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $fixedPurchaseOrder['FixedPurchaseOrder']['id'])); ?>
-						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $fixedPurchaseOrder['FixedPurchaseOrder']['id']), null, __('Are you sure you want to delete # %s?', $fixedPurchaseOrder['FixedPurchaseOrder']['id'])); ?>
+						<?php echo $this->Html->link(__('Confirm'), array('action' => 'preview','FixedPurchaseOrder','GrNote', $fixedPurchaseOrder['GrNote']['id']),array('class'=>'btn btn-success')); ?>
+						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $fixedPurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
+						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $fixedPurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $fixedPurchaseOrder['FixedPurchaseOrder']['id'])); ?>
 					</td>
 				</tr>
 			<?php endforeach; ?>
@@ -49,9 +49,9 @@
 				?>	</p>
 				<div class="paging">
 				<?php
-					echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+					echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled btn btn-default'));
 					echo $this->Paginator->numbers(array('separator' => ''));
-					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled btn btn-default'));
 				?>
 				</div>
 			</div>
@@ -60,17 +60,21 @@
 	</div>
 
 
-	<div class="block">
-		<div class="actions">
-			<h3><?php echo __('Actions'); ?></h3>
-			<div>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Fixed Purchase Order'), array('action' => 'add')); ?></span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </span>
+	<div class="col-md-3">
+		<!-- actions block start -->
+		<div class="actions block">
+			<div class="header">
+				<h2><?php echo __('Actions'); ?></h2>
+			</div>
+			<div class="content list-group">
+				<?php echo $this->Html->link(__('New Fixed Purchase Order'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
+				<?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
 			</div>
 		</div>
+		<!-- actions block end -->
 	</div>
 
 

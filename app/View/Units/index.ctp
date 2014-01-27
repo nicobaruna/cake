@@ -1,6 +1,6 @@
 <div class="units index col-md-10">
 
-	<div class="units-detail">
+	<div class="units-detail col-md-9">
 		<div class="block">
 				
 			<div class="header">
@@ -21,9 +21,9 @@
 					<td><?php echo h($unit['Unit']['name']); ?>&nbsp;</td>
 					<td><?php echo h($unit['Unit']['status']); ?>&nbsp;</td>
 					<td class="actions">
-						<?php echo $this->Html->link(__('View'), array('action' => 'view', $unit['Unit']['id'])); ?>
-						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $unit['Unit']['id'])); ?>
-						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $unit['Unit']['id']), null, __('Are you sure you want to delete # %s?', $unit['Unit']['id'])); ?>
+						<?php echo $this->Html->link(__('View'), array('action' => 'view', $unit['Unit']['id']),array('class'=>'btn btn-default')); ?>
+						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $unit['Unit']['id']),array('class'=>'btn btn-info')); ?>
+						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $unit['Unit']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $unit['Unit']['id'])); ?>
 					</td>
 				</tr>
 				<?php endforeach; ?>
@@ -36,9 +36,9 @@
 				?>	</p>
 				<div class="paging">
 				<?php
-					echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-					echo $this->Paginator->numbers(array('separator' => ''));
-					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+					echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled btn btn-default'));
+					echo $this->Paginator->numbers(array('separator' => ''),array('class'=>'btn btn-default'));
+					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled btn btn-default'));
 				?>
 				</div>
 
@@ -47,15 +47,19 @@
 		</div>
 	</div>
 
-	<div class="actions">
-		<div class="block">	
-			<h3><?php echo __('Actions'); ?></h3>
-			<div>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Unit'), array('action' => 'add')); ?></span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add')); ?> </span>
+	<div class="col-md-3">
+		<!-- actions block start -->
+		<div class="block actions">
+			<div class="header">
+				<h2><?php echo __('Actions'); ?></h2>
+			</div>	
+			<div class="content list-group">
+				<?php echo $this->Html->link(__('New Unit'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
+				<?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
 			</div>
 		</div>
+		<!-- actions block end -->
 	</div>
 
 </div>

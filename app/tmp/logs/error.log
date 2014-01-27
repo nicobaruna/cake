@@ -12220,3 +12220,1028 @@ Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
 Stack Trace:
 #0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-01-27 16:19:18 Error: [MissingTableException] Table aros for model Aro was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aros',
+  'class' => 'Aro',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('aros')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(185): Model->find('first', Array)
+#4 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(216): UsersController->getRedirectUrl()
+#5 [internal function]: UsersController->login()
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-27 16:19:30 Error: [MissingTableException] Table aros for model Aro was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aros',
+  'class' => 'Aro',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('aros')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(185): Model->find('first', Array)
+#4 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(216): UsersController->getRedirectUrl()
+#5 [internal function]: UsersController->login()
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-27 16:19:39 Error: [MissingTableException] Table aros for model Aro was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aros',
+  'class' => 'Aro',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('aros')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(185): Model->find('first', Array)
+#4 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(216): UsersController->getRedirectUrl()
+#5 [internal function]: UsersController->login()
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-27 16:25:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 16:25:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 16:25:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 16:25:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 16:59:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 17:05:57 Error: Fatal Error (1): Call to undefined function echo__() in [C:\xampp\htdocs\lubana_resto\cake\app\View\PurchaseOrders\add.ctp, line 13]
+2014-01-27 17:05:57 Error: [FatalErrorException] Call to undefined function echo__()
+Request URL: /lubana_resto/cake/purchase_orders/add
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 17:11:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 17:12:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 17:12:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 17:18:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 17:33:41 Error: Fatal Error (1): Call to a member function exists() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\AppController.php, line 69]
+2014-01-27 17:33:41 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /lubana_resto/cake/purchase_orders/preview/25
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 69, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 69, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 20:24:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 20:25:32 Error: [MissingActionException] Action PurchaseOrdersController::new() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'new',
+)
+Request URL: /lubana_resto/cake/purchase_orders/new
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-27 20:25:37 Error: [MissingTableException] Table aros for model Aro was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aros',
+  'class' => 'Aro',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('aros')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(185): Model->find('first', Array)
+#4 C:\xampp\htdocs\lubana_resto\cake\app\Controller\UsersController.php(216): UsersController->getRedirectUrl()
+#5 [internal function]: UsersController->login()
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-27 20:29:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 20:29:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 20:29:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 20:30:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 20:30:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 20:36:40 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\lubana_resto\cake\app\View\PurchaseRequests\add.ctp, line 53]
+2014-01-27 20:36:40 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /lubana_resto/cake/purchase_requests/add
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 53, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 53, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 20:51:16 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\xampp\htdocs\lubana_resto\cake\app\View\PurchaseRequests\edit.ctp, line 61]
+2014-01-27 20:51:16 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /lubana_resto/cake/purchase_requests/edit/11
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 61, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 61, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 21:00:26 Error: [NotFoundException] Invalid purchase request
+Request URL: /lubana_resto/cake/purchase_requests/view
+Stack Trace:
+#0 [internal function]: PurchaseRequestsController->view()
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 21:02:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 21:18:48 Error: [NotFoundException] Invalid purchase order
+Request URL: /lubana_resto/cake/purchase_orders/view/11
+Stack Trace:
+#0 [internal function]: PurchaseOrdersController->view('11')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseOrdersController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 21:19:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 21:19:48 Error: [NotFoundException] Invalid gr note
+Request URL: /lubana_resto/cake/grnotes/view/26
+Stack Trace:
+#0 [internal function]: GrNotesController->view('26')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 21:19:56 Error: [NotFoundException] Invalid gr note
+Request URL: /lubana_resto/cake/grnotes/view/26
+Stack Trace:
+#0 [internal function]: GrNotesController->view('26')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 21:35:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 21:35:47 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:35:55 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:35:58 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:38:15 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:38:39 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:38:49 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:38:55 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:39:04 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:39:06 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:39:13 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 21:51:47 Error: Fatal Error (4): syntax error, unexpected 'Edit' (T_STRING), expecting ')' in [C:\xampp\htdocs\lubana_resto\cake\app\View\PurchaseOrders\get_all.ctp, line 57]
+2014-01-27 21:51:47 Error: [FatalErrorException] syntax error, unexpected 'Edit' (T_STRING), expecting ')'
+Request URL: /lubana_resto/cake/purchase_orders/getAll
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 57, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 57, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 21:51:51 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\lubana_resto\cake\app\View\PurchaseOrders\get_all.ctp, line 56]
+2014-01-27 21:51:51 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /lubana_resto/cake/purchase_orders/getAll
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 56, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 56, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 22:03:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:04:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:04:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:05:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:05:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:06:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:06:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:07:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:08:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:08:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:08:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:08:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:08:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:08:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:09:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:09:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:09:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:09:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:09:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:10:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:10:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:11:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:21:37 Error: [MissingViewException] View file "C:\xampp\htdocs\lubana_resto\cake\app\View\TrFixPuchaseOrders\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lubana_resto\\cake\\app\\View\\TrFixPuchaseOrders\\index.ctp',
+)
+Request URL: /lubana_resto/cake/tr_fix_puchase_orders
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrFixPuchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 22:24:59 Error: [MissingViewException] View file "C:\xampp\htdocs\lubana_resto\cake\app\View\TrFixPuchaseOrders\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lubana_resto\\cake\\app\\View\\TrFixPuchaseOrders\\index.ctp',
+)
+Request URL: /lubana_resto/cake/tr_fix_puchase_orders
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrFixPuchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 22:31:05 Error: [MissingControllerException] Controller class PurhcaseOrdersController could not be found.
+Exception Attributes: array (
+  'class' => 'PurhcaseOrdersController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/purhcase_orders
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 22:45:41 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\TrRequestsController.php, line 60]
+2014-01-27 22:45:41 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lubana_resto/cake/tr_requests/add
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 22:48:14 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 22:49:12 Error: [NotFoundException] Invalid gr note
+Request URL: /lubana_resto/cake/grnotes/edit/26
+Stack Trace:
+#0 [internal function]: GrNotesController->edit('26')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 22:49:19 Error: [MissingViewException] View file "C:\xampp\htdocs\lubana_resto\cake\app\View\GrNotes\get_a_ll.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lubana_resto\\cake\\app\\View\\GrNotes\\get_a_ll.ctp',
+)
+Request URL: /lubana_resto/cake/grnotes/getALl
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 22:49:26 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/grnotes/view/44
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(2294): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1523): DboSource->fields(Object(TrFixPurchaseOrder), 'TrFixPurchaseOr...', '')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1188): DboSource->generateAssociationQuery(Object(FixedPurchaseOrder), Object(TrFixPurchaseOrder), 'hasMany', 'TrFixPurchaseOr...', Array, Array, true, Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1292): DboSource->queryAssociation(Object(FixedPurchaseOrder), Object(TrFixPurchaseOrder), 'hasMany', 'TrFixPurchaseOr...', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1113): DboSource->queryAssociation(Object(GrNote), Object(FixedPurchaseOrder), 'belongsTo', 'FixedPurchaseOr...', Array, Array, true, Array, 1, Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(GrNote), Array)
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\app\Controller\GrNotesController.php(54): Model->find('first', Array)
+#10 [internal function]: GrNotesController->view('44')
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-27 23:00:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 23:01:37 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/grnotes/view/44
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(2294): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1523): DboSource->fields(Object(TrFixPurchaseOrder), 'TrFixPurchaseOr...', '')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1188): DboSource->generateAssociationQuery(Object(FixedPurchaseOrder), Object(TrFixPurchaseOrder), 'hasMany', 'TrFixPurchaseOr...', Array, Array, true, Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1292): DboSource->queryAssociation(Object(FixedPurchaseOrder), Object(TrFixPurchaseOrder), 'hasMany', 'TrFixPurchaseOr...', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1113): DboSource->queryAssociation(Object(GrNote), Object(FixedPurchaseOrder), 'belongsTo', 'FixedPurchaseOr...', Array, Array, true, Array, 1, Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(GrNote), Array)
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\app\Controller\GrNotesController.php(54): Model->find('first', Array)
+#10 [internal function]: GrNotesController->view('44')
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-27 23:04:36 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\TrRequestsController.php, line 60]
+2014-01-27 23:04:36 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lubana_resto/cake/tr_requests/add
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 23:06:20 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\TrRequestsController.php, line 60]
+2014-01-27 23:06:20 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lubana_resto/cake/tr_requests/add
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 23:06:23 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\TrRequestsController.php, line 60]
+2014-01-27 23:06:23 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lubana_resto/cake/tr_requests/add
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 60, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-27 23:06:30 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/grnotes/view/44
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(2294): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1523): DboSource->fields(Object(TrFixPurchaseOrder), 'TrFixPurchaseOr...', '')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1188): DboSource->generateAssociationQuery(Object(FixedPurchaseOrder), Object(TrFixPurchaseOrder), 'hasMany', 'TrFixPurchaseOr...', Array, Array, true, Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1292): DboSource->queryAssociation(Object(FixedPurchaseOrder), Object(TrFixPurchaseOrder), 'hasMany', 'TrFixPurchaseOr...', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1113): DboSource->queryAssociation(Object(GrNote), Object(FixedPurchaseOrder), 'belongsTo', 'FixedPurchaseOr...', Array, Array, true, Array, 1, Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(GrNote), Array)
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\app\Controller\GrNotesController.php(54): Model->find('first', Array)
+#10 [internal function]: GrNotesController->view('44')
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-27 23:06:35 Error: [NotFoundException] Invalid tr request
+Request URL: /lubana_resto/cake/tr_requests/view/96
+Stack Trace:
+#0 [internal function]: TrRequestsController->view('96')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TrRequestsController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrRequestsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 23:25:08 Error: [MissingViewException] View file "C:\xampp\htdocs\lubana_resto\cake\app\View\TrFixPuchaseOrders\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lubana_resto\\cake\\app\\View\\TrFixPuchaseOrders\\index.ctp',
+)
+Request URL: /lubana_resto/cake/tr_fix_puchase_orders
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrFixPuchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 23:25:12 Error: [MissingViewException] View file "C:\xampp\htdocs\lubana_resto\cake\app\View\TrFixPuchaseOrders\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lubana_resto\\cake\\app\\View\\TrFixPuchaseOrders\\index.ctp',
+)
+Request URL: /lubana_resto/cake/tr_fix_puchase_orders
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrFixPuchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-27 23:25:15 Error: [MissingActionException] Action TrFixPuchaseOrdersController::getAll() could not be found.
+Exception Attributes: array (
+  'controller' => 'TrFixPuchaseOrdersController',
+  'action' => 'getAll',
+)
+Request URL: /lubana_resto/cake/tr_fix_puchase_orders/getAll
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrFixPuchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-27 23:31:12 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\TrRequestsController.php, line 89]
+2014-01-27 23:31:12 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lubana_resto/cake/tr_requests/edit/27
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -1,6 +1,6 @@
 <div class="trRequests index col-md-10">
 	
-	<div class="trRequests-detail">
+	<div class="trRequests-detail col-md-9">
 		<div class="block">
 			<div class="header">
 				<h2><?php echo __('Tr Requests'); ?></h2>
@@ -27,9 +27,9 @@
 					<td><?php echo h($trRequest['TrRequest']['qty']); ?>&nbsp;</td>
 					<td><?php echo h($trRequest['TrRequest']['harga']); ?>&nbsp;</td>
 					<td class="actions">
-						<?php echo $this->Html->link(__('View'), array('action' => 'view', $trRequest['TrRequest']['id'])); ?>
-						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $trRequest['TrRequest']['id'])); ?>
-						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $trRequest['TrRequest']['id']), null, __('Are you sure you want to delete # %s?', $trRequest['TrRequest']['id'])); ?>
+						<?php echo $this->Html->link(__('View'), array('action' => 'view', $trRequest['TrRequest']['id']),array('class'=>'btn btn-default')); ?>
+						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $trRequest['TrRequest']['id']),array('class'=>'btn btn-info')); ?>
+						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $trRequest['TrRequest']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $trRequest['TrRequest']['id'])); ?>
 					</td>
 				</tr>
 				<?php endforeach; ?>
@@ -42,28 +42,30 @@
 				?>	</p>
 				<div class="paging">
 				<?php
-					echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-					echo $this->Paginator->numbers(array('separator' => ''));
-					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+					echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled btn btn-default'));
+					echo $this->Paginator->numbers(array('separator' => ''),array('class'=>'btn btn-default'));
+					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled btn btn-default'));
 				?>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="actions">
-		<div class="block">
-			<h3><?php echo __('Actions'); ?></h3>
-			<div>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Tr Request'), array('action' => 'add')); ?></span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Purchase Requests'), array('controller' => 'purchase_requests', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Purchase Request'), array('controller' => 'purchase_requests', 'action' => 'add')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Purchase Orders'), array('controller' => 'purchase_orders', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Purchase Order'), array('controller' => 'purchase_orders', 'action' => 'add')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('List Gr Notes'), array('controller' => 'gr_notes', 'action' => 'index')); ?> </span>
-				<span class="btn btn-default"><?php echo $this->Html->link(__('New Gr Note'), array('controller' => 'gr_notes', 'action' => 'add')); ?> </span>
+	<div class="col-md-3">
+		<div class="actions block">
+			<div class="header">
+				<h2><?php echo __('Actions'); ?></h2>
+			</div>
+			<div class="content list-group">
+				<?php echo $this->Html->link(__('New Tr Request'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
+				<?php echo $this->Html->link(__('List Purchase Requests'), array('controller' => 'purchase_requests', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Purchase Request'), array('controller' => 'purchase_requests', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('List Stocks'), array('controller' => 'stocks', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('List Purchase Orders'), array('controller' => 'purchase_orders', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Purchase Order'), array('controller' => 'purchase_orders', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('List Gr Notes'), array('controller' => 'gr_notes', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
+				<?php echo $this->Html->link(__('New Gr Note'), array('controller' => 'gr_notes', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
 			</div>
 		</div>
 	</div>
