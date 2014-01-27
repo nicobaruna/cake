@@ -13245,3 +13245,72 @@ Stack Trace:
 #3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-27 23:39:46 Error: [MissingControllerException] Controller class SuppliesController could not be found.
+Exception Attributes: array (
+  'class' => 'SuppliesController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/supplies
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 23:39:52 Error: [MissingControllerException] Controller class SuppliesController could not be found.
+Exception Attributes: array (
+  'class' => 'SuppliesController',
+  'plugin' => NULL,
+)
+Request URL: /lubana_resto/cake/supplies
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-27 23:46:37 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Datasource\DboSource.php(1064): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(FixedPurchaseOrder), Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#4 C:\xampp\htdocs\lubana_resto\cake\app\Controller\FixedPurchaseOrdersController.php(51): Model->find('first', Array)
+#5 [internal function]: FixedPurchaseOrdersController->view('1')
+#6 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FixedPurchaseOrdersController), Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-27 23:46:43 Error: [MissingTableException] Table tr_fix_purchase_orders for model TrFixPurchaseOrder was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tr_fix_purchase_orders',
+  'class' => 'TrFixPurchaseOrder',
+  'ds' => 'default',
+)
+Request URL: /lubana_resto/cake/fixed_purchase_orders/preview/FixedPurchaseOrder/GrNote/45
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(3493): Model->setSource('tr_fix_purchase...')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1143): FormHelper->_introspectModel('TrFixPurchaseOr...', 'fields', 'stock_id')
+#4 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(1082): FormHelper->_magicOptions(Array)
+#5 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\Helper\FormHelper.php(962): FormHelper->_parseOptions(Array)
+#6 C:\xampp\htdocs\lubana_resto\cake\app\View\FixedPurchaseOrders\preview.ctp(45): FormHelper->input('TrFixPurchaseOr...', Array)
+#7 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#11 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#12 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-27 23:47:04 Error: [NotFoundException] Invalid fixed purchase order
+Request URL: /lubana_resto/cake/fixed_purchase_orders/edit
+Stack Trace:
+#0 [internal function]: FixedPurchaseOrdersController->edit()
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FixedPurchaseOrdersController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
