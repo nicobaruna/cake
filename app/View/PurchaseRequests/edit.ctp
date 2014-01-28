@@ -7,6 +7,63 @@
 				<h2><?php echo __('Edit Purchase Request'); ?></h2>
 			</div>
 			<div class="content">
+				<div class="form-row">
+					<div class="col-md-3">
+						Supplier
+					</div>
+					<div class="col-md-6">
+						<!-- insert supplier input here -->
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-3">
+						Note
+					</div>
+					<div class="col-md-6">
+						<!-- insert nore input here -->
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-3">
+						Jangka Pembayaran
+					</div>
+					<div class="col-md-6">
+						<!-- insert jangka pembayaran input here -->
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-3">
+						Ordered By
+					</div>
+					<div class="col-md-6">
+						<!-- insert ordered by input here -->
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-3">
+						Status
+					</div>
+					<div class="col-md-6">
+						<!-- insert status input here -->
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-3">
+						Made By
+					</div>
+					<div class="col-md-6">
+						<!-- insert made by input here -->
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-3">
+						Discount
+					</div>
+					<div class="col-md-6">
+						<!-- insert discount input here -->
+					</div>
+				</div>
+				<!--
 				<?php
 					echo $this->Form->input('id');
 					echo $this->Form->input('supplier_id');
@@ -20,34 +77,31 @@
 					echo $this->Form->input('made_by');
 					echo $this->Form->input('discount');
 					$count = 0;
-					?>
-					<fieldset>
-				<legend>Items</legend>
-				<div class="items">
-					<?php 
-					foreach ($this->request->data['TrRequest'] as $key => $value) {
-						
-					}
-						echo $this->Form->input('TrRequest.'.$key.'.stock_id',array('label'=>'item','value'=>$stocks,'empty'=>'please choose one'));
-						echo $this->Form->input('TrRequest.'.$key.'.qty',array('label'=>'Qty'));
-						echo $this->Form->input('TrRequest.'.$key.'.big_unit_id',array('label'=>'Unit','value'=>$bigUnits,'empty'=>'please choose one'));
-						echo $this->Form->input('TrRequest.'.$key.'.harga',array('label'=>'Harga'));
-					?>
+				?>
+				-->
+				<div class="header">
+					<h2>Items</h2>
 				</div>
-			</fieldset>
-			<button type="button" class="btn more btn-info right">
-				add more item
-			</button>
-			<button type="button" class="btn less btn-warning right">
-				less item
-			</button>
-			<div class="header">
-				Items
+				<div class="content">
+					<div class="items content">
+						<?php 
+						foreach ($this->request->data['TrRequest'] as $key => $value) {
+						}
+							echo $this->Form->input('TrRequest.'.$key.'.stock_id',array('label'=>'item','value'=>$stocks,'empty'=>'please choose one'));
+							echo $this->Form->input('TrRequest.'.$key.'.qty',array('label'=>'Qty'));
+							echo $this->Form->input('TrRequest.'.$key.'.big_unit_id',array('label'=>'Unit','value'=>$bigUnits,'empty'=>'please choose one'));
+							echo $this->Form->input('TrRequest.'.$key.'.harga',array('label'=>'Harga'));
+						?>
+					</div>
+					<button type="button" class="btn more btn-info right">
+						add more item
+					</button>
+					<button type="button" class="btn less btn-warning right">
+						less item
+					</button>
+				</div>
 			</div>
-			<div class="content">
-				
-			</div>
-			</div>
+
 			<div class="footer">
 				<?php echo $this->Form->end(__('Submit')); ?>
 			</div>

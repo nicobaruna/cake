@@ -13389,3 +13389,74 @@ Stack Trace:
 #8 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-01-28 01:22:30 Error: [NotFoundException] Invalid gr note
+Request URL: /lubana_resto/cake/grnotes/edit/26
+Stack Trace:
+#0 [internal function]: GrNotesController->edit('26')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-28 01:22:49 Error: [NotFoundException] Invalid fixed purchase order
+Request URL: /lubana_resto/cake/fixed_purchase_orders/edit
+Stack Trace:
+#0 [internal function]: FixedPurchaseOrdersController->edit()
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FixedPurchaseOrdersController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(FixedPurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-28 01:35:44 Error: [MissingViewException] View file "C:\xampp\htdocs\lubana_resto\cake\app\View\TrFixPuchaseOrders\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lubana_resto\\cake\\app\\View\\TrFixPuchaseOrders\\index.ctp',
+)
+Request URL: /lubana_resto/cake/tr_fix_puchase_orders
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrFixPuchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-28 01:35:46 Error: [MissingViewException] View file "C:\xampp\htdocs\lubana_resto\cake\app\View\TrFixPuchaseOrders\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lubana_resto\\cake\\app\\View\\TrFixPuchaseOrders\\index.ctp',
+)
+Request URL: /lubana_resto/cake/tr_fix_puchase_orders
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TrFixPuchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-28 01:41:17 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\TrRequestsController.php, line 89]
+2014-01-28 01:41:17 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lubana_resto/cake/tr_requests/edit/27
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-28 01:41:20 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\lubana_resto\cake\app\Controller\TrRequestsController.php, line 89]
+2014-01-28 01:41:20 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lubana_resto/cake/tr_requests/edit/29
+Stack Trace:
+#0 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 89, Array)
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-28 01:49:59 Error: [NotFoundException] Invalid gr note
+Request URL: /lubana_resto/cake/grnotes/edit/26
+Stack Trace:
+#0 [internal function]: GrNotesController->edit('26')
+#1 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#2 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
