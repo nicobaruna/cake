@@ -13460,3 +13460,391 @@ Stack Trace:
 #3 C:\xampp\htdocs\lubana_resto\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
 #4 C:\xampp\htdocs\lubana_resto\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-28 14:51:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:51:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:52:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:52:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 14:52:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:07:54 Error: Fatal Error (1): Call to undefined method View::input() in [C:\wamp\www\cake\app\View\PurchaseRequests\add.ctp, line 18]
+2014-01-28 15:07:54 Error: [FatalErrorException] Call to undefined method View::input()
+Request URL: /cake/purchase_requests/add
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 18, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 18, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-28 15:07:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:08:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:08:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:08:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:12:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:15:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:21:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validateSearch' at line 1
+Request URL: /cake/purchase_requests/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('validateSearch', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validateSearch', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validateSearch', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('validateSearch', Array, Object(PurchaseRequest))
+#5 C:\wamp\www\cake\app\Plugin\search\Controller\Component\PrgComponent.php(349): Model->__call('validateSearch', Array)
+#6 C:\wamp\www\cake\app\Plugin\search\Controller\Component\PrgComponent.php(349): PurchaseRequest->validateSearch()
+#7 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(38): PrgComponent->commonProcess()
+#8 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(27): PurchaseRequestsController->find()
+#9 [internal function]: PurchaseRequestsController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-28 15:22:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validateSearch' at line 1
+Request URL: /cake/purchase_requests/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('validateSearch', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validateSearch', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validateSearch', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('validateSearch', Array, Object(PurchaseRequest))
+#5 C:\wamp\www\cake\app\Plugin\search\Controller\Component\PrgComponent.php(349): Model->__call('validateSearch', Array)
+#6 C:\wamp\www\cake\app\Plugin\search\Controller\Component\PrgComponent.php(349): PurchaseRequest->validateSearch()
+#7 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(38): PrgComponent->commonProcess()
+#8 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(27): PurchaseRequestsController->find()
+#9 [internal function]: PurchaseRequestsController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-28 15:24:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /cake/purchase_requests/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('parseCriteria', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('parseCriteria', Array, Object(PurchaseRequest))
+#5 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(40): Model->__call('parseCriteria', Array)
+#6 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(40): PurchaseRequest->parseCriteria(Array)
+#7 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(27): PurchaseRequestsController->find()
+#8 [internal function]: PurchaseRequestsController->index()
+#9 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-01-28 15:25:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validateSearch' at line 1
+Request URL: /cake/purchase_requests/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('validateSearch', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validateSearch', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validateSearch', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('validateSearch', Array, Object(PurchaseRequest))
+#5 C:\wamp\www\cake\app\Plugin\search\Controller\Component\PrgComponent.php(349): Model->__call('validateSearch', Array)
+#6 C:\wamp\www\cake\app\Plugin\search\Controller\Component\PrgComponent.php(349): PurchaseRequest->validateSearch()
+#7 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(38): PrgComponent->commonProcess()
+#8 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(27): PurchaseRequestsController->find()
+#9 [internal function]: PurchaseRequestsController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-01-28 15:30:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:33:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:33:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:36:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:37:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:37:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:39:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:39:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:40:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:45:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:45:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:46:34 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\wamp\www\cake\app\View\Elements\search.ctp, line 20]
+2014-01-28 15:46:34 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /cake/purchase_requests
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 20, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 20, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-28 15:46:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:46:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:48:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-28 15:48:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -3,7 +3,7 @@
 		<div class="block">
 			
 			<div class="header">
-				<h2><?php echo __('Purchase Requests'); ?></h2>
+				<h2><?php echo __('Purchase Orders'); ?></h2>
 			</div>
 		<div class="content">
 		<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">

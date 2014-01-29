@@ -14,12 +14,12 @@
 						<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 						<th><?php echo $this->Paginator->sort('date'); ?></th>
 						<th><?php echo $this->Paginator->sort('note'); ?></th>
-						<th><?php echo $this->Paginator->sort('purchase_order_id'); ?></th>
+						
 						<th><?php echo $this->Paginator->sort('jangka_pembayaran'); ?></th>
-						<th><?php echo $this->Paginator->sort('ordered_by'); ?></th>
+						
 						<th><?php echo $this->Paginator->sort('status'); ?></th>
-						<th><?php echo $this->Paginator->sort('made_by'); ?></th>
-						<th><?php echo $this->Paginator->sort('discount'); ?></th>
+					
+						
 						<th class="actions"><?php echo 'Actions'; ?></th>
 				</tr>
 				</thead>
@@ -35,11 +35,9 @@
 						</td>
 						<td><?php echo h(date('d M Y', strtotime($purchaseRequest['PurchaseRequest']['date']))); ?>&nbsp;</td>
 						<td><?php echo h($purchaseRequest['PurchaseRequest']['note']); ?>&nbsp;</td>
-						<td>
-							<?php echo $this->Html->link($purchaseRequest['PurchaseOrder']['id'], array('controller' => 'purchase_orders', 'action' => 'view', $purchaseRequest['PurchaseOrder']['id'])); ?>
-						</td>
+						
 						<td><?php echo h($purchaseRequest['PurchaseRequest']['jangka_pembayaran']); ?>&nbsp;</td>
-						<td><?php echo h($purchaseRequest['PurchaseRequest']['ordered_by']); ?>&nbsp;</td>
+						
 						<td>
 							<?php 
 								switch ($purchaseRequest['PurchaseRequest']['status']) {
@@ -56,8 +54,7 @@
 								<?php echo h($purchaseRequest['PurchaseRequest']['status']); ?>&nbsp;
 							</span>
 						</td>
-						<td><?php echo h($purchaseRequest['PurchaseRequest']['made_by']); ?>&nbsp;</td>
-						<td><?php echo h($purchaseRequest['PurchaseRequest']['discount']); ?>&nbsp;</td>
+					
 						<td class="actions">
 							<?php echo $this->Html->link(__('View'), array('action' => 'view', $purchaseRequest['PurchaseRequest']['id']),array('class'=>'btn btn-default')); ?> 
 							<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $purchaseRequest['PurchaseRequest']['id']),array('class'=>'btn btn-info')); ?>

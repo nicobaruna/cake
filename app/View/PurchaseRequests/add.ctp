@@ -15,6 +15,11 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert supplier input here -->
+							
+							<?php
+								echo $this->Form->hidden('user_id',array('value'=>$this->Session->read('Auth.User.id'))); 
+								echo $this->Form->input('suplier_id',array('label'=>FALSE,'empty'=>'Please choose one')); 
+								?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -23,6 +28,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert note input here -->
+							<?php echo $this->Form->input('note',array('type'=>'textarea','class'=>'cle','label'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -31,6 +37,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert jangka pembayaran input here -->
+							<?php echo $this->Form->input('jangka_pembayaran'); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -39,6 +46,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert ordered by input here -->
+							<?php echo $this->Form->input('ordered_by'); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -47,6 +55,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert made by input here -->
+							<?php echo $this->Form->input('made_by'); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -55,21 +64,15 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert discount input here -->
+							<?php echo $this->Form->input('discount'); ?>
 						</div>
 					</div>
-					<!--
-					<?php
-						echo $this->Form->hidden('user_id',array('value'=>$this->Session->read('Auth.User.id')));
-						echo $this->Form->hidden('date',array('value'=>date('Y-m-d')));
-						echo $this->Form->input('note',array('type'=>'textarea'));
+					<?php 
 						echo $this->Form->hidden('purchase_order_id');
-						echo $this->Form->input('jangka_pembayaran');
-						echo $this->Form->input('ordered_by');
 						echo $this->Form->hidden('status',array('value'=>'draft'));
-						echo $this->Form->input('made_by');
-						echo $this->Form->input('discount');
+						echo $this->Form->hidden('date',array('value'=>date('Y-m-d')));
 					?>
-					-->
+					
 				</div>
 				<div class="header">
 					<h2>Items</h2>

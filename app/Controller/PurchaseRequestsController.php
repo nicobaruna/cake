@@ -24,9 +24,9 @@ class PurchaseRequestsController extends AppController {
 		$this->PurchaseRequest->recursive = 0;
 		$purchaseRequests = $this->Paginator->paginate();
 		if ($this->request->is('post')) {
-			$purchaseRequests = $this->find();
+			$purchaseRequests = $this->find($this->request->data);
 		}
-		$this->set('purchaseRequests', $this->Paginator->paginate());
+		$this->set('purchaseRequests', $purchaseRequests);
 	}
 	
 	public function beforeFilter(){
@@ -34,10 +34,16 @@ class PurchaseRequestsController extends AppController {
 		$this->loadModel('Stock');
 	}
 	
-	public function find() {
-        $this->Prg->commonProcess();
+	public function find($data) {
+        
 		$model = $this->modelClass;
-        $this->Paginator->settings['conditions'] = $this->$model->parseCriteria($this->Prg->parsedParams());
+        $this->Paginator->settings['conditions'] = array(
+        'AND' => array(
+        	'Supplier.name LIKE' =>'%'.$data['PurchaseRequest']['supplier'].'%',
+        	'PurchaseRequest.jangka_pembayaran LIKE' =>'%'.$data['PurchaseRequest']['jangka_pembayaran'].'%',
+        	'PurchaseRequest.status LIKE' =>$data['PurchaseRequest']['status'],
+        	)
+		);
         return $this->Paginator->paginate();
     }
 
