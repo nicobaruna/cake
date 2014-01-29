@@ -62,13 +62,35 @@ App::uses('Debugger', 'Utility');
 						echo $this->element('navigation') 
 			    ?>
 			<!-- end of nav -->
+			<!-- print header start -->
+			<div id="print-header">
+				<div class="print-header-logo">
+					<img src="<?php echo $this->webroot; ?>img/lubana-logo.jpg">
+				</div>
+				<div class="block">
+					<div class="print-address">
+						<h1>Lubana Sengkol</h1>
+						<h4>Pemancingan, Pondok Makan &amp; Outbond</h4>
+						<p>
+							Jl. Hutama Karya KM 1,5 Sengkol - Tangerang Selatan<br/>
+							Telp / Fax : 021 - 758 799 62<br/>
+						</p>
+
+					</div>
+				</div>
+				<div class="border"></div>
+			</div>
+			<!-- print header end -->
 			<div class="row">
 				<?php
 				 if($this->Session->read('Auth.User.id'))
 						echo $this->element('sidebar');
-				 
+				 ?>
+				 <div id="content">
+					<?php
 						echo $this -> fetch('content'); 
-				?>
+					?>
+				 </div>
 				<!-- <?php echo $this->element('sql_dump'); ?> -->
 			</div>
 		</div>
