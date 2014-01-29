@@ -80,6 +80,40 @@
 							<!-- insert gr_notes input field here -->
 						</div>
 					</div>
+				</div>
+				<!-- items table start -->
+				<div class="content item-table" data-items="">
+					<div class="content">
+						<table cellpadding = "0" cellspacing = "0" class="table table-bordered table-striped table-hover">
+							<thead>
+								<tr>
+									<th>Item Name</th>
+									<th>Qty</th>
+									<th>Unit</th>
+									<th>Harga</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="item">
+									<td>Insert Stock input here</td>
+									<td>Insert Qty input here</td>
+									<td>Insert Unit input here</td>
+									<td>Insert Harga input here</td>
+								</tr> 
+							</tbody>						
+						</table>
+					</div>
+					<div class="footer">
+						<button type="button" class="btn more btn-info right">
+							add more item
+						</button>
+						<button type="button" class="btn less btn-warning right">
+							less item
+						</button>
+					</div>
+				</div>
+				<!-- items table end -->
+				<div class="footer">
 					<?php echo $this->Form->end(__('Submit')); ?>
 				</div>
 			</div>

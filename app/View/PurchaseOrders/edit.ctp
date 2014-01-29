@@ -70,40 +70,46 @@
 					echo $this->Form->hidden('date');
 					echo $this->Form->hidden('gr_note_id');
 				?>
-		<div class="content">
-				<table cellpadding = "0" cellspacing = "0" class="table table-bordered table-striped table-hover">
-					<thead>
-						<tr>
-							<th>Item Name</th>
-							<th>Qty</th>
-							<th>Unit</th>
-							<th>Harga</th>
-						</tr>
-					</thead>
-					<tbody>
-						<?php
-						$count = 0;
-						foreach ($this->request->data['TrPo'] as $item) {
-						?>
-						<tr>
-							<td><?php echo $this->Form->input('TrPo.'.$count.'.stock_id',array('label'=>FALSE)); ?></td>
-							<td><?php echo $this->Form->input('TrPo.'.$count.'.qty',array('label'=>FALSE)); ?></td>
-							<td><?php echo $this->Form->input('TrPo.'.$count.'.big_unit_id',array('label'=>FALSE,'options'=>$bigUnits,'default'=>$item['big_unit_id'])); ?></td>
-							<td><?php echo $this->Form->input('TrPo.'.$count.'.harga',array('label'=>FALSE)); ?></td>
-						</tr> 
-						<?php $count++; } ?>
-					</tbody>
-					
-						
-				</table>
-				<button type="button" class="btn more btn-info right">
-					add more item
-				</button>
-				<button type="button" class="btn less btn-warning right">
-					less item
-				</button>
+
+			<div class="content item-table" data-items="">
+				<div class="content">
+					<table cellpadding = "0" cellspacing = "0" class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Item Name</th>
+								<th>Qty</th>
+								<th>Unit</th>
+								<th>Harga</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php
+							$count = 0;
+							foreach ($this->request->data['TrPo'] as $item) {
+							?>
+							<tr class="item">
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.stock_id',array('label'=>FALSE)); ?></td>
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.qty',array('label'=>FALSE)); ?></td>
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.big_unit_id',array('label'=>FALSE,'options'=>$bigUnits,'default'=>$item['big_unit_id'])); ?></td>
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.harga',array('label'=>FALSE)); ?></td>
+							</tr> 
+							<?php $count++; } ?>
+						</tbody>						
+					</table>
+				</div>
+				<div class="footer">
+					<button type="button" class="btn more btn-info right">
+						add more item
+					</button>
+					<button type="button" class="btn less btn-warning right">
+						less item
+					</button>
+				</div>
+			</div>
+			<div class="footer">
 				<?php echo $this->Form->end(__('Submit')); ?>
 			</div>
+
 		</div>
 
 	</div>
