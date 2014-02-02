@@ -80,6 +80,20 @@
 
 
 	<div class="col-md-3">
+		<!-- search block start -->
+		<div class="search block">
+			<div class="header">
+				<h2>Search</h2>
+			</div>
+			<div class="content">
+				<?php
+					echo $this->element('search', array(
+				    "model" => 'PurchaseRequest', 
+					));
+				?>
+			</div>
+		</div>
+		<!-- search block end -->
 		<!-- actions block start -->
 		<div class="actions block">
 			<div class="header">

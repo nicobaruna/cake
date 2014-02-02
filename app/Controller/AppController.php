@@ -34,6 +34,7 @@ class AppController extends Controller {
 	
 	public $components = array(
 	    'DebugKit.Toolbar',
+	    'RequestHandler',
         'Session',
         'Acl',
         'Search.Prg',
@@ -64,6 +65,20 @@ class AppController extends Controller {
 		//$this->setPermission();
     }
 	
+	public function find($data) {
+
+		$model = $this->modelClass;
+        $this->Paginator->settings['conditions'] = array(
+        'AND' => array(
+        	'Supplier.name LIKE' =>'%'.$data[$model]['supplier'].'%',
+        	$model.'.jangka_pembayaran LIKE' =>'%'.$data[$model]['jangka_pembayaran'].'%',
+        	$model.'.status LIKE' =>'%'.$data[$model]['status'].'%',
+        	$model.'.date  BETWEEN ? AND ?' =>  array( $data[$model]['date_from'], $data[$model]['date_to']), 
+        	)
+		);
+        return $this->Paginator->paginate();
+    }
+	
 	public function preview($modelTo,$modelFrom,$id = null) {
 		//echo $modelFrom; exit;
 		if (!$this->$modelFrom->exists($id)) {
@@ -72,7 +87,7 @@ class AppController extends Controller {
 	
 		$warehouses = NULL;
 		if($this->request->is(array('post', 'put' ))) {
-			var_dump($this->request->data); exit;
+			//var_dump($this->request->data); exit;
 			
 			if ($this->$modelTo->saveAssociated($this->request->data,array('deep'=>TRUE))) {
 			$dataPR = array(

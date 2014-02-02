@@ -48,7 +48,7 @@ class StocksController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Stock->create();
-			if ($this->Stock->save($this->request->data)) {
+			if ($this->Stock->saveAssociated ($this->request->data,array('deep'=>TRUE))) {
 				$this->Session->setFlash(__('The stock has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -68,11 +68,12 @@ class StocksController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->Stock->recursive = 2;
 		if (!$this->Stock->exists($id)) {
 			throw new NotFoundException(__('Invalid stock'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Stock->save($this->request->data)) {
+			if ($this->Stock->saveAssociated($this->request->data,array('deep'=>TRUE))) {
 				$this->Session->setFlash(__('The stock has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {

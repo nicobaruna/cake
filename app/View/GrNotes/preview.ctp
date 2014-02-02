@@ -14,6 +14,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert supplier ID input here -->
+							<?php echo $this->Form->input('supplier_id',array('label'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -22,6 +23,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert note input here -->
+							<?php echo $this->Form->input('note',array('label'=>FALSE,'type'=>'textarea','class'=>'cle')); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -30,6 +32,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert jangka pembayaran input here -->
+							<?php echo $this->Form->input('jangka_pembayaran',array('label'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -38,28 +41,27 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert received by input here -->
+							<?php echo $this->Form->input('received_by',array('label'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="col-md-3">
-							Discount
+							Discount (%)	
 						</div>
 						<div class="col-md-9">
 							<!-- insert discount input here -->
+							<?php echo $this->Form->input('discount',array('label'=>FALSE)); ?>
 						</div>
 					</div>
-					<!--
+
 					<?php
-						echo $this->Form->input('supplier_id');
+						
 						echo $this->Form->hidden('user_id');
 						echo $this->Form->hidden('date');
-						echo $this->Form->input('note');
-						echo $this->Form->input('jangka_pembayaran');
-						echo $this->Form->input('received_by');
 						echo $this->Form->hidden('status',array('value'=>'draft'));
-						echo $this->Form->input('discount');
+						
 					?>
-					-->
+	
 				</div>
 			</div>
 			<!-- GR Notes block end -->
@@ -68,7 +70,7 @@
 				<div class="header">
 					<h2>Items</h2>
 				</div>
-				<div class="content">
+				<div class="content item-table" data-items="" data-total="">
 					<table class="table table-bordered table-striped table-hover">
 						<thead>
 							<tr>
@@ -76,7 +78,7 @@
 								<th>qty</th>
 								<th>Unit</th>
 								<th>Price</th>
-								<th>Warehouse</th>
+								<th>action</th>
 								
 							</tr>
 						</thead>
@@ -85,21 +87,27 @@
 							$count = 0;
 							foreach ($this->request->data['TrGrnote'] as $item) {
 						?>
-							<tr>
-								<td><?php echo $this->Form->input('TrGrnote.'.$count.'.stock_id',array('label'=>false)); ?></td>
+							<tr class="item">
+								<td><?php echo $this->Form->input('TrGrnote.'.$count.'.stock_id',array('label'=>false,'class'=>'stock')); ?></td>
 								<td><?php echo $this->Form->input('TrGrnote.'.$count.'.qty',array('label'=>false));?></td>
-								<td><?php echo $this->Form->input('TrGrnote.'.$count.'.big_unit_id',array('label'=>False,'options'=>$bigUnits,'default'=>$item['big_unit_id'])); ?></td>
+								<td><?php echo $this->Form->input('TrGrnote.'.$count.'.big_unit_id',array('label'=>False,'options'=>$bigUnits,'default'=>$item['big_unit_id'],'class'=>'bigUnit')); ?></td>
 								<td><?php echo $this->Form->input('TrGrnote.'.$count.'.harga',array('label'=>false)); ?></td>
-								<td><?php 
-										  echo $this->Form->hidden('TrWarehouse.'.$count.'.stock_id',array('label'=>false,'value'=>$item['stock_id']));
-										  echo $this->Form->hidden('TrWarehouse.'.$count.'.qty',array('label'=>false,'value'=>$item['qty']));
-										  echo $this->Form->input('TrWarehouse.'.$count.'.warehouse_id',array('label'=>false,'options'=>$warehouses,'empty'=>'Please select one')); ?></td>
-							
+								<td><?php echo $this->Html->link(__('Delete'), array('controller'=>'TrRequests','action' => 'delete', $item['id']),array('class'=>'btn delete btn-danger'), null, __('Are you sure you want to delete # %s?', $item['id']));?></td>
 							</tr>
 						<?php $count++; } ?>
 						</tbody>
 					</table>
 				</div>
+				
+				<div class="footer">
+					<button type="button" class="btn more btn-info right">
+						add more item
+					</button>
+					<button type="button" class="btn less btn-warning right">
+						less item
+					</button>
+				</div>
+				
 			</div>
 			<!-- items block end -->
 			<!-- submit button start -->

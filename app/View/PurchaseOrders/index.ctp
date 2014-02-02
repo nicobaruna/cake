@@ -7,7 +7,7 @@
 					<h2><?php echo __('Unconfirm Purchase Orders'); ?></h2>
 				</div>
 				<div class="content">
-					
+					<?php if(!empty($purchaseOrders)){ ?>
 					<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 					<tr>
 							<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -56,19 +56,42 @@
 							echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled btn btn-default'));
 						?>
 					</div>
-					
+					<?php }else {  ?>
+						<div class="alert alert-warning">
+						 	 There's no unconfirm Purchase Order , <?php echo $this->Html->link(__('View All Purchase Orders'),array('action'=>'getAll'),array('class'=>'btn btn-success')) ?>
+							<button type="button" class="close" data-dismiss="alert">
+								×
+							</button>
+						</div>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-md-3">
+			
+			<!-- search block start -->
+			<div class="search block">
+				<div class="header">
+					<h2>Search</h2>
+				</div>
+				<div class="content">
+					<?php
+						echo $this->element('search', array(
+					    "model" => 'PurchaseOrder', 
+						));
+					?>
+				</div>
+			</div>
+			<!-- search block end -->
+			
 			<!-- actions block start -->
 			<div class="actions block">
 				<div class="header">
 					<h3><?php echo __('Actions'); ?></h3>
 				</div>
 				<div class="content list-group">
-					<?php echo $this->Html->link(__('New Purchase Order'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
+					<?php echo $this->Html->link(__('All Purchase order'), array('action' => 'getAll'),array('class'=>'list-group-item')); ?>
 					<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
 					<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
 					<?php echo $this->Html->link(__('List Tr Requests'), array('controller' => 'tr_requests', 'action' => 'index'),array('class'=>'list-group-item')); ?> 

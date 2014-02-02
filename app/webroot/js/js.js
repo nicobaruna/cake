@@ -841,4 +841,5 @@ $(document).ready(function() {
 		}
 		google.maps.event.addDomListener(window, "load", m)
 	}
+	$( ".datetimepicker, .datepicker" ).datepicker( "option", "dateFormat", 'yy-mm-dd' );
 })

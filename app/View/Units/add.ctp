@@ -29,22 +29,11 @@
 						</div>
 						<div class="col-md-6">
 							<!-- insert name input here -->
+							<?php echo $this->Form->input('name',array('label'=>FALSE));  ?>
+							<?php echo $this->Form->hidden('status',array('label'=>FALSE,'value'=>1));  ?>
 						</div>
 					</div>
-					<div class="form-row">
-						<div class="col-md-3">
-							Status
-						</div>
-						<div class="col-md-6">
-							<!-- insert status input here -->
-						</div>
-					</div>
-					<!--
-					<?php
-						echo $this->Form->input('name');
-						echo $this->Form->input('status');
-					?>
-					-->
+					
 				</div>
 				<div class="footer">
 					<?php echo $this->Form->end(__('Submit')); ?>

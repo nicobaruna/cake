@@ -80,7 +80,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="col-md-3">
 			<!-- block actions start -->
 			<div class="block actions">
@@ -102,10 +102,10 @@
 		</div>
 	</div>
 
-	<div class="related col-md-12">
+	<div class="related col-md-9">
 		<div class="block">
 			<div class="header">
-				<h2><?php echo __('Related Tr Requests'); ?></h2>
+				<h2><?php echo __('Item'); ?></h2>
 			</div>
 			<div class="content">
 				<?php if (!empty($grNote['TrGrnote'])): ?>
@@ -117,7 +117,7 @@
 					<th><?php echo __('Qty'); ?></th>
 					<th><?php echo __('Unit'); ?></th>
 					<th><?php echo __('Harga'); ?></th>
-					<th class="actions"><?php echo __('Actions'); ?></th>
+					<!-- <th class="actions"><?php echo __('Actions'); ?></th> -->
 				</tr>
 				<?php $total = 0; foreach ($grNote['TrGrnote'] as $trRequest): ?>
 					<tr>
@@ -127,11 +127,11 @@
 						<td><?php echo $trRequest['qty']; ?></td>
 						<td><?php echo $trRequest['BigUnit']['name']; ?></td>
 						<td><?php echo $trRequest['harga']; ?></td>
-						<td class="actions">
+					<!--	<td class="actions">
 							<?php echo $this->Html->link(__('View'), array('controller' => 'tr_requests', 'action' => 'view', $trRequest['id']),array('class'=>'btn btn-default')); ?>
 							<?php echo $this->Html->link(__('Edit'), array('controller' => 'tr_requests', 'action' => 'edit', $trRequest['id']),array('class'=>'btn btn-info')); ?>
 							<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tr_requests', 'action' => 'delete', $trRequest['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $trRequest['id'])); ?>
-						</td>
+					</td> -->
 					</tr>
 				<?php
 					 $total = $total + ($trRequest['harga'] * $trRequest['qty']);
@@ -143,8 +143,8 @@
 							 ?>
 							<tr>
 								<td colspan="3">Total dengan discount</td>
-								<td><?php echo $total; ?></td>
-								<td></td>
+								<td>Rp. <?php echo $total; ?></td>
+								<!--<td></td> -->
 							</tr>
 				</table>
 			<?php endif; ?>

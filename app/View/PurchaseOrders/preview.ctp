@@ -1,44 +1,138 @@
-<div class="purchaseOrders form col-md-6">
+<div class="purchaseOrders content col-md-6">
 <?php echo $this->Form->create('PurchaseOrder'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Purchase Order'); ?></legend>
+	<div class="block">
+		<div class="content">
+			<div class="header">
+				<h2><?php echo __('Confirm Fixed Purchase Order'); ?></h2>
+			</div>
+			<div class="content">
+				
+				<div class="form-row">
+						<div class="col-md-3">
+							Supplier
+						</div>
+						<div class="col-md-9">
+							<!-- insert supplier ID input here -->
+							<?php echo $this->Form->input('supplier_id',array('label'=>FALSE)); ?>
+						</div>
+					</div>
+				
+				<div class="form-row">
+						<div class="col-md-3">
+							Note
+						</div>
+						<div class="col-md-9">
+							<!-- insert supplier ID input here -->
+							<?php echo $this->Form->input('note',array('label'=>FALSE,'type'=>'textarea','class'=>'cle')); ?>
+						</div>
+					</div>
+				
+				<div class="form-row">
+						<div class="col-md-3">
+							jangka pembayaran
+						</div>
+						<div class="col-md-9">
+							<!-- insert supplier ID input here -->
+							<?php echo $this->Form->input('jangka_pembayaran',array('label'=>FALSE)); ?>
+						</div>
+					</div>
+					
+				<div class="form-row">
+						<div class="col-md-3">
+							Discount (%)
+						</div>
+						<div class="col-md-9">
+							<!-- insert supplier ID input here -->
+							<?php echo $this->Form->input('discount',array('label'=>FALSE)); ?>
+						</div>
+					</div>	
+					
+				<div class="form-row">
+						<div class="col-md-3">
+							Diorder oleh
+						</div>
+						<div class="col-md-9">
+							<!-- insert supplier ID input here -->
+							<?php echo $this->Form->input('ordered_by',array('label'=>FALSE)); ?>
+						</div>
+					</div>				
+				
+			</div>
+		
 	<?php
+
 		echo $this->Form->hidden('user_id');
-		echo $this->Form->hidden('date');
-		echo $this->Form->input('supplier_id');
-		echo $this->Form->input('note');
-		echo $this->Form->input('jangka_pembayaran');
-		echo $this->Form->input('ordered_by');
+		echo $this->Form->hidden('date',array('value'=>date('Y-m-d')));
 		echo $this->Form->hidden('confirm_by',array('value'=>$this->Session->read('Auth.User.id')));
-		echo $this->Form->input('discount');
 		echo $this->Form->hidden('gr_note_id');
-		?>
-		</fieldset>
-		<fieldset>
-			<legend>Items</legend>
-		<?php
-		$count = 0;
-		foreach ($this->request->data['TrPo'] as $item) {
-			
-			echo $this->Form->input('TrPo.'.$count.'.stock_id');
-			echo $this->Form->input('TrPo.'.$count.'.qty');
-			echo $this->Form->input('TrPo.'.$count.'.big_unit_id',array('label'=>'Unit','options'=>$bigUnits,'default'=>$item['big_unit_id']));
-			echo $this->Form->input('TrPo.'.$count.'.harga');
-			$count++;
-		}
+		echo $this->Form->hidden('status',array('value'=>'draft'));
+		
 	?>
+	</div>
+	</div>
+	<fieldset>
+		<!-- items block start -->
+			<div class="block">
+				<div class="header">
+					<h2>Items</h2>
+				</div>
+				<div class="content item-table" data-items="" data-total="">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>qty</th>
+								<th>Unit</th>
+								<th>Price</th>
+								<th>action</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+						<?php
+							$count = 0;
+							foreach ($this->request->data['TrPo'] as $item) {
+						?>
+							<tr class="item">
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.stock_id',array('label'=>false,'class'=>'stock')); ?></td>
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.qty',array('label'=>false));?></td>
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.big_unit_id',array('label'=>False,'options'=>$bigUnits,'default'=>$item['big_unit_id'],'class'=>'bigUnit')); ?></td>
+								<td><?php echo $this->Form->input('TrPo.'.$count.'.harga',array('label'=>false)); ?></td>
+								<td><?php echo $this->Html->link(__('Delete'), array('controller'=>'TrPo','action' => 'delete', $item['id']),array('class'=>'btn delete btn-danger'), null, __('Are you sure you want to delete # %s?', $item['id']));?></td>
+							</tr>
+						<?php $count++; } ?>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="footer">
+					<button type="button" class="btn more btn-info right">
+						add more item
+					</button>
+					<button type="button" class="btn less btn-warning right">
+						less item
+					</button>
+				</div>
+				
+			</div>
+			<!-- items block end -->
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('PurchaseOrder.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('PurchaseOrder.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Purchase Orders'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tr Requests'), array('controller' => 'tr_requests', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tr Request'), array('controller' => 'tr_requests', 'action' => 'add')); ?> </li>
-	</ul>
+<!-- actions block start -->
+<div class="actions col-md-3">
+	<div class="block">
+		<div class="header">
+			<h2><?php echo __('Actions'); ?></h2>
+		</div>
+		<div class="content list-group">
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('PurchaseOrder.id')),array('class'=>'list-group-item'), null, __('Are you sure you want to delete # %s?', $this->Form->value('PurchaseOrder.id'))); ?>
+			<?php echo $this->Html->link(__('List Uncomfirm Purchase Orders'), array('action' => 'index'),array('class'=>'list-group-item')); ?>
+			 
+		</div>
+	</div>
 </div>
+<!-- actions block end -->
+
+
+

@@ -64,7 +64,7 @@ class GrNotesController extends AppController {
 			$this->GrNote->create();
 			if ($this->GrNote->save($this->request->data)) {
 				$this->Session->setFlash(__('The gr note has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'getAll'));
 			} else {
 				$this->Session->setFlash(__('The gr note could not be saved. Please, try again.'));
 			}
@@ -87,7 +87,7 @@ class GrNotesController extends AppController {
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->GrNote->save($this->request->data)) {
 				$this->Session->setFlash(__('The gr note has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'getAll'));
 			} else {
 				$this->Session->setFlash(__('The gr note could not be saved. Please, try again.'));
 			}

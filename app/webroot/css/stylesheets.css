@@ -86,3 +86,31 @@
 .hidden {
 	display: none;
 }
+
+#print-header {display:none;}
+#print-header .border {clear:both; width:100%; border-top:2px solid #000;}
+#print-header .print-header-logo {text-align:center;}
+#print-header .print-address * {color:#000 !important;}
+
+/*---------------------------------*/
+/*print styling*/
+@media only print {
+
+    /*hide elements  */
+    #navigation, 
+    #sidebar,
+    .actions>*,
+    .site-settings,
+    #debug-kit-toolbar,
+    .page-footer {display:none;}
+
+    #print-header {display:block;}
+
+    /*styling*/
+    .col-md-3,
+    .col-md-9 {float:left;}
+
+    .col-md-3 {width:30%;}
+    .col-md-9 {width:70%;}
+
+}

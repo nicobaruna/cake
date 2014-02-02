@@ -28,14 +28,21 @@ class PurchaseOrdersController extends AppController {
  */
 	public function index() {
 		$this->PurchaseOrder->recursive = 0;
-		$this->set('purchaseOrders', $this->Paginator->paginate('PurchaseRequest',array(
+		$purchaseOrders = $this->Paginator->paginate('PurchaseRequest',array(
 			'PurchaseRequest.status' => 'draft',
-		)));
+		));
+		if ($this->request->is('post')) {
+			$purchaseOrders = $this->find($this->request->data);
+		}
+		$this->set('purchaseOrders',$purchaseOrders );
 	}
 	
 	public function getAll() {
-		$this->PurchaseOrder->recursive = 0;
-		$this->set('purchaseOrders', $this->Paginator->paginate());
+		$purchaseOrders = $this->Paginator->paginate();
+		if ($this->request->is('post')) {
+			$purchaseOrders = $this->find($this->request->data);
+		}
+		$this->set('purchaseOrders',$purchaseOrders );
 	}
 
 /**
@@ -66,7 +73,7 @@ class PurchaseOrdersController extends AppController {
 			$this->PurchaseOrder->create();
 			if ($this->PurchaseOrder->save($this->request->data)) {
 				$this->Session->setFlash(__('The purchase order has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'getAll'));
 			} else {
 				$this->Session->setFlash(__('The purchase order could not be saved. Please, try again.'));
 			}
@@ -89,7 +96,7 @@ class PurchaseOrdersController extends AppController {
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->PurchaseOrder->save($this->request->data)) {
 				$this->Session->setFlash(__('The purchase order has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'getAll'));
 			} else {
 				$this->Session->setFlash(__('The purchase order could not be saved. Please, try again.'));
 			}
@@ -125,5 +132,5 @@ class PurchaseOrdersController extends AppController {
 		} else {
 			$this->Session->setFlash(__('The purchase order could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+		return $this->redirect(array('action' => 'getAll'));
 	}}

@@ -123,8 +123,21 @@ class Stock extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'TrFixPuchaseOrder' => array(
-			'className' => 'TrFixPuchaseOrder',
+		'StockEditHistory' => array(
+			'className' => 'StockEditHistory',
+			'foreignKey' => 'stock_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'TrFixPurchaseOrder' => array(
+			'className' => 'TrFixPurchaseOrder',
 			'foreignKey' => 'stock_id',
 			'dependent' => false,
 			'conditions' => '',

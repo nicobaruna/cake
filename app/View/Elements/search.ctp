@@ -1,6 +1,6 @@
 <?php
 
-echo $this->Form->create($model,array('method'=>'post','action'=>'index'));
+echo $this->Form->create(Inflector::classify( $this->params['controller']),array('method'=>'post','action'=> $this->params['action']));
 ?>
 <div class="form-row">
 						<div class="col-md-3">
@@ -8,7 +8,7 @@ echo $this->Form->create($model,array('method'=>'post','action'=>'index'));
 						</div>
 						<div class="col-md-9">
 							<!-- insert status input here -->
-							<?php echo $this->Form->input('jangka_pembayaran',array('label'=>FALSE)); ?>
+							<?php echo $this->Form->input('jangka_pembayaran',array('label'=>FALSE,'required'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -17,7 +17,7 @@ echo $this->Form->create($model,array('method'=>'post','action'=>'index'));
 						</div>
 						<div class="col-md-9">
 							<!-- insert discount input here -->
-							<?php echo $this->Form->input('supplier', array('label'=>'supplier','label'=>FALSE)); ?>
+							<?php echo $this->Form->input('supplier', array('label'=>'supplier','label'=>FALSE,'required'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -26,7 +26,29 @@ echo $this->Form->create($model,array('method'=>'post','action'=>'index'));
 						</div>
 						<div class="col-md-9">
 							<!-- insert discount input here -->
-							<?php echo $this->Form->input('status', array('label'=>FALSE,'options' => array('posted'=>'posted', 'draft'=>'draft'))); ?>
+							<?php echo $this->Form->input('status', array('label'=>FALSE,'required'=>FALSE,'empty'=>'Please choose one','options' => array('posted'=>'posted', 'draft'=>'draft'))); ?>
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<div class="col-md-3">
+							Date
+						</div>
+						<div class="col-md-9">
+							<!-- insert discount input here -->
+							<div class="input-group">
+							<div class="input-group-addon">
+											<span class="icon-calendar-empty"></span>
+										</div>
+							<?php echo $this->Form->input('date_from', array('type'=>'text','div'=>FALSE,'label'=>FALSE,'required'=>FALSE,'class'=>'datepicker form-control')); ?>
+
+							</div>
+							<div class="input-group">
+								<div class="input-group-addon">
+											<span class="icon-calendar-empty"></span>
+										</div>
+								<?php echo $this->Form->input('date_to', array('type'=>'text','div'=>FALSE,'label'=>FALSE,'required'=>FALSE,'class'=>'datepicker form-control')); ?>
+							</div>
 						</div>
 					</div>
 

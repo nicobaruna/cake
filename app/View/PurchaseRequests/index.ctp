@@ -4,14 +4,16 @@
 		<div class="block purchaseRequest-detail">
 			<div class="header">
 				<h2><?php echo __('Purchase Requests'); ?></h2>
+				
 			</div>
 			<div class="content">
+				<?php echo $this->Html->link(__('New Purchase Request'), array('action' => 'add'),array('class'=>'btn btn-success icon-plus')); ?>
 				<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 				<thead>
 				<tr>
 						<th><?php echo $this->Paginator->sort('id'); ?></th>
 						<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
-						<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+						
 						<th><?php echo $this->Paginator->sort('date'); ?></th>
 						<th><?php echo $this->Paginator->sort('note'); ?></th>
 						
@@ -30,9 +32,7 @@
 						<td>
 							<?php echo $this->Html->link($purchaseRequest['Supplier']['name'], array('controller' => 'suppliers', 'action' => 'view', $purchaseRequest['Supplier']['id'])); ?>
 						</td>
-						<td>
-							<?php echo $this->Html->link($purchaseRequest['User']['id'], array('controller' => 'users', 'action' => 'view', $purchaseRequest['User']['id'])); ?>
-						</td>
+						
 						<td><?php echo h(date('d M Y', strtotime($purchaseRequest['PurchaseRequest']['date']))); ?>&nbsp;</td>
 						<td><?php echo h($purchaseRequest['PurchaseRequest']['note']); ?>&nbsp;</td>
 						
@@ -106,12 +106,7 @@
 				<?php echo $this->Html->link(__('New Purchase Request'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
 				<?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
 				<?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Purchase Orders'), array('controller' => 'purchase_orders', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New Purchase Order'), array('controller' => 'purchase_orders', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Tr Requests'), array('controller' => 'tr_requests', 'action' => 'index'),array('class'=>'list-group-item')); ?>
-				<?php echo $this -> Html -> link(__('New Tr Request'), array('controller' => 'tr_requests', 'action' => 'add'),array('class'=>'list-group-item')); ?>
+				
 			</div>
 		</div>
 		<!-- actions block start -->

@@ -14,14 +14,16 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert name input here -->
+							<?php echo $this->Form->input('name',array('label'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="col-md-3">
-							Unit
+							Unit Satuan
 						</div>
 						<div class="col-md-9">
 							<!-- insert unit input here -->
+							<?php echo $this->Form->input('unit_id',array('label'=>FALSE,'class'=>'unit','empty'=>'please select one')); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -30,6 +32,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert warehouse input here -->
+							<?php echo $this->Form->input('warehouse_id',array('label'=>FALSE,'empty'=>'please select one')); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -38,6 +41,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert status input here -->
+							<?php echo $this->Form->input('status',array('value'=>array('in stock','out of stock'),'empty'=>'please choose one','label'=>FALSE)); ?>
 						</div>
 					</div>
 					<div class="form-row">
@@ -46,17 +50,46 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert qty input here -->
+							<?php echo $this->Form->input('qty',array('label'=>FALSE)); ?>
 						</div>
 					</div>
-				<!--
-				<?php
-					echo $this->Form->input('name');
-					echo $this->Form->input('unit_id');
-					echo $this->Form->input('warehouse_id');
-					echo $this->Form->input('status');
-					echo $this->Form->input('qty');
-				?>
-				-->
+				
+				
+				<div class="header">
+					<h2>Big Units</h2>
+				</div>
+				<div class="content item-table" data-items="" data-total="">
+				<div class="content">
+					<table cellpadding = "0" cellspacing = "0" class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Unit Name</th>
+								<th>Setara dengan</th>
+								<th>Unit Satuan</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							<tr class="item">
+								<td><?php echo $this->Form->input('BigUnit.0.name',array('label'=>FALSE)); ?></td>
+								<td><?php echo $this->Form->input('BigUnit.0.equivalent',array('label'=>FALSE)); ?> </td>
+								<td><span class="unitLabel">unit satuan</span></td>
+								
+							</tr> 
+							
+						</tbody>						
+					</table>
+				</div>
+				<div class="footer">
+					<button type="button" class="btn more btn-info right">
+						add more item
+					</button>
+					<button type="button" class="btn less btn-warning right">
+						less item
+					</button>
+				</div>
+			</div>
+				
 				</div>
 				<div class="footer">
 					<?php echo $this->Form->end(__('Submit')); ?>

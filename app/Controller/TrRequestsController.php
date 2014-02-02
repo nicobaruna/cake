@@ -103,11 +103,22 @@ class TrRequestsController extends AppController {
 		if (!$this->TrRequest->exists()) {
 			throw new NotFoundException(__('Invalid tr request'));
 		}
-		$this->request->onlyAllow('post', 'delete');
+		//$this->request->onlyAllow('post', 'delete');
+		//$this->request->onlyAllow('post', 'delete','index');
 		if ($this->TrRequest->delete()) {
-			$this->Session->setFlash(__('The tr request has been deleted.'));
+			$this->Session->setFlash(__('The big unit has been deleted.'));
+			$message = array(
+				'message' => 1
+			);
 		} else {
-			$this->Session->setFlash(__('The tr request could not be deleted. Please, try again.'));
+			$message = array(
+				'message' => 0
+			);
+			$this->Session->setFlash(__('The big unit could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+		
+		$this->set(array(
+			'message' => $message,
+			'_serialize' => array('message')
+		));
 	}}

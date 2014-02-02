@@ -54,7 +54,7 @@
 				
 				<td class="actions">
 					<?php echo $this->Html->link(__('View'), array('action' => 'view', $grNote['GrNote']['id']),array('class'=>'btn btn-default')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $grNote['GrNote']['id']),array('class'=>'btn btn-info')); ?>
+					
 					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $grNote['GrNote']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $grNote['GrNote']['id'])); ?>
 				</td>
 			</tr>
@@ -80,6 +80,20 @@
 
 
 	<div class="col-md-3">
+		<!-- search block start -->
+		<div class="search block">
+			<div class="header">
+				<h2>Search</h2>
+			</div>
+			<div class="content">
+				<?php
+					echo $this->element('search', array(
+				    "model" => 'PurchaseRequest', 
+					));
+				?>
+			</div>
+		</div>
+		<!-- search block end -->
 		<div class="actions block">
 			<div class="header">
 				<h2><?php echo __('Actions'); ?></h2>

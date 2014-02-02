@@ -143,6 +143,19 @@ class User extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
+		'StockEditHistory' => array(
+			'className' => 'StockEditHistory',
+			'foreignKey' => 'user_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'PurchaseOrder' => array(
 			'className' => 'PurchaseOrder',
 			'foreignKey' => 'user_id',

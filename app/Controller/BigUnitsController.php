@@ -32,12 +32,18 @@ class BigUnitsController extends AppController {
  * @param string $id
  * @return void
  */
-	public function view($id = null) {
-		if (!$this->BigUnit->exists($id)) {
+	public function view($id = null,$count,$model,$default = 0) {
+		$this->layout = 'blank';
+		if (!$this->BigUnit->Stock->exists($id)) {
 			throw new NotFoundException(__('Invalid big unit'));
 		}
-		$options = array('conditions' => array('BigUnit.' . $this->BigUnit->primaryKey => $id));
-		$this->set('bigUnit', $this->BigUnit->find('first', $options));
+		$options = array('conditions' => array('BigUnit.stock_id' => $id),'fields'=>array('id','name'));
+		$this->set(array(
+			'bigUnit'=> $this->BigUnit->find('list', $options),
+			'count' => $count,
+			'model' => $model,
+			'default' => $default
+		));
 	}
 
 /**
@@ -94,14 +100,25 @@ class BigUnitsController extends AppController {
  */
 	public function delete($id = null) {
 		$this->BigUnit->id = $id;
+		
 		if (!$this->BigUnit->exists()) {
 			throw new NotFoundException(__('Invalid big unit'));
 		}
-		$this->request->onlyAllow('post', 'delete');
+		//$this->request->onlyAllow('post', 'delete','index');
 		if ($this->BigUnit->delete()) {
 			$this->Session->setFlash(__('The big unit has been deleted.'));
+			$message = array(
+				'message' => 1
+			);
 		} else {
+			$message = array(
+				'message' => 0
+			);
 			$this->Session->setFlash(__('The big unit could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+		
+		$this->set(array(
+			'message' => $message,
+			'_serialize' => array('message')
+		));
 	}}

@@ -44,6 +44,7 @@ class FixedPurchaseOrdersController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->FixedPurchaseOrder->recursive = 2;
 		if (!$this->FixedPurchaseOrder->exists($id)) {
 			throw new NotFoundException(__('Invalid fixed purchase order'));
 		}
@@ -61,7 +62,7 @@ class FixedPurchaseOrdersController extends AppController {
 			$this->FixedPurchaseOrder->create();
 			if ($this->FixedPurchaseOrder->save($this->request->data)) {
 				$this->Session->setFlash(__('The fixed purchase order has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'getAll'));
 			} else {
 				$this->Session->setFlash(__('The fixed purchase order could not be saved. Please, try again.'));
 			}
@@ -85,7 +86,7 @@ class FixedPurchaseOrdersController extends AppController {
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->FixedPurchaseOrder->save($this->request->data)) {
 				$this->Session->setFlash(__('The fixed purchase order has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'getAll'));
 			} else {
 				$this->Session->setFlash(__('The fixed purchase order could not be saved. Please, try again.'));
 			}
@@ -116,5 +117,5 @@ class FixedPurchaseOrdersController extends AppController {
 		} else {
 			$this->Session->setFlash(__('The fixed purchase order could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+		return $this->redirect(array('action' => 'getAll'));
 	}}

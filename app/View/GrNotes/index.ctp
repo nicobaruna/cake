@@ -3,36 +3,34 @@
 	<div class="grNotes-detail col-md-9">
 		<div class="block">
 			<div class="header">
-				<h2><?php echo __('Gr Notes'); ?></h2>
+				<h2><?php echo __('Unconfirm Gr Notes'); ?></h2>
 			</div>
 			<div class="content">
-
+			<?php if(!empty($grNotes)) { ?>
 				<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 				<tr>
-						<th><?php echo $this->Paginator->sort('id'); ?></th>
+						
 						<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
-						<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+					
 						<th><?php echo $this->Paginator->sort('date'); ?></th>
 						<th><?php echo $this->Paginator->sort('note'); ?></th>
 						<th><?php echo $this->Paginator->sort('jangka_pembayaran'); ?></th>
-						<th><?php echo $this->Paginator->sort('received_by'); ?></th>
+
 						<th><?php echo $this->Paginator->sort('status'); ?></th>
-						<th><?php echo $this->Paginator->sort('discount'); ?></th>
+						
 						<th class="actions"><?php echo __('Actions'); ?></th>
 				</tr>
 				<?php foreach ($grNotes as $grNote): ?>
 				<tr>
-					<td><?php echo h($grNote['PurchaseOrder']['id']); ?>&nbsp;</td>
+					
 					<td><?php echo h($grNote['PurchaseOrder']['supplier_id']); ?>&nbsp;</td>
-					<td>
-						<?php echo $this->Html->link($grNote['User']['id'], array('controller' => 'users', 'action' => 'view', $grNote['User']['id'])); ?>
-					</td>
+					
 					<td><?php echo h($grNote['PurchaseOrder']['date']); ?>&nbsp;</td>
 					<td><?php echo h($grNote['PurchaseOrder']['note']); ?>&nbsp;</td>
 					<td><?php echo h($grNote['PurchaseOrder']['jangka_pembayaran']); ?>&nbsp;</td>
-					<td><?php echo h($grNote['PurchaseOrder']['confirm_by']); ?>&nbsp;</td>
+					
 					<td><?php echo h($grNote['PurchaseOrder']['status']); ?>&nbsp;</td>
-					<td><?php echo h($grNote['PurchaseOrder']['discount']); ?>&nbsp;</td>
+
 					<td class="actions">
 						<?php echo $this->Html->link(__('Confirm'), array('action' => 'preview','GrNote','PurchaseOrder', $grNote['PurchaseOrder']['id']),array('class'=>'btn btn-success')); ?>
 						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $grNote['PurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
@@ -54,7 +52,14 @@
 					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled btn btn-default'));
 				?>
 				</div>
-
+				<?php } else { ?>
+						<div class="alert alert-warning">
+						 	 There's no unconfirm GR Notes , <?php echo $this->Html->link(__('View All GR Notes'),array('action'=>'getAll'),array('class'=>'btn btn-success')) ?>
+							<button type="button" class="close" data-dismiss="alert">
+								×
+							</button>
+						</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>

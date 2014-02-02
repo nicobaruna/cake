@@ -1,5 +1,5 @@
 <!-- navigation -->
-			<div class=row>
+			<div class="row" id="navigation">
     <div class=col-md-12>
       <nav class="navbar brb" role=navigation>
         <div class=navbar-header>
@@ -19,6 +19,7 @@
             <li class=dropdown> <a href=# class=dropdown-toggle data-toggle=dropdown><span class=icon-pencil></span> Warehousing Setting</a>
               <ul class=dropdown-menu>
                 <li><a href="<?php echo $this->request->base; ?>/stocks/">Stocks</a></li>
+                <li><a href="<?php echo $this->request->base; ?>/suppliers/">Supplier</a></li>
                 <li><a href="<?php echo $this->request->base; ?>/warehouses/">Warhouses</a></li>
                  <li><a href="<?php echo $this->request->base; ?>/Units/">Units</a></li>
               </ul>

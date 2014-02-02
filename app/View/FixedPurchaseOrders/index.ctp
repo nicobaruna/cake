@@ -7,6 +7,7 @@
 				<h2><?php echo __('Fixed Purchase Orders'); ?></h2>
 			</div>
 			<div class="content">
+				<?php if(!empty($fixedPurchaseOrders)) { ?>
 				<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 				<tr>
 						<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -54,6 +55,14 @@
 					echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled btn btn-default'));
 				?>
 				</div>
+				<?php } else { ?>
+					<div class="alert alert-warning">
+						 	 There's no unconfirm Fixed Purchase Orders , <?php echo $this->Html->link(__('View Fixed Purchase Orders'),array('action'=>'getAll'),array('class'=>'btn btn-success')) ?>
+							<button type="button" class="close" data-dismiss="alert">
+								×
+							</button>
+						</div>
+				<?php } ?>
 			</div>
 
 		</div>
