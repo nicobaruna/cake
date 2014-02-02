@@ -49,6 +49,7 @@ App::uses('Debugger', 'Utility');
 		<script type=text/javascript src=js/plugins/datatables/jquery.dataTables.min.js></script>
 		<script type=text/javascript src=js/plugins/validationengine/languages/jquery.validationEngine-en.js></script>
 		<script type=text/javascript src=js/plugins/validationengine/jquery.validationEngine.js></script>
+		<script type=text/javascript src=js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js></script>
 		<script>
 			var base = "<?php echo $this->base; ?>";
 			var model = "<?php echo  Inflector::classify( $this->params['controller']); ?>";

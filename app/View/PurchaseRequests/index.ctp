@@ -97,19 +97,7 @@
 			</div>
 		</div>
 		<!-- search block end -->
-		<!-- actions block start -->
-		<div class="actions block">
-			<div class="header">
-				<h3><?php echo __('Actions'); ?></h3>
-			</div>
-			<div class="content list-group">
-				<?php echo $this->Html->link(__('New Purchase Request'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
-				<?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				
-			</div>
-		</div>
-		<!-- actions block start -->
+		
 	
 </div>
 

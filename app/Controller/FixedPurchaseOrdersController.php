@@ -28,12 +28,23 @@ class FixedPurchaseOrdersController extends AppController {
  */
 	public function index() {
 		$this->FixedPurchaseOrder->recursive = 1;
-		$this->set('fixedPurchaseOrders', $this->Paginator->paginate('GrNote',array('GrNote.status'=>'draft')));
+		$FixedPurchaseOrders = $this->Paginator->paginate('GrNote',array(
+			'GrNote.status' => 'draft',
+		));
+		if ($this->request->is('post')) {
+			$FixedPurchaseOrders = $this->findRequest($this->request->data,'GrNote');
+		}
+		$this->set('fixedPurchaseOrders', $FixedPurchaseOrders);
+		return $FixedPurchaseOrders;
 	}
 	
 	public function getAll() {
 		$this->FixedPurchaseOrder->recursive = 0;
-		$this->set('fixedPurchaseOrders', $this->Paginator->paginate());
+		$FixedPurchaseOrder = $this->Paginator->paginate();
+		if ($this->request->is('post')) {
+			$FixedPurchaseOrders = $this->find($this->request->data);
+		}
+		$this->set('fixedPurchaseOrders', $FixedPurchaseOrder);
 	}
 
 /**

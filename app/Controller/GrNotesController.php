@@ -22,14 +22,22 @@ class GrNotesController extends AppController {
  */
 	public function index() {
 		$this->GrNote->recursive = 0;
-		$grnotes = $this->Paginator->paginate('PurchaseOrder',array('PurchaseOrder.status'=>'draft'));
-		$this->set('grNotes', $grnotes);
-		return $grnotes;
+		$GrNotes = $this->Paginator->paginate('PurchaseOrder',array(
+			'PurchaseOrder.status' => 'draft',
+		));
+		if ($this->request->is('post')) {
+			$GrNotes = $this->findRequest($this->request->data,'PurchaseOrder');
+		}
+		$this->set('GrNotes',$GrNotes );
+		return $GrNotes;
 	}
 	
 	public function getAll() {
-		$this->PurchaseOrder->recursive = 0;
-		$this->set('grNotes', $this->Paginator->paginate());
+		$GrNotes = $this->Paginator->paginate();
+		if ($this->request->is('post')) {
+			$GrNotes = $this->find($this->request->data);
+		}
+		$this->set('GrNotes',$GrNotes );
 	}
 	
 	public function beforeFilter(){
@@ -122,6 +130,8 @@ class GrNotesController extends AppController {
 		}else{
 			echo "error tuh"; 
 		}
+		
+		//save to warehouse histories
 		//var_dump($records); exit;
 	}
 

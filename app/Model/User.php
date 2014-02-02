@@ -130,6 +130,32 @@ class User extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
+		'From' => array(
+			'className' => 'Message',
+			'foreignKey' => 'from',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'To' => array(
+			'className' => 'Message',
+			'foreignKey' => 'to',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
 		'PurchaseRequest' => array(
 			'className' => 'PurchaseRequest',
 			'foreignKey' => 'user_id',

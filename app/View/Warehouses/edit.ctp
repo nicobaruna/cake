@@ -12,23 +12,24 @@
 					</div>
 					<div class="col-md-6">
 						<!-- insert name input here -->
+						<?php echo $this->Form->input('name',array('label'=>FALSE)); ?>
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="col-md-3">
-						Type
+						Keterangan
 					</div>
 					<div class="col-md-6">
 						<!-- insert type input here -->
+						<?php echo $this->Form->input('type',array('label'=>FALSE)); ?>
 					</div>
 				</div>
-				<!--	
+					
 				<?php
 					echo $this->Form->input('id');
-					echo $this->Form->input('name');
-					echo $this->Form->input('type');
+					
 				?>
-				-->
+			
 			</div>
 			<div class="footer">
 				<?php echo $this->Form->end(__('Submit')); ?>

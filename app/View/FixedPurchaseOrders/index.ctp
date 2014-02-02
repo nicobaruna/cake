@@ -4,7 +4,7 @@
 		<div class="fixedPurchaseOrders-detail block">
 
 			<div class="header">
-				<h2><?php echo __('Fixed Purchase Orders'); ?></h2>
+				<h2><?php echo __('Unconfirm Fixed Purchase Orders'); ?></h2>
 			</div>
 			<div class="content">
 				<?php if(!empty($fixedPurchaseOrders)) { ?>
@@ -27,7 +27,7 @@
 						<?php echo $this->Html->link($fixedPurchaseOrder['Supplier']['name'], array('controller' => 'suppliers', 'action' => 'view', $fixedPurchaseOrder['Supplier']['id'])); ?>
 					</td>
 					<td>
-						<?php echo $this->Html->link($fixedPurchaseOrder['User']['id'], array('controller' => 'users', 'action' => 'view', $fixedPurchaseOrder['User']['id'])); ?>
+						<?php echo $this->Html->link($fixedPurchaseOrder['User']['username'], array('controller' => 'users', 'action' => 'view', $fixedPurchaseOrder['User']['id'])); ?>
 					</td>
 					<td><?php echo h($fixedPurchaseOrder['GrNote']['date']); ?>&nbsp;</td>
 					<td><?php echo h($fixedPurchaseOrder['GrNote']['note']); ?>&nbsp;</td>
@@ -70,17 +70,29 @@
 
 
 	<div class="col-md-3">
+		<!-- search block start -->
+		<div class="search block">
+			<div class="header">
+				<h2>Search</h2>
+			</div>
+			<div class="content">
+				<?php
+					echo $this->element('search_request', array(
+				    "model" => 'PurchaseRequest', 
+					));
+				?>
+			</div>
+		</div>
+		<!-- search block end -->
 		<!-- actions block start -->
 		<div class="actions block">
 			<div class="header">
 				<h2><?php echo __('Actions'); ?></h2>
 			</div>
 			<div class="content list-group">
-				<?php echo $this->Html->link(__('New Fixed Purchase Order'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
+				
 				<?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				 
 			</div>
 		</div>
 		<!-- actions block end -->

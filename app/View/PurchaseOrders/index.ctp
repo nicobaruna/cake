@@ -77,7 +77,7 @@
 				</div>
 				<div class="content">
 					<?php
-						echo $this->element('search', array(
+						echo $this->element('search_request', array(
 					    "model" => 'PurchaseOrder', 
 						));
 					?>

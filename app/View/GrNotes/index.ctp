@@ -65,17 +65,29 @@
 	</div>
 
 	<div class="col-md-3">
+		<!-- search block start -->
+		<div class="search block">
+			<div class="header">
+				<h2>Search</h2>
+			</div>
+			<div class="content">
+				<?php
+					echo $this->element('search_request', array(
+				    "model" => 'PurchaseRequest', 
+					));
+				?>
+			</div>
+		</div>
+		<!-- search block end -->
 		<!-- actions block start -->
 		<div class="actions block">
 			<div class="header">
 				<h3><?php echo __('Actions'); ?></h3>
 			</div>
 			<div class="content list-group">
-				<?php echo $this->Html->link(__('New Gr Note'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
-				<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Tr Requests'), array('controller' => 'tr_requests', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New Tr Request'), array('controller' => 'tr_requests', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				
+				<?php echo $this->Html->link(__('List GrNotes'), array('action' => 'getAll'),array('class'=>'list-group-item')); ?> 
+				
 			</div>
 		</div>
 		<!-- actions block end -->

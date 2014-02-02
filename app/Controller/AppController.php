@@ -58,7 +58,7 @@ class AppController extends Controller {
 	}
 
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view');
+        //$this->Auth->allow('index', 'view');
 		$this->loadModel('Aro');
 		
 		//$this->initAcl();
@@ -68,15 +68,36 @@ class AppController extends Controller {
 	public function find($data) {
 
 		$model = $this->modelClass;
-        $this->Paginator->settings['conditions'] = array(
-        'AND' => array(
+		$conditions = array(
         	'Supplier.name LIKE' =>'%'.$data[$model]['supplier'].'%',
-        	$model.'.jangka_pembayaran LIKE' =>'%'.$data[$model]['jangka_pembayaran'].'%',
+        	$prevModel.'.jangka_pembayaran LIKE' =>'%'.$data[$model]['jangka_pembayaran'].'%',
         	$model.'.status LIKE' =>'%'.$data[$model]['status'].'%',
-        	$model.'.date  BETWEEN ? AND ?' =>  array( $data[$model]['date_from'], $data[$model]['date_to']), 
-        	)
+        	
+        	);
+		if(!empty($data[$model]['date_from']) && !empty($data[$model]['date_from'])){
+			$conditions[$model.'.date  BETWEEN ? AND ?'] =  array( $data[$model]['date_from'], $data[$model]['date_to']);
+		}
+        $this->Paginator->settings['conditions'] = array(
+        	'AND' => $conditions
 		);
         return $this->Paginator->paginate();
+    }
+	
+	public function findRequest($data,$prevModel) {
+		$model = $this->modelClass;
+		$conditions = array(
+        	'Supplier.name LIKE' =>'%'.$data[$model]['supplier'].'%',
+        	$prevModel.'.jangka_pembayaran LIKE' =>'%'.$data[$model]['jangka_pembayaran'].'%',
+        	'User.username LIKE' =>'%'.$data[$model]['username'].'%',
+        	
+        	);
+		if(!empty($data[$model]['date_from']) && !empty($data[$model]['date_from'])){
+			$conditions[$prevModel.'.date  BETWEEN ? AND ?'] =  array( $data[$model]['date_from'], $data[$model]['date_to']);
+		}
+        $this->Paginator->settings['conditions'] = array(
+        	'AND' => $conditions
+		);
+        return $this->Paginator->paginate($prevModel);
     }
 	
 	public function preview($modelTo,$modelFrom,$id = null) {

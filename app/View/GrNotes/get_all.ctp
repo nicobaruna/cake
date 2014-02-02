@@ -22,7 +22,7 @@
 		</tr>
 		</thead>
 		<tbody>
-			<?php foreach ($grNotes as $grNote): ?>
+			<?php foreach ($GrNotes as $grNote): ?>
 			<tr>
 				<td><?php echo h($grNote['GrNote']['id']); ?>&nbsp;</td>
 				<td>
@@ -99,15 +99,9 @@
 				<h2><?php echo __('Actions'); ?></h2>
 			</div>
 			<div class="content list-group">
-				<?php echo $this->Html->link(__('New Purchase order'), array('action' => 'add'),array('class'=>'list-group-item')); ?>
-				<?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New Supplier'), array('controller' => 'suppliers', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Purchase Orders'), array('controller' => 'purchase_orders', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('New Purchase Order'), array('controller' => 'purchase_orders', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this->Html->link(__('List Tr Requests'), array('controller' => 'tr_requests', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
-				<?php echo $this -> Html -> link(__('New Tr Request'), array('controller' => 'tr_requests', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
+				
+				<?php echo $this->Html->link(__('Unconfirm GrNote'), array('action' => 'index'),array('class'=>'list-group-item')); ?> 
+				 
 			</div>
 		</div>
 	</div>

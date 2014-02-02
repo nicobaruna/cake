@@ -7,31 +7,20 @@
 					<h2><?php echo __('Gr Note'); ?></h2>
 				</div>
 				<div class="content">
-					<div class="form-row">
-						<div class="col-md-3"><?php echo __('Id'); ?></div>
-						<div class="col-md-9">
-							<?php echo h($grNote['GrNote']['id']); ?>
-							&nbsp;
-						</div>
-					</div>
+					
 					<div class="form-row">
 						<div class="col-md-3"><?php echo __('Supplier Id'); ?></div>
 						<div class="col-md-9">
-							<?php echo h($grNote['GrNote']['supplier_id']); ?>
+							
+							<?php echo $this->Html->link($grNote['Supplier']['name'],array('controller'=>'suppliers','action'=>'view',$grNote['Supplier']['id']),array('class'=>'btn btn-success'))?>
 							&nbsp;
 						</div>
 					</div>
-					<div class="form-row">
-						<div class="col-md-3"><?php echo __('User'); ?></div>
-						<div class="col-md-9">
-							<?php echo $this->Html->link($grNote['User']['id'], array('controller' => 'users', 'action' => 'view', $grNote['User']['id'])); ?>
-							&nbsp;
-						</div>
-					</div>
+					
 					<div class="form-row">
 						<div class="col-md-3"><?php echo __('Date'); ?></div>
 						<div class="col-md-9">
-							<?php echo h($grNote['GrNote']['date']); ?>
+							<?php echo h(date('d M Y',strtotime($grNote['GrNote']['date']))); ?>
 							&nbsp;
 						</div>
 					</div>
@@ -45,7 +34,7 @@
 					<div class="form-row">
 						<div class="col-md-3"><?php echo __('Fixed Purchase Order Id'); ?></div>
 						<div class="col-md-9">
-							<?php echo h($grNote['GrNote']['fixed_purchase_order_id']); ?>
+							<?php echo $this->Html->link('Click to view Fix purchase ID',array('controller'=>'fixedpurchaseorders','action'=>'view',$grNote['FixedPurchaseOrder']['id']),array('class'=>'btn btn-success'))?>
 							&nbsp;
 						</div>
 					</div>
@@ -134,16 +123,39 @@
 					</td> -->
 					</tr>
 				<?php
-					 $total = $total + ($trRequest['harga'] * $trRequest['qty']);
+					 $subtotal = $total + ($trRequest['harga'] * $trRequest['qty']);
 					 endforeach; 
 				?>
 				<?php
-								$discount = $total * ($grNote['GrNote']['discount'] / 100);
-								$total = $total - $discount;
+								$discount = $subtotal * ($grNote['GrNote']['discount'] / 100);
+								$total = $subtotal - $discount;
+								$ppn = $total * (10/100);
+								$grandTotal = $ppn + $total;
 							 ?>
+							 <tr>
+								<td colspan="3">Sub Total</td>
+								<td>Rp. <?php echo $subtotal; ?></td>
+								<!--<td></td> -->
+							</tr>
+							<tr>
+								<td colspan="3">Discount</td>
+								<td>Rp. <?php echo $discount; ?></td>
+								<!--<td></td> -->
+							</tr>
 							<tr>
 								<td colspan="3">Total dengan discount</td>
 								<td>Rp. <?php echo $total; ?></td>
+								<!--<td></td> -->
+							</tr>
+							<tr>
+								<td colspan="3">PPN</td>
+								<td>Rp. <?php echo $ppn; ?></td>
+								<!--<td></td> -->
+							</tr>
+							
+							<tr>
+								<td colspan="3">Grand Total</td>
+								<td>Rp. <?php echo $grandTotal; ?></td>
 								<!--<td></td> -->
 							</tr>
 				</table>

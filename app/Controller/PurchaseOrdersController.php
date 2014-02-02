@@ -32,9 +32,10 @@ class PurchaseOrdersController extends AppController {
 			'PurchaseRequest.status' => 'draft',
 		));
 		if ($this->request->is('post')) {
-			$purchaseOrders = $this->find($this->request->data);
+			$purchaseOrders = $this->findRequest($this->request->data,'PurchaseRequest');
 		}
 		$this->set('purchaseOrders',$purchaseOrders );
+		return $purchaseOrders;
 	}
 	
 	public function getAll() {

@@ -3,6 +3,8 @@ $(document).ready(function(){
 	countItem();
 	deleteList();
 	changeUnitLabel();
+	addNewMessage();
+	loadMessage();
 	populateBigUnit();
 });
 
@@ -106,6 +108,39 @@ function moreAndLessItem() {
 
 }
 
+
+function addNewMessage(){
+	var query = base+'/messages/add';
+	console.log(query);
+	$('form#newMessage').on('submit',function(e){
+		e.preventDefault();
+		$.ajax({
+			url : query,
+			data : $(this).serialize(),
+			method : 'post',
+		}).done(function(){
+			$('form#newMessage').prepend('<div class="alert alert-success"><b>Success!</b><button type="button" class="close" data-dismiss="alert">×</button></div>');
+		});
+	});
+}
+
+//populate message
+function populateMessage(){
+	
+}
+
+//load message
+function loadMessage(){
+	$('.email-list-item').click(function(){
+		$('.list-active').removeClass('list-active');
+		$(this).addClass('list-active');
+		$(this).find('.unread').remove();
+		var msgId = $(this).data('id');
+		$.get(base+'/messages/view/'+msgId,function(data){
+			$('#messageBody').html('').append(data);
+		});
+	});
+}
 
 
 //populate bigUnits

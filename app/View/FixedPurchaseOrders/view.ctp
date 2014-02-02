@@ -116,16 +116,39 @@
 					</td> -->
 					</tr>
 				<?php
-					 $total = $total + ($trRequest['harga'] * $trRequest['qty']);
+					 $subtotal = $total + ($trRequest['harga'] * $trRequest['qty']);
 					 endforeach; 
 				?>
 				<?php
-								$discount = $total * ($fixedPurchaseOrder['FixedPurchaseOrder']['discount'] / 100);
-								$total = $total - $discount;
+								$discount = $subtotal * ($fixedPurchaseOrder['FixedPurchaseOrder']['discount'] / 100);
+								$total = $subtotal - $discount;
+								$ppn = $total * (10/100);
+								$grandTotal = $ppn + $total;
 							 ?>
+							 <tr>
+								<td colspan="3">Sub Total</td>
+								<td>Rp. <?php echo $subtotal; ?></td>
+								<!--<td></td> -->
+							</tr>
+							<tr>
+								<td colspan="3">Discount</td>
+								<td>Rp. <?php echo $discount; ?></td>
+								<!--<td></td> -->
+							</tr>
 							<tr>
 								<td colspan="3">Total dengan discount</td>
 								<td>Rp. <?php echo $total; ?></td>
+								<!--<td></td> -->
+							</tr>
+							<tr>
+								<td colspan="3">PPN</td>
+								<td>Rp. <?php echo $ppn; ?></td>
+								<!--<td></td> -->
+							</tr>
+							
+							<tr>
+								<td colspan="3">Grand Total</td>
+								<td>Rp. <?php echo $grandTotal; ?></td>
 								<!--<td></td> -->
 							</tr>
 				</table>

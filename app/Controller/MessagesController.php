@@ -21,10 +21,33 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Message->recursive = 0;
-		$this->set('messages', $this->Paginator->paginate());
+		$this->Message->recursive = 2;
+		 $this->Paginator->settings['conditions'] = array(
+        'AND' => array(
+        	'to' =>$this->Session->read('Auth.User.id'),
+        	
+        	)
+		);
+		$this->set(array('messages'=>$this->Paginator->paginate(),'tos'=>$this->Message->To->find('list',array('fields'=>array('id','username')))));
 	}
-
+	
+	public function getMyMessages(){
+		$id = $this->Session->read('Auth.User.id');
+		//get records
+		$messages = $this->Message->find('all',array(
+			'conditions'=>array(
+				'to'=>$id,
+				'status' => NULL
+			)
+		));
+		
+		$this->set(array(
+			'messages' => $messages,
+			'_serialize' => array('messages')
+		));
+		
+		return $messages;
+	}
 /**
  * view method
  *
@@ -33,9 +56,16 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout = 'blank';
 		if (!$this->Message->exists($id)) {
 			throw new NotFoundException(__('Invalid message'));
 		}
+		//update
+		$data = array('Message'=>array(
+			'id' => $id,
+			'status' => 1,
+		));
+		$this->Message->save($data);
 		$options = array('conditions' => array('Message.' . $this->Message->primaryKey => $id));
 		$this->set('message', $this->Message->find('first', $options));
 	}
@@ -46,18 +76,23 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function add() {
-		if ($this->request->is('post')) {
+	
+		if ($this->request->is('post') || $this->request->is('ajax')) {
 			$this->Message->create();
+			var_dump($this->request->data);
 			if ($this->Message->save($this->request->data)) {
 				$this->Session->setFlash(__('The message has been saved.'));
+				echo "success";
 				return $this->redirect(array('action' => 'index'));
 			} else {
+				
 				$this->Session->setFlash(__('The message could not be saved. Please, try again.'));
 			}
 		}
-		$froms = $this->Message->From->find('list');
+		/*$froms = $this->Message->From->find('list');
 		$tos = $this->Message->To->find('list');
-		$this->set(compact('froms', 'tos'));
+		
+		$this->set(compact('froms', 'tos'));*/
 	}
 
 /**
@@ -71,7 +106,7 @@ class MessagesController extends AppController {
 		if (!$this->Message->exists($id)) {
 			throw new NotFoundException(__('Invalid message'));
 		}
-		if ($this->request->is(array('post', 'put'))) {
+		if ($this->request->is(array('post', 'put','ajax'))) {
 			if ($this->Message->save($this->request->data)) {
 				$this->Session->setFlash(__('The message has been saved.'));
 				return $this->redirect(array('action' => 'index'));

@@ -9,14 +9,7 @@
 				
 				<div class="content controls">
 					
-					<div class=form-row>
-						<div class=col-md-3>
-							<?php echo __('User'); ?>
-						</div>
-						<div class=col-md-9>
-							<?php echo $this->Html->link($purchaseOrder['User']['username'], array('controller' => 'users', 'action' => 'view', $purchaseOrder['User']['id']),array('class'=>'btn btn-default')); ?>
-						</div>
-					</div>
+					
 					
 					<div class=form-row>
 						<div class=col-md-3>
@@ -60,7 +53,7 @@
 							<?php echo __('confirm by'); ?>
 						</div>
 						<div class=col-md-9>
-							<?php echo h($purchaseOrder['PurchaseOrder']['confirm_by']); ?>
+							<?php echo $this->Html->link($purchaseOrder['User']['username'], array('controller' => 'users', 'action' => 'view', $purchaseOrder['PurchaseOrder']['confirm_by']),array('class'=>'btn btn-default')); ?>
 						</div>
 					</div>
 					
@@ -80,7 +73,7 @@
 							<?php echo __('Gr Note Id'); ?>
 						</div>
 						<div class=col-md-9>
-							<?php echo h($purchaseOrder['PurchaseOrder']['gr_note_id']); ?>
+							<?php echo $this->Html->link('Click to view Gr Notes',array('controller'=>'grnotes','action'=>'view',$purchaseOrder['PurchaseOrder']['gr_note_id']),array('class'=>'btn btn-success'))?>
 						</div>
 					</div>
 					
@@ -100,7 +93,7 @@
 				<div class="content list-group">
 					<?php echo $this->Html->link(__('Edit Purchase Order'), array('action' => 'edit', $purchaseOrder['PurchaseOrder']['id']),array('class'=>'list-group-item')); ?> 
 					<?php echo $this->Form->postLink(__('Delete Purchase Order'), array('action' => 'delete', $purchaseOrder['PurchaseOrder']['id']), array('class'=>'list-group-item'), __('Are you sure you want to delete # %s?', $purchaseOrder['PurchaseOrder']['id'])); ?> 
-					<?php echo $this->Html->link(__('List Purchase Orders'), array('action' => 'index'),array('class'=>'list-group-item')); ?> 
+					<?php echo $this->Html->link(__('List Purchase Orders'), array('action' => 'getAll'),array('class'=>'list-group-item')); ?> 
 					<?php echo $this->Html->link(__('New Purchase Order'), array('action' => 'add'),array('class'=>'list-group-item')); ?> 
 					<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
 					<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
@@ -124,43 +117,61 @@
 					<?php if (!empty($purchaseOrder['TrPo'])): ?>
 					<table cellpadding = "0" cellspacing = "0" class="table table-bordered table-striped table-hover">
 					<tr>
-						<th><?php echo __('Id'); ?></th>
+						
 						
 						<th><?php echo __('Item'); ?></th>
 						<th><?php echo __('Qty'); ?></th>
 						<th><?php echo __('Unit'); ?></th>
 						<th><?php echo __('Harga'); ?></th>
-						<th class="actions"><?php echo __('Actions'); ?></th>
+						
 					</tr>
 					
 					<?php $total = 0; foreach ($purchaseOrder['TrPo'] as $trRequest): ?>
 						<tr>
-							<td><?php echo $trRequest['id']; ?></td>
+							
 							
 							<td><?php echo $trRequest['Stock']['name']; ?></td>
 							<td><?php echo $trRequest['qty']; ?></td>
 							<td><?php echo $trRequest['BigUnit']['name']; ?></td>
 							<td><?php echo $trRequest['harga']; ?></td>
-							<td class="actions">
-								<?php echo $this->Html->link(__('View'), array('controller' => 'tr_requests', 'action' => 'view', $trRequest['id'])); ?>
-								<?php echo $this->Html->link(__('Edit'), array('controller' => 'tr_requests', 'action' => 'edit', $trRequest['id'])); ?>
-								<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tr_requests', 'action' => 'delete', $trRequest['id']), null, __('Are you sure you want to delete # %s?', $trRequest['id'])); ?>
-							</td>
+							
 						</tr>
-						<?php 
-								$diskon = ($trRequest['qty'] * $trRequest['harga'] * ( $purchaseOrder['PurchaseOrder']['discount'] / 100 ));
-								$total = $total + ( $trRequest['qty'] * $trRequest['harga'] - $diskon ) ; 
-						?>
-					<?php endforeach; ?>
-						<tr>
-							<td colspan="4">
-								Total dengan diskon
-							</td>
-							<td>
-								Rp. <?php echo number_format($total);  ?>
-							</td>
-							<td></td>
-						</tr>
+						<?php
+					 $subtotal = $total + ($trRequest['harga'] * $trRequest['qty']);
+					 endforeach; 
+				?>
+				<?php
+								$discount = $subtotal * ($purchaseOrder['PurchaseOrder']['discount'] / 100);
+								$total = $subtotal - $discount;
+								$ppn = $total * (10/100);
+								$grandTotal = $ppn + $total;
+							 ?>
+							 <tr>
+								<td colspan="3">Sub Total</td>
+								<td>Rp. <?php echo $subtotal; ?></td>
+								<!--<td></td> -->
+							</tr>
+							<tr>
+								<td colspan="3">Discount</td>
+								<td>Rp. <?php echo $discount; ?></td>
+								<!--<td></td> -->
+							</tr>
+							<tr>
+								<td colspan="3">Total dengan discount</td>
+								<td>Rp. <?php echo $total; ?></td>
+								<!--<td></td> -->
+							</tr>
+							<tr>
+								<td colspan="3">PPN</td>
+								<td>Rp. <?php echo $ppn; ?></td>
+								<!--<td></td> -->
+							</tr>
+							
+							<tr>
+								<td colspan="3">Grand Total</td>
+								<td>Rp. <?php echo $grandTotal; ?></td>
+								<!--<td></td> -->
+							</tr>
 					</table>
 					<?php endif; ?>
 
