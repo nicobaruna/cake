@@ -65,13 +65,25 @@ class AppController extends Controller {
 		//$this->setPermission();
     }
 	
+	function beforeRender(){
+	    if ($this->Session->check('Message.flash')) {
+	        $flash = $this->Session->read('Message.flash');
+	
+	        if ($flash['element'] == 'default') {
+	            $flash['element'] = 'flash';
+	            $this->Session->write('Message.flash', $flash);
+	        }
+	    }
+	}
+	
 	public function find($data) {
 
 		$model = $this->modelClass;
 		$conditions = array(
         	'Supplier.name LIKE' =>'%'.$data[$model]['supplier'].'%',
-        	$prevModel.'.jangka_pembayaran LIKE' =>'%'.$data[$model]['jangka_pembayaran'].'%',
-        	$model.'.status LIKE' =>'%'.$data[$model]['status'].'%',
+        	$model.'.jangka_pembayaran LIKE' =>'%'.$data[$model]['jangka_pembayaran'].'%',
+        	$model.'.number LIKE' =>'%'.trim($data[$model]['number']).'%',
+        	$model.'.status LIKE' =>'%'.$data[$model]['status'].'%'
         	
         	);
 		if(!empty($data[$model]['date_from']) && !empty($data[$model]['date_from'])){
@@ -87,6 +99,7 @@ class AppController extends Controller {
 		$model = $this->modelClass;
 		$conditions = array(
         	'Supplier.name LIKE' =>'%'.$data[$model]['supplier'].'%',
+        	$prevModel.'.number LIKE' =>'%'.trim($data[$model]['number']).'%',
         	$prevModel.'.jangka_pembayaran LIKE' =>'%'.$data[$model]['jangka_pembayaran'].'%',
         	'User.username LIKE' =>'%'.$data[$model]['username'].'%',
         	
@@ -108,6 +121,8 @@ class AppController extends Controller {
 	
 		$warehouses = NULL;
 		if($this->request->is(array('post', 'put' ))) {
+			$docNumber = $this->request->data[$modelTo]['number'];
+			unset($this->request->data[$modelTo]['number']);
 			//var_dump($this->request->data); exit;
 			
 			if ($this->$modelTo->saveAssociated($this->request->data,array('deep'=>TRUE))) {
@@ -117,11 +132,14 @@ class AppController extends Controller {
 			'status' => 'posted',
 			);
 			//var_dump($dataPR); exit;
+			
 			if($this->$modelFrom->save($dataPR)){
 				$this->Session->setFlash(__('The purchase order has been saved.'));
-				if($modelTo == 'GrNote'){
+				if($modelTo == 'FixedPurchaseOrder'){
 					$this->pushToWareHouse($this->request->data);
 				}
+				
+				$this->Session->setFlash(__('Dokumen '.$modelFrom.' dengan nomor '.$docNumber.' Telah dikonfirmasi untuk selanjutnya diajukan menjadi '.$modelTo));
 				return $this->redirect(array('action' => 'getAll'));
 			}
 			} else {

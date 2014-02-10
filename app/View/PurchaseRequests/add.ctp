@@ -18,7 +18,7 @@
 							
 							<?php
 								echo $this->Form->hidden('user_id',array('value'=>$this->Session->read('Auth.User.id'))); 
-								echo $this->Form->input('supplier_id',array('label'=>FALSE,'empty'=>'Please choose one')); 
+								echo $this->Form->input('supplier_id',array('label'=>FALSE,'div'=>FALSE,'empty'=>'Please choose one','class'=>'select2', 'style'=>'width:100%')); 
 								?>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 					<h2>Items</h2>
 				</div>
 				<!-- items table start -->
-				<div class="content item-table" data-items="">
+				<div class="content item-table" data-items="0" data-model="TrRequest">
 					<div class="content">
 						<table cellpadding = "0" cellspacing = "0" class="table table-bordered table-striped table-hover">
 							<thead>
@@ -128,18 +128,8 @@
 		<!-- actions block end -->
 	</div>
 
-	<div class="hidden">
-		<div id="item" data-indexnumber="1">
-			<div class="item{number} wrapper" > 
-		<?php 
-			echo $this->Form->input('TrRequest.{number}.stock_id',array('label'=>'item','value'=>$stocks,'empty'=>'please choose one'));
-			echo $this->Form->input('TrRequest.{number}.qty',array('label'=>'Qty'));
-			echo $this->Form->input('TrRequest.{number}.big_unit_id',array('label'=>'Unit','value'=>$bigUnits,'empty'=>'please choose one'));
-			echo $this->Form->input('TrRequest.{number}.harga',array('label'=>'Harga'));
-		?>
-		</div>
-		</div>
-	</div>
+	
 
 
 </div>
+

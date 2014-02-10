@@ -14,6 +14,7 @@
 						</div>
 						<div class="col-md-9">
 							<!-- insert supplier ID input here -->
+							<?php echo $this->Form->hidden('number',array('label'=>FALSE)); ?>
 							<?php echo $this->Form->input('supplier_id',array('label'=>FALSE)); ?>
 						</div>
 					</div>
@@ -70,7 +71,7 @@
 				<div class="header">
 					<h2>Items</h2>
 				</div>
-				<div class="content item-table" data-items="" data-total="">
+				<div class="content item-table" data-items="<?php echo count($this->request->data['TrGrnote']) ?>" data-total="<?php echo count($this->request->data['TrGrnote']) ?>">
 					<table class="table table-bordered table-striped table-hover">
 						<thead>
 							<tr>

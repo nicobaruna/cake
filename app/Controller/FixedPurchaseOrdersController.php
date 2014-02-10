@@ -26,23 +26,23 @@ class FixedPurchaseOrdersController extends AppController {
  *
  * @return void
  */
-	public function index() {
+	public function index($request = NULL) {
 		$this->FixedPurchaseOrder->recursive = 1;
 		$FixedPurchaseOrders = $this->Paginator->paginate('GrNote',array(
 			'GrNote.status' => 'draft',
 		));
-		if ($this->request->is('post')) {
+		if ($this->request->is('post') && $request == NULL) {
 			$FixedPurchaseOrders = $this->findRequest($this->request->data,'GrNote');
 		}
 		$this->set('fixedPurchaseOrders', $FixedPurchaseOrders);
 		return $FixedPurchaseOrders;
 	}
 	
-	public function getAll() {
+	public function getAll($request = NULL) {
 		$this->FixedPurchaseOrder->recursive = 0;
 		$FixedPurchaseOrder = $this->Paginator->paginate();
-		if ($this->request->is('post')) {
-			$FixedPurchaseOrders = $this->find($this->request->data);
+		if ($this->request->is('post') && $request == NULL) {
+			$FixedPurchaseOrder = $this->find($this->request->data);
 		}
 		$this->set('fixedPurchaseOrders', $FixedPurchaseOrder);
 	}
@@ -109,6 +109,30 @@ class FixedPurchaseOrdersController extends AppController {
 		$users = $this->FixedPurchaseOrder->User->find('list');
 		$this->set(compact('suppliers', 'users'));
 	}
+	
+	public function pushToWareHouse($data){
+		foreach ($data['TrFixPurchaseOrder'] as $item) {
+			$bigUnit = $this->Stock->BigUnit->find('first',array('conditions'=>array('BigUnit.id'=>$item['big_unit_id'])));
+			var_dump($bigUnit);
+			$records[]['Stock'] = array(
+				'id' => $item['stock_id'],
+				'qty' => $bigUnit['Stock']['qty'] + ($item['qty'] * $bigUnit['BigUnit']['equivalent'])
+			);
+		}
+		
+		//var_dump($records); exit;
+		
+		if($this->Stock->saveMany($records)){
+			$this->Session->setFlash(__('Berhasil'));
+			//exit;
+		}else{
+			echo "error tuh"; 
+		}
+		
+		//save to warehouse histories
+		//var_dump($records); exit;
+	}
+	
 
 /**
  * delete method

@@ -17621,3 +17621,717 @@ Request URL: /cake/fixpurchaseorders/view/9
 Stack Trace:
 #0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-02-06 02:57:01 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cake\app\Model\PurchaseRequest.php, line 103]
+2014-02-06 02:57:01 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/PurchaseRequests/add
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 103, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 103, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 02:58:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'date' in where clause is ambiguous
+Request URL: /cake/PurchaseRequests/add
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseRequest), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('count', Array)
+#6 C:\wamp\www\cake\app\Model\PurchaseRequest.php(103): Model->find('count', Array)
+#7 C:\wamp\www\cake\app\Model\PurchaseRequest.php(117): PurchaseRequest->setNumber()
+#8 [internal function]: PurchaseRequest->beforeSave(Array)
+#9 C:\wamp\www\cake\lib\Cake\Event\CakeEventManager.php(245): call_user_func_array(Array, Array)
+#10 C:\wamp\www\cake\lib\Cake\Model\Model.php(1771): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\cake\lib\Cake\Model\Model.php(2388): Model->save(Array, Array)
+#12 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(65): Model->saveAssociated(Array, Array)
+#13 [internal function]: PurchaseRequestsController->add()
+#14 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#15 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#16 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#17 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2014-02-06 05:07:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Model.php(3471): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\cake\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(3493): Model->setSource('purchase_orders')
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#6 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\cake\app\Controller\GrNotesController.php(27): PaginatorComponent->paginate('PurchaseOrder', Array)
+#9 [internal function]: GrNotesController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#14 C:\wamp\www\cake\app\View\Pages\home.ctp(2): Object->requestAction(Array)
+#15 C:\wamp\www\cake\lib\Cake\View\View.php(929): include('C:\wamp\www\cak...')
+#16 C:\wamp\www\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\wamp\www\cak...', Array)
+#17 C:\wamp\www\cake\lib\Cake\View\View.php(460): View->_render('C:\wamp\www\cak...')
+#18 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render('home', NULL)
+#19 C:\wamp\www\cake\app\Controller\PagesController.php(68): Controller->render('home')
+#20 [internal function]: PagesController->display('home')
+#21 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#22 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#23 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#24 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#25 {main}
+2014-02-07 10:30:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%') AND (`PurchaseOrder`.`status` LIKE '%draft%'))    LIMIT 20' at line 1
+Request URL: /cake/purchase_orders/getAll
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseOrder), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\cake\app\Controller\AppController.php(83): PaginatorComponent->paginate()
+#8 C:\wamp\www\cake\app\Controller\PurchaseOrdersController.php(44): AppController->find(Array)
+#9 [internal function]: PurchaseOrdersController->getAll()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseOrdersController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-02-07 10:31:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%') AND (`PurchaseRequest`.`status` LIKE '%draft%'))    LIMIT 20' at line 1
+Request URL: /cake/purchase_requests
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseRequest), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\cake\app\Controller\AppController.php(83): PaginatorComponent->paginate()
+#8 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(27): AppController->find(Array)
+#9 [internal function]: PurchaseRequestsController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-02-07 10:36:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%') AND (`PurchaseRequest`.`status` LIKE '%posted%'))    LIMIT 20' at line 1
+Request URL: /cake/purchase_requests
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseRequest), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\cake\app\Controller\AppController.php(83): PaginatorComponent->paginate()
+#8 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(27): AppController->find(Array)
+#9 [internal function]: PurchaseRequestsController->index()
+#10 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-02-07 11:56:03 Error: [MissingActionException] Action PurchaseRequestsController::getAll() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseRequestsController',
+  'action' => 'getAll',
+)
+Request URL: /cake/purchase_requests/getAll
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-07 11:56:37 Error: [NotFoundException] Invalid purchase request
+Request URL: /cake/purchase_requests/delete/19
+Stack Trace:
+#0 [internal function]: PurchaseRequestsController->delete('19')
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-07 23:59:49 Error: [MissingActionException] Action PurchaseRequestsController::getAll() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseRequestsController',
+  'action' => 'getAll',
+)
+Request URL: /cake/purchase_requests/getAll
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-08 00:16:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lastInsertId' at line 1
+Request URL: /cake/PurchaseRequests/add
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('lastInsertId', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('lastInsertId', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('lastInsertId', Array, Array)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('lastInsertId', Array, Object(PurchaseRequest))
+#5 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(66): Model->__call('lastInsertId', Array)
+#6 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(66): PurchaseRequest->lastInsertId()
+#7 [internal function]: PurchaseRequestsController->add()
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-08 00:17:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /cake/PurchaseRequests/add
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseRequest), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\app\Controller\PurchaseRequestsController.php(71): Model->find('first', Array)
+#7 [internal function]: PurchaseRequestsController->add()
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseRequestsController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-08 00:21:00 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\wamp\www\cake\app\View\Layouts\default.ctp, line 131]
+2014-02-08 00:21:00 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /cake/PurchaseRequests
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 131)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 131, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 131, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-08 01:50:30 Error: [NotFoundException] Invalid purchase order
+Request URL: /cake/PurchaseOrders/delete/1
+Stack Trace:
+#0 [internal function]: PurchaseOrdersController->delete('1')
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseOrdersController), Array)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-08 01:51:52 Error: [NotFoundException] Invalid purchase order
+Request URL: /cake/PurchaseOrders/delete/1
+Stack Trace:
+#0 [internal function]: PurchaseOrdersController->delete('1')
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseOrdersController), Array)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-08 01:55:43 Error: [NotFoundException] Invalid gr note
+Request URL: /cake/GrNotes/delete/1
+Stack Trace:
+#0 [internal function]: GrNotesController->delete('1')
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-08 02:39:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /cake/PurchaseOrders/preview/PurchaseOrder/PurchaseRequest/28
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseRequest), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\app\Controller\AppController.php(140): Model->find('first', Array)
+#7 [internal function]: AppController->preview('PurchaseOrder', 'PurchaseRequest', '28')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseOrdersController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-08 02:39:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PurchaseRequestid' in 'where clause'
+Request URL: /cake/PurchaseOrders/preview/PurchaseOrder/PurchaseRequest/28
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseRequest), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\app\Controller\AppController.php(140): Model->find('first', Array)
+#7 [internal function]: AppController->preview('PurchaseOrder', 'PurchaseRequest', '28')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PurchaseOrdersController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-08 02:41:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PurchaseOrderid' in 'where clause'
+Request URL: /cake/GrNotes/preview/GrNote/PurchaseOrder/32
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseOrder), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\app\Controller\AppController.php(140): Model->find('first', Array)
+#7 [internal function]: AppController->preview('GrNote', 'PurchaseOrder', '32')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-08 02:41:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PurchaseOrderid' in 'where clause'
+Request URL: /cake/GrNotes/preview/GrNote/PurchaseOrder/32
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Purchas...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Purchas...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `Purchas...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(PurchaseOrder), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\cake\app\Controller\AppController.php(140): Model->find('first', Array)
+#7 [internal function]: AppController->preview('GrNote', 'PurchaseOrder', '32')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GrNotesController), Array)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GrNotesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-08 03:09:18 Error: [MissingActionException] Action PurchaseRequestsController::getAll() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseRequestsController',
+  'action' => 'getAll',
+)
+Request URL: /cake/purchase_requests/getAll
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-08 03:10:18 Error: [MissingActionException] Action PurchaseRequestsController::getAll() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseRequestsController',
+  'action' => 'getAll',
+)
+Request URL: /cake/purchase_requests/getAll
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PurchaseRequestsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-09 00:48:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/js/plugins/jquery/jquery-2.0.3.min.map
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-09 02:55:46 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\cake\lib\Cake\Controller\Controller.php, line 437]
+2014-02-09 02:55:46 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cake/reports/kartuStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 02:57:01 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\cake\lib\Cake\Controller\Controller.php, line 437]
+2014-02-09 02:57:01 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cake/reports/kartuStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 02:58:27 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\cake\lib\Cake\Controller\Controller.php, line 437]
+2014-02-09 02:58:27 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cake/reports/kartuStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 02:58:53 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\cake\lib\Cake\Controller\Controller.php, line 437]
+2014-02-09 02:58:53 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cake/reports/kartuStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 03:03:07 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\cake\lib\Cake\Controller\Controller.php, line 437]
+2014-02-09 03:03:07 Error: [FatalErrorException] Cannot access empty property
+Request URL: /cake/reports/kartuStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\wamp\www\cak...', 437, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 03:11:14 Error: Fatal Error (1): Call to undefined method ReportsController::Warehouse() in [C:\wamp\www\cake\app\Controller\ReportsController.php, line 23]
+2014-02-09 03:11:14 Error: [FatalErrorException] Call to undefined method ReportsController::Warehouse()
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 23, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 23, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 03:24:30 Error: Fatal Error (1): Call to undefined method ReportsController::request() in [C:\wamp\www\cake\app\Controller\ReportsController.php, line 43]
+2014-02-09 03:24:30 Error: [FatalErrorException] Call to undefined method ReportsController::request()
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 43, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 43, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 03:30:41 Error: [MissingControllerException] Controller class SearchesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/searches/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-09 03:31:39 Error: [MissingTableException] Table reports for model Report was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'reports',
+  'class' => 'Report',
+  'ds' => 'default',
+)
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Model.php(3493): Model->setSource('reports')
+#1 C:\wamp\www\cake\lib\Cake\Model\Model.php(1353): Model->getDataSource()
+#2 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\cake\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('Report', 'fields')
+#4 C:\wamp\www\cake\app\View\Reports\list_stock.ctp(10): FormHelper->create('Report', Array)
+#5 C:\wamp\www\cake\lib\Cake\View\View.php(929): include('C:\wamp\www\cak...')
+#6 C:\wamp\www\cake\lib\Cake\View\View.php(891): View->_evaluate('C:\wamp\www\cak...', Array)
+#7 C:\wamp\www\cake\lib\Cake\View\View.php(460): View->_render('C:\wamp\www\cak...')
+#8 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-09 03:32:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.id' in 'where clause'
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `TrFixPu...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `TrFixPu...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `TrFixPu...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(TrFixPurchaseOrder), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\app\Controller\ReportsController.php(28): Model->find('all', Array)
+#7 C:\wamp\www\cake\app\Controller\ReportsController.php(46): ReportsController->listStockFilter(Array)
+#8 [internal function]: ReportsController->listStock()
+#9 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-02-09 03:34:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cake\app\Controller\ReportsController.php, line 25]
+2014-02-09 03:34:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 25, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 25, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 03:35:02 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cake\app\Controller\ReportsController.php, line 24]
+2014-02-09 03:35:02 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 24, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 24, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 03:35:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.id' in 'where clause'
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `TrFixPu...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `TrFixPu...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `TrFixPu...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(TrFixPurchaseOrder), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\app\Controller\ReportsController.php(28): Model->find('all', Array)
+#7 C:\wamp\www\cake\app\Controller\ReportsController.php(46): ReportsController->listStockFilter(Array)
+#8 [internal function]: ReportsController->listStock()
+#9 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-02-09 03:36:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.id' in 'where clause'
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `TrFixPu...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `TrFixPu...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `TrFixPu...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(TrFixPurchaseOrder), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\app\Controller\ReportsController.php(28): Model->find('all', Array)
+#7 C:\wamp\www\cake\app\Controller\ReportsController.php(46): ReportsController->listStockFilter(Array)
+#8 [internal function]: ReportsController->listStock()
+#9 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-02-09 03:37:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Stock.Warehouse.id' in 'where clause'
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `TrFixPu...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `TrFixPu...', Array, Array)
+#3 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `TrFixPu...', false)
+#4 C:\wamp\www\cake\lib\Cake\Model\Model.php(2897): DboSource->read(Object(TrFixPurchaseOrder), Array)
+#5 C:\wamp\www\cake\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\cake\app\Controller\ReportsController.php(28): Model->find('all', Array)
+#7 C:\wamp\www\cake\app\Controller\ReportsController.php(46): ReportsController->listStockFilter(Array)
+#8 [internal function]: ReportsController->listStock()
+#9 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#10 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-02-09 03:45:04 Error: Fatal Error (1): Call to undefined method ReportsController::getDataSource() in [C:\wamp\www\cake\app\Controller\ReportsController.php, line 25]
+2014-02-09 03:45:04 Error: [FatalErrorException] Call to undefined method ReportsController::getDataSource()
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 25, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 25, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 04:29:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Beetween NULL AND NULL
+					    		  	  Warehouse.id = '3'' at line 10
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT Stock.na...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT Stock.na...', Array, Array)
+#3 C:\wamp\www\cake\app\Controller\ReportsController.php(39): DboSource->fetchAll('SELECT Stock.na...', Array)
+#4 C:\wamp\www\cake\app\Controller\ReportsController.php(57): ReportsController->listStockFilter(Array)
+#5 [internal function]: ReportsController->listStock()
+#6 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#7 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-09 04:30:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Beetween '2014-01-01' AND '2014-01-01'
+					    		  	  Warehouse.id = '3'' at line 10
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT Stock.na...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT Stock.na...', Array, Array)
+#3 C:\wamp\www\cake\app\Controller\ReportsController.php(39): DboSource->fetchAll('SELECT Stock.na...', Array)
+#4 C:\wamp\www\cake\app\Controller\ReportsController.php(57): ReportsController->listStockFilter(Array)
+#5 [internal function]: ReportsController->listStock()
+#6 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#7 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-09 04:32:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Beetween '2014-01-01' AND '2014-01-01' AND
+					    		  	  Warehouse.id = '3'' at line 10
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT Stock.na...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT Stock.na...', Array, Array)
+#3 C:\wamp\www\cake\app\Controller\ReportsController.php(39): DboSource->fetchAll('SELECT Stock.na...', Array)
+#4 C:\wamp\www\cake\app\Controller\ReportsController.php(57): ReportsController->listStockFilter(Array)
+#5 [internal function]: ReportsController->listStock()
+#6 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#7 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-09 04:33:06 Error: Fatal Error (4): syntax error, unexpected 'list' (T_LIST), expecting ']' in [C:\wamp\www\cake\app\Controller\ReportsController.php, line 53]
+2014-02-09 04:33:06 Error: [FatalErrorException] syntax error, unexpected 'list' (T_LIST), expecting ']'
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 53, Array)
+#2 C:\wamp\www\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 53, Array)
+#3 C:\wamp\www\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-09 04:33:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Beetween '2014-01-01' AND '2014-02-28'' at line 11
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT Stock.na...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT Stock.na...', Array, Array)
+#3 C:\wamp\www\cake\app\Controller\ReportsController.php(39): DboSource->fetchAll('SELECT Stock.na...', Array)
+#4 C:\wamp\www\cake\app\Controller\ReportsController.php(57): ReportsController->listStockFilter(Array)
+#5 [internal function]: ReportsController->listStock()
+#6 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#7 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-09 04:33:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TrFixPurchaseOrder.date' in 'where clause'
+Request URL: /cake/reports/listStock
+Stack Trace:
+#0 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT Stock.na...', Array)
+#2 C:\wamp\www\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT Stock.na...', Array, Array)
+#3 C:\wamp\www\cake\app\Controller\ReportsController.php(39): DboSource->fetchAll('SELECT Stock.na...', Array)
+#4 C:\wamp\www\cake\app\Controller\ReportsController.php(57): ReportsController->listStockFilter(Array)
+#5 [internal function]: ReportsController->listStock()
+#6 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#7 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-10 08:29:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:30:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:30:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:31:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:33:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:33:24 Error: [MissingControllerException] Controller class CakeController could not be found.
+Exception Attributes: array (
+  'class' => 'CakeController',
+  'plugin' => NULL,
+)
+Request URL: /cake/cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:33:29 Error: [MissingControllerException] Controller class CakeController could not be found.
+Exception Attributes: array (
+  'class' => 'CakeController',
+  'plugin' => NULL,
+)
+Request URL: /cake/cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:34:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:35:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/choosen.css
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:38:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/chosen-sprite.png
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:44:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/chosen-sprite.png
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 08:59:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/css/chosen-sprite.png
+Stack Trace:
+#0 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-10 09:12:41 Error: [NotFoundException] Invalid big unit
+Request URL: /cake/bigunits/view//1/undefined
+Stack Trace:
+#0 [internal function]: BigUnitsController->view('1', 'undefined')
+#1 C:\wamp\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BigUnitsController), Array)
+#2 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(BigUnitsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

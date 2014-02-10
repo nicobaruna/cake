@@ -27,7 +27,7 @@
 					<div class="form-row">
 						<div class="col-md-3"><?php echo __('Note'); ?></div>
 						<div class="col-md-9">
-							<?php echo h($grNote['GrNote']['note']); ?>
+							<?php echo html_entity_decode($grNote['GrNote']['note']); ?>
 							&nbsp;
 						</div>
 					</div>

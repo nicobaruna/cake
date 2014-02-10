@@ -114,3 +114,7 @@
     .col-md-9 {width:70%;}
 
 }
+
+select {
+	width:100%;
+}

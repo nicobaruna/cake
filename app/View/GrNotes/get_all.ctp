@@ -9,7 +9,7 @@
 		<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 		<thead>
 		<tr>
-				<th><?php echo $this->Paginator->sort('id'); ?></th>
+				<th><?php echo $this->Paginator->sort('number'); ?></th>
 				<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
 				<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 				<th><?php echo $this->Paginator->sort('date'); ?></th>
@@ -24,7 +24,7 @@
 		<tbody>
 			<?php foreach ($GrNotes as $grNote): ?>
 			<tr>
-				<td><?php echo h($grNote['GrNote']['id']); ?>&nbsp;</td>
+				<td><?php echo h($grNote['GrNote']['number']); ?>&nbsp;</td>
 				<td>
 					<?php echo $this->Html->link($grNote['Supplier']['name'], array('controller' => 'suppliers', 'action' => 'view', $grNote['Supplier']['id'])); ?>
 				</td>
@@ -44,6 +44,7 @@
 							
 							default:
 								$class = "warning";
+								$grNote['GrNote']['status'] = 'Diajukan menjadi Fixed Purchase Order';
 								break;
 						}
 					?>

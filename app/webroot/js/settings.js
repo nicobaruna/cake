@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    var theme = 'default';
+    var theme = 'theme-white';
 
     var themeToBackground = new Array();
         themeToBackground['default'] = ['bg-img-num1','bg-img-num2','bg-img-num3','bg-img-num4','bg-img-num5','bg-img-num6','bg-img-num7','bg-img-num8'];

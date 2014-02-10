@@ -6,35 +6,35 @@
 				<h2><?php echo __('Unconfirm Gr Notes'); ?></h2>
 			</div>
 			<div class="content">
-			<?php if(!empty($grNotes)) { ?>
+			<?php if(!empty($GrNotes)) { ?>
 				<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 				<tr>
-						
+						<th><?php echo $this->Paginator->sort('number'); ?></th>
 						<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
 					
 						<th><?php echo $this->Paginator->sort('date'); ?></th>
-						<th><?php echo $this->Paginator->sort('note'); ?></th>
+						
 						<th><?php echo $this->Paginator->sort('jangka_pembayaran'); ?></th>
 
 						<th><?php echo $this->Paginator->sort('status'); ?></th>
 						
 						<th class="actions"><?php echo __('Actions'); ?></th>
 				</tr>
-				<?php foreach ($grNotes as $grNote): ?>
+				<?php foreach ($GrNotes as $grNote): ?>
 				<tr>
-					
-					<td><?php echo h($grNote['PurchaseOrder']['supplier_id']); ?>&nbsp;</td>
+					<td><?php echo h($grNote['PurchaseOrder']['number']); ?>&nbsp;</td>
+					<td><?php echo h($grNote['Supplier']['name']); ?>&nbsp;</td>
 					
 					<td><?php echo h($grNote['PurchaseOrder']['date']); ?>&nbsp;</td>
-					<td><?php echo h($grNote['PurchaseOrder']['note']); ?>&nbsp;</td>
+					
 					<td><?php echo h($grNote['PurchaseOrder']['jangka_pembayaran']); ?>&nbsp;</td>
 					
-					<td><?php echo h($grNote['PurchaseOrder']['status']); ?>&nbsp;</td>
+					<td><?php $class = ($grNote['PurchaseOrder']['status'] == 'draft') ? 'label-warning' : 'label-success'; echo '<span class="label '.$class.'">'.h($grNote['PurchaseOrder']['status']).'</span>'; ?>&nbsp;</td>
 
 					<td class="actions">
 						<?php echo $this->Html->link(__('Confirm'), array('action' => 'preview','GrNote','PurchaseOrder', $grNote['PurchaseOrder']['id']),array('class'=>'btn btn-success')); ?>
-						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $grNote['PurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
-						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $grNote['GrNote']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $grNote['GrNote']['id'])); ?>
+						
+						<?php echo $this->Form->postLink(__('Delete'), array('controller'=>'PurchaseOrders','action' => 'delete', $grNote['PurchaseOrder']['id'],'GrNotes','index'),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $grNote['PurchaseOrder']['id'])); ?>
 					</td>
 				</tr>
 			<?php endforeach; ?>

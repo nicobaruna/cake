@@ -10,35 +10,31 @@
 					<?php if(!empty($purchaseOrders)){ ?>
 					<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 					<tr>
-							<th><?php echo $this->Paginator->sort('id'); ?></th>
+							<th><?php echo $this->Paginator->sort('number'); ?></th>
 							<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 							<th><?php echo $this->Paginator->sort('date'); ?></th>
-							<th><?php echo $this->Paginator->sort('note'); ?></th>
+							
 							<th><?php echo $this->Paginator->sort('status'); ?></th>
 							<th><?php echo $this->Paginator->sort('jangka_pembayaran'); ?></th>
-							<th><?php echo $this->Paginator->sort('ordered_by'); ?></th>
-							<th><?php echo $this->Paginator->sort('confirm_by'); ?></th>
-							<th><?php echo $this->Paginator->sort('discount'); ?></th>
+							
 							
 							<th class="actions"><?php echo __('Actions'); ?></th>
 					</tr>
 					<?php foreach ($purchaseOrders as $purchaseOrder): ?>
 					<tr>
-						<td><?php echo h($purchaseOrder['PurchaseRequest']['id']); ?>&nbsp;</td>
+						<td><?php echo h($purchaseOrder['PurchaseRequest']['number']); ?>&nbsp;</td>
 						<td>
-							<?php echo $this->Html->link($purchaseOrder['User']['id'], array('controller' => 'users', 'action' => 'view', $purchaseOrder['User']['id'])); ?>
+							<?php echo $this->Html->link($purchaseOrder['User']['username'], array('controller' => 'users', 'action' => 'view', $purchaseOrder['User']['id'])); ?>
 						</td>
 						<td><?php echo h($purchaseOrder['PurchaseRequest']['date']); ?>&nbsp;</td>
-						<td><?php echo h($purchaseOrder['PurchaseRequest']['note']); ?>&nbsp;</td>
+						
 						<td><?php echo h($purchaseOrder['PurchaseRequest']['status']); ?>&nbsp;</td>
 						<td><?php echo h($purchaseOrder['PurchaseRequest']['jangka_pembayaran']); ?>&nbsp;</td>
-						<td><?php echo h($purchaseOrder['PurchaseRequest']['ordered_by']); ?>&nbsp;</td>
-						<td><?php echo h($purchaseOrder['PurchaseRequest']['made_by']); ?>&nbsp;</td>
-						<td><?php echo h($purchaseOrder['PurchaseRequest']['discount']); ?>&nbsp;</td>
+						
 
 						<td class="actions">
 							<?php echo $this->Html->link(__('Confirm'), array('action' => 'preview', 'PurchaseOrder','PurchaseRequest',$purchaseOrder['PurchaseRequest']['id']),array('class'=>'btn btn-success')); ?>
-							<?php echo $this->Form->postLink(__('Cancel'), array('action' => 'delete', $purchaseOrder['PurchaseOrder']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $purchaseOrder['PurchaseOrder']['id'])); ?>
+							<?php echo $this->Form->postLink(__('Cancel'), array('controller'=>'PurchaseRequests','action' => 'delete', $purchaseOrder['PurchaseRequest']['id'],urlencode('PurchaseOrders'),'index'),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $purchaseOrder['PurchaseOrder']['id'])); ?>
 						</td>
 					</tr>
 					<?php endforeach; ?>

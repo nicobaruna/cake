@@ -9,7 +9,7 @@
 		<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 		<thead>
 		<tr>
-				<th><?php echo $this->Paginator->sort('id'); ?></th>
+				<th><?php echo $this->Paginator->sort('number'); ?></th>
 				<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
 				<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 				<th><?php echo $this->Paginator->sort('date'); ?></th>
@@ -24,7 +24,7 @@
 		<tbody>
 			<?php foreach ($purchaseOrders as $PurchaseOrder): ?>
 			<tr>
-				<td><?php echo h($PurchaseOrder['PurchaseOrder']['id']); ?>&nbsp;</td>
+				<td><?php echo h($PurchaseOrder['PurchaseOrder']['number']); ?>&nbsp;</td>
 				<td>
 					<?php echo $this->Html->link($PurchaseOrder['Supplier']['name'], array('controller' => 'suppliers', 'action' => 'view', $PurchaseOrder['Supplier']['id'])); ?>
 				</td>
@@ -44,6 +44,7 @@
 							
 							default:
 								$class = "warning";
+								$PurchaseOrder['PurchaseOrder']['status'] = 'diajukan menjadi GrNote';
 								break;
 						}
 					?>
@@ -54,7 +55,7 @@
 				
 				<td class="actions">
 					<?php echo $this->Html->link(__('View'), array('action' => 'view', $PurchaseOrder['PurchaseOrder']['id']),array('class'=>'btn btn-default')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $PurchaseOrder['PurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
+					<?php //echo $this->Html->link(__('Edit'), array('action' => 'edit', $PurchaseOrder['PurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
 					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $PurchaseOrder['PurchaseOrder']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $PurchaseOrder['PurchaseOrder']['id'])); ?>
 				</td>
 			</tr>

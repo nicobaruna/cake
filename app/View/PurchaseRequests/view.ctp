@@ -30,7 +30,7 @@
 					<div class="form-row">
 						<div class="col-md-3"><?php echo __('Note'); ?></div>
 						<div class="col-md-9">
-							<?php echo h($purchaseRequest['PurchaseRequest']['note']); ?>	
+							<?php echo html_entity_decode($purchaseRequest['PurchaseRequest']['note']); ?>	
 						</div>
 					</div>
 					<div class="form-row">

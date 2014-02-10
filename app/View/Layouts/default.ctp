@@ -31,10 +31,12 @@ App::uses('Debugger', 'Utility');
 		<?php echo $this -> Html -> meta('icon'); ?>
 		<?php
 		echo $this -> Html -> css('stylesheets');
+		echo $this->Html->css('chosen');
 		echo $this -> fetch('meta');
 		echo $this -> fetch('script');
 		
 		?>
+
 		<script type=text/javascript src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script type=text/javascript src=js/plugins/jquery/jquery-ui.min.js></script>
 		<script type=text/javascript src=js/plugins/jquery/jquery-migrate.min.js></script>
@@ -46,6 +48,7 @@ App::uses('Debugger', 'Utility');
 		<script type=text/javascript src=js/plugins/tagsinput/jquery.tagsinput.min.js></script>
 		<script type=text/javascript src=js/plugins/jquery/jquery-ui-timepicker-addon.js></script>
 		<script type=text/javascript src=js/plugins/ibutton/jquery.ibutton.js></script>
+		
 		<script type=text/javascript src=js/plugins/datatables/jquery.dataTables.min.js></script>
 		<script type=text/javascript src=js/plugins/validationengine/languages/jquery.validationEngine-en.js></script>
 		<script type=text/javascript src=js/plugins/validationengine/jquery.validationEngine.js></script>
@@ -56,7 +59,10 @@ App::uses('Debugger', 'Utility');
 		</script>
 		<script type=text/javascript src=js/js.js></script>
 		<script type=text/javascript src=js/settings.js></script>
+		<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+		<script type="text/javascript" src="js/prism.js"></script>
 		<script type=text/javascript src=js/script.js></script>
+		
 	</head>
 	<body class=bg-img-num1>
 		<div class=container>
@@ -85,12 +91,16 @@ App::uses('Debugger', 'Utility');
 				<div class="border"></div>
 			</div>
 			<!-- print header end -->
+			<?php echo $this->Session->flash(); ?>
+			
 			<div class="row">
 				<?php
 				 if($this->Session->read('Auth.User.id'))
 						echo $this->element('sidebar');
 				 ?>
 				 <div id="content">
+				 	
+				 
 					<?php
 						echo $this -> fetch('content'); 
 					?>
@@ -105,14 +115,39 @@ App::uses('Debugger', 'Utility');
       </div>
     </div>
     
+    <?php 
+    
+    //getmodel
+
+    switch (Inflector::classify( $this->params['controller'])) {
+        case 'PurchaseOrder':
+            $model = 'TrPo';
+            break;
+        case 'GrNote':
+            $model = 'TrGrnote';
+            break;
+		case 'FixedPurchaseOrder':
+            $model = 'TrFixPurchaseOrder';
+            break;
+		case 'PurchaseRequest':
+            $model = 'TrRequest';
+            break;
+        default:
+            $model = 'TrRequest';
+            break;
+    }
+	
+
+    ?>
+    
     <div class="hidden">
-		<div id="item" data-indexnumber="1" data-model="TrRequest">
+		<div id="item" data-indexnumber="1" data-model="<?php echo $model; ?>">
 			<table>
 				<tr class="item">			
-			<td><?php echo $this->Form->input('TrRequest.{number}.stock_id',array('label'=>FALSE,'empty'=>'please choose one','class'=>'stock')); ?></td>
-			<td><?php echo $this->Form->input('TrRequest.{number}.qty',array('label'=>FALSE)); ?></td>
-			<td><?php echo $this->Form->input('TrRequest.{number}.big_unit_id',array('label'=>FALSE,'empty'=>'please choose item first','class'=>'bigUnit')); ?></td>
-			<td><?php echo $this->Form->input('TrRequest.{number}.harga',array('label'=>FALSE)); ?></td>
+			<td class="col-md-3"><?php echo $this->Form->input($model.'.{number}.stock_id',array('label'=>FALSE,'div'=>FALSE,'empty'=>'please choose one','class'=>'stock','style'=>'width:100%')); ?></td>
+			<td><?php echo $this->Form->input($model.'.{number}.qty',array('label'=>FALSE)); ?></td>
+			<td class="bigUnitColumn col-md-3"><?php echo $this->Form->input($model.'.{number}.big_unit_id',array('label'=>FALSE,'div'=>FALSE,'empty'=>'please choose item first','class'=>'bigUnit','style'=>'width:100%')); ?></td>
+			<td><?php echo $this->Form->input($model.'.{number}.harga',array('label'=>FALSE)); ?></td>
 			<td>&nbsp;</td>
 					</tr>		
 	</table>

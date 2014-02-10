@@ -25,7 +25,7 @@
 							<?php echo __('Note'); ?>
 						</div>
 						<div class="col-md-9">
-							<?php echo h($purchaseOrder['PurchaseOrder']['note']); ?>
+							<?php echo html_entity_decode($purchaseOrder['PurchaseOrder']['note']); ?>
 						</div>
 					</div>
 					

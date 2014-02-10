@@ -11,11 +11,11 @@
 				<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 				<thead>
 				<tr>
-						<th><?php echo $this->Paginator->sort('id'); ?></th>
+						<th><?php echo $this->Paginator->sort('number'); ?></th>
 						<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
 						
 						<th><?php echo $this->Paginator->sort('date'); ?></th>
-						<th><?php echo $this->Paginator->sort('note'); ?></th>
+			
 						
 						<th><?php echo $this->Paginator->sort('jangka_pembayaran'); ?></th>
 						
@@ -28,13 +28,13 @@
 				<tbody>
 					<?php foreach ($purchaseRequests as $purchaseRequest): ?>
 					<tr>
-						<td><?php echo h($purchaseRequest['PurchaseRequest']['id']); ?>&nbsp;</td>
+						<td><?php echo h($purchaseRequest['PurchaseRequest']['number']); ?>&nbsp;</td>
 						<td>
 							<?php echo $this->Html->link($purchaseRequest['Supplier']['name'], array('controller' => 'suppliers', 'action' => 'view', $purchaseRequest['Supplier']['id'])); ?>
 						</td>
 						
 						<td><?php echo h(date('d M Y', strtotime($purchaseRequest['PurchaseRequest']['date']))); ?>&nbsp;</td>
-						<td><?php echo h($purchaseRequest['PurchaseRequest']['note']); ?>&nbsp;</td>
+						
 						
 						<td><?php echo h($purchaseRequest['PurchaseRequest']['jangka_pembayaran']); ?>&nbsp;</td>
 						

@@ -14,10 +14,9 @@
 						<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
 						<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 						<th><?php echo $this->Paginator->sort('date'); ?></th>
-						<th><?php echo $this->Paginator->sort('note'); ?></th>
 						<th><?php echo $this->Paginator->sort('jangka_pembayaran'); ?></th>
 						<th><?php echo $this->Paginator->sort('status'); ?></th>
-						<th><?php echo $this->Paginator->sort('discount'); ?></th>
+						
 						<th class="actions"><?php echo __('Actions'); ?></th>
 				</tr>
 				<?php foreach ($fixedPurchaseOrders as $fixedPurchaseOrder): ?>
@@ -30,14 +29,14 @@
 						<?php echo $this->Html->link($fixedPurchaseOrder['User']['username'], array('controller' => 'users', 'action' => 'view', $fixedPurchaseOrder['User']['id'])); ?>
 					</td>
 					<td><?php echo h($fixedPurchaseOrder['GrNote']['date']); ?>&nbsp;</td>
-					<td><?php echo h($fixedPurchaseOrder['GrNote']['note']); ?>&nbsp;</td>
+					
 					<td><?php echo h($fixedPurchaseOrder['GrNote']['jangka_pembayaran']); ?>&nbsp;</td>
 					<td><?php echo h($fixedPurchaseOrder['GrNote']['status']); ?>&nbsp;</td>
-					<td><?php echo h($fixedPurchaseOrder['GrNote']['discount']); ?>&nbsp;</td>
+					
 					<td class="actions">
 						<?php echo $this->Html->link(__('Confirm'), array('action' => 'preview','FixedPurchaseOrder','GrNote', $fixedPurchaseOrder['GrNote']['id']),array('class'=>'btn btn-success')); ?>
-						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $fixedPurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
-						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $fixedPurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $fixedPurchaseOrder['FixedPurchaseOrder']['id'])); ?>
+						
+						<?php echo $this->Form->postLink(__('Delete'), array('controller'=>'GrNotes','action' => 'delete', $fixedPurchaseOrder['GrNote']['id'],'FixedPurchaseOrders','index'),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $fixedPurchaseOrder['FixedPurchaseOrder']['id'])); ?>
 					</td>
 				</tr>
 			<?php endforeach; ?>
@@ -90,7 +89,7 @@
 				<h2><?php echo __('Actions'); ?></h2>
 			</div>
 			<div class="content list-group">
-				
+				<?php echo $this->Html->link(__('List FixPO'), array('action' => 'getAll'),array('class'=>'list-group-item')); ?>
 				<?php echo $this->Html->link(__('List Suppliers'), array('controller' => 'suppliers', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
 				 
 			</div>

@@ -17,11 +17,19 @@ function populate(){
 		console.log(id);
 		var count = $('.item-table').attr('data-items');
 		var model = $('#item').data('model');
-		var url = base+'/bigunits/view/'+id+'/'+(count-1)+'/'+model;
+		console.log(count);
+		count = parseInt(count) - 1;
+		if(count == 0){
+			$count = 0;
+		}
+		var url = base+'/bigunits/view/'+id+'/'+count+'/'+model;
 		$(this).closest('tr').addClass('current');
 		$.get(url,function(data){
-			console.log(data);
+			console.log(model);
+			$('.item.current .bigUnitColumn .select2-container').remove();
 			$('.item.current .bigUnit').after(data).remove();
+			
+			$(".item.current select").select2();
 			$('.item.current').removeClass('current');
 		});
 }
@@ -89,6 +97,7 @@ function moreAndLessItem() {
 		//itemTemplate = itemTemplate.replace('{number}',itemsTotal);
 		console.log(itemTemplate);
 		$('.item-table tbody').append('<tr class="item newRow">' + itemTemplate + '</tr>');
+		$(".item.newRow select").select2();
 		$(items).find('.item:last-child input,.item:last-child select').val('');
 		$(items).find('.item:last-child a.delete').remove();
 		$('.item-table').attr('data-items', (parseInt(itemsTotal) + 1));

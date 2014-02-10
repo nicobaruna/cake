@@ -26,12 +26,12 @@ class PurchaseOrdersController extends AppController {
  *
  * @return void
  */
-	public function index() {
+	public function index($request = NULL) {
 		$this->PurchaseOrder->recursive = 0;
 		$purchaseOrders = $this->Paginator->paginate('PurchaseRequest',array(
 			'PurchaseRequest.status' => 'draft',
 		));
-		if ($this->request->is('post')) {
+		if ($this->request->is('post') && $request == NULL) {
 			$purchaseOrders = $this->findRequest($this->request->data,'PurchaseRequest');
 		}
 		$this->set('purchaseOrders',$purchaseOrders );
@@ -122,7 +122,7 @@ class PurchaseOrdersController extends AppController {
  * @param string $id
  * @return void
  */
-	public function delete($id = null) {
+	public function delete($id = null,$controller='GrNotes',$action='getAll') {
 		$this->PurchaseOrder->id = $id;
 		if (!$this->PurchaseOrder->exists()) {
 			throw new NotFoundException(__('Invalid purchase order'));
@@ -133,5 +133,5 @@ class PurchaseOrdersController extends AppController {
 		} else {
 			$this->Session->setFlash(__('The purchase order could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'getAll'));
+		return $this->redirect(array('controller'=>$controller,'action' => $action));
 	}}

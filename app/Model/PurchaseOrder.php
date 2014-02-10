@@ -100,7 +100,26 @@ class PurchaseOrder extends AppModel {
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
+	public function setNumber(){
+		//get todays PR
+		$prs = $this->find('count',array('conditions'=>array('PurchaseOrder.date'=>date('Y-m-d'))));
+		
+		$count = 1;
+		if($prs){
+			$count = $prs;
+		}
 
+		if(($prs+1) < 9){
+				$count = "0".$prs+1;
+		}
+		return 'PO/'.$count.'/'.date('dmy');
+	}
+	
+	public function beforeSave($options = array()) {
+		//var_dump($this->setNumber()); exit;
+	    $this->data['PurchaseOrder']['number'] = $this->setNumber();
+	    return true;
+	}
 /**
  * belongsTo associations
  *

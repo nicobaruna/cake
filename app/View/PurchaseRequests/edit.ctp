@@ -80,7 +80,7 @@
 					<h2>Items</h2>
 				</div>
 				
-				<div class="content item-table" data-items="" data-total="">
+				<div class="content item-table" data-model="TrRequest" data-items="<?php echo count($this->request->data['TrRequest']) ?>" data-total="<?php echo count($this->request->data['TrRequest']) ?>">
 					<table cellpadding = "0" cellspacing = "0" class="table table-bordered table-striped table-hover">
 						<thead>
 							<tr>

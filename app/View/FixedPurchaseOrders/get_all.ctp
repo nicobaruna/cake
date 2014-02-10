@@ -3,13 +3,13 @@
 		<div class="block">
 			
 			<div class="header">
-				<h2><?php echo __('Purchase Requests'); ?></h2>
+				<h2><?php echo __('Fix Purchase Orders'); ?></h2>
 			</div>
 		<div class="content">
 		<table cellpadding="0" cellspacing="0" class="table table-bordered table-striped table-hover">
 		<thead>
 		<tr>
-				<th><?php echo $this->Paginator->sort('id'); ?></th>
+				<th><?php echo $this->Paginator->sort('number'); ?></th>
 				<th><?php echo $this->Paginator->sort('supplier_id'); ?></th>
 				<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 				<th><?php echo $this->Paginator->sort('date'); ?></th>
@@ -24,7 +24,7 @@
 		<tbody>
 			<?php foreach ($fixedPurchaseOrders as $PurchaseOrder): ?>
 			<tr>
-				<td><?php echo h($PurchaseOrder['FixedPurchaseOrder']['id']); ?>&nbsp;</td>
+				<td><?php echo h($PurchaseOrder['FixedPurchaseOrder']['number']); ?>&nbsp;</td>
 				<td>
 					<?php echo $this->Html->link($PurchaseOrder['Supplier']['name'], array('controller' => 'suppliers', 'action' => 'view', $PurchaseOrder['Supplier']['id'])); ?>
 				</td>
@@ -54,7 +54,7 @@
 				
 				<td class="actions">
 					<?php echo $this->Html->link(__('View'), array('action' => 'view', $PurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-default')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $PurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
+					<?php //echo $this->Html->link(__('Edit'), array('action' => 'edit', $PurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-info')); ?>
 					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $PurchaseOrder['FixedPurchaseOrder']['id']),array('class'=>'btn btn-danger'), null, __('Are you sure you want to delete # %s?', $PurchaseOrder['FixedPurchaseOrder']['id'])); ?>
 				</td>
 			</tr>
@@ -96,7 +96,7 @@
 		<!-- search block end -->
 		<!-- actions block start -->
 		<div class="actions block">
-			<div class="header">
+			<!-- <div class="header">
 				<h2><?php echo __('Actions'); ?></h2>
 			</div>
 			<div class="content list-group">
@@ -109,7 +109,7 @@
 				<?php echo $this->Html->link(__('New Purchase Order'), array('controller' => 'purchase_orders', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
 				<?php echo $this->Html->link(__('List Tr Requests'), array('controller' => 'tr_requests', 'action' => 'index'),array('class'=>'list-group-item')); ?> 
 				<?php echo $this -> Html -> link(__('New Tr Request'), array('controller' => 'tr_requests', 'action' => 'add'),array('class'=>'list-group-item')); ?> 
-			</div>
+			</div> -->
 		</div>
 		<!-- actions block end -->
 	</div>

@@ -31,7 +31,7 @@
 				<div class="form-row">
 					<div class="col-md-3"><?php echo __('Note'); ?></div>
 					<div class="col-md-9">
-						<?php echo h($fixedPurchaseOrder['FixedPurchaseOrder']['note']); ?>
+						<?php echo html_entity_decode($fixedPurchaseOrder['FixedPurchaseOrder']['note']); ?>
 						&nbsp;
 					</div>
 				</div>

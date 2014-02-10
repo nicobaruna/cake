@@ -20,12 +20,12 @@ class GrNotesController extends AppController {
  *
  * @return void
  */
-	public function index() {
+	public function index($request = NULL) {
 		$this->GrNote->recursive = 0;
 		$GrNotes = $this->Paginator->paginate('PurchaseOrder',array(
 			'PurchaseOrder.status' => 'draft',
 		));
-		if ($this->request->is('post')) {
+		if ($this->request->is('post') && $request == NULL) {
 			$GrNotes = $this->findRequest($this->request->data,'PurchaseOrder');
 		}
 		$this->set('GrNotes',$GrNotes );
@@ -112,29 +112,7 @@ class GrNotesController extends AppController {
 		$this->set(compact('suppliers', 'users','stocks','bigUnits','warehouses'));
 	}
 	
-	public function pushToWareHouse($data){
-		foreach ($data['TrGrnote'] as $item) {
-			$bigUnit = $this->Stock->BigUnit->find('first',array('conditions'=>array('BigUnit.id'=>$item['big_unit_id'])));
-			var_dump($bigUnit);
-			$records[]['Stock'] = array(
-				'id' => $item['stock_id'],
-				'qty' => $bigUnit['Stock']['qty'] + ($item['qty'] * $bigUnit['BigUnit']['equivalent'])
-			);
-		}
-		
-		//var_dump($records); exit;
-		
-		if($this->Stock->saveMany($records)){
-			$this->Session->setFlash(__('Berhasil'));
-			//exit;
-		}else{
-			echo "error tuh"; 
-		}
-		
-		//save to warehouse histories
-		//var_dump($records); exit;
-	}
-
+	
 /**
  * delete method
  *
@@ -142,7 +120,7 @@ class GrNotesController extends AppController {
  * @param string $id
  * @return void
  */
-	public function delete($id = null) {
+	public function delete($id = null,$controller='GrNotes',$action='getAll') {
 		$this->GrNote->id = $id;
 		if (!$this->GrNote->exists()) {
 			throw new NotFoundException(__('Invalid gr note'));
@@ -153,7 +131,7 @@ class GrNotesController extends AppController {
 		} else {
 			$this->Session->setFlash(__('The gr note could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+		return $this->redirect(array('controller'=>$controller,'action'=>$action)) ;
 	}}
 
 

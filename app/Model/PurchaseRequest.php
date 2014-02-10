@@ -51,7 +51,7 @@ class PurchaseRequest extends AppModel {
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
-				//'required' => false,
+				'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -97,6 +97,27 @@ class PurchaseRequest extends AppModel {
 			),
 		),
 	);
+	
+	public function setNumber(){
+		//get todays PR
+		$prs = $this->find('count',array('conditions'=>array('PurchaseRequest.date'=>date('Y-m-d'))));
+		
+		$count = 1;
+		if($prs){
+			$count = $prs;
+		}
+
+		if(($prs+1) < 9){
+				$count = "0".$prs+1;
+		}
+		return 'PR/'.$count.'/'.date('dmy');
+	}
+	
+	public function beforeSave($options = array()) {
+		//var_dump($this->setNumber()); exit;
+	    $this->data['PurchaseRequest']['number'] = $this->setNumber();
+	    return true;
+	}
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
